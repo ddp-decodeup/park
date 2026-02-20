@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_layoutActivity"
+    android:layout_marginTop="@dimen/_100dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@android:color/transparent"
+    android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_gravity="center"
+                android:id="@+id/iv_emptyLayimage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35dp"
+                android:src="@drawable/ic_report" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_emptyLayTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_7dp"
+                android:text="@string/loader_text_please_wait_we_are_loading_data"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sp"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_emptyLayMsg"
+                android:layout_marginTop="@dimen/_7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_12sp"
+                tools:ignore="RtlCompat" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

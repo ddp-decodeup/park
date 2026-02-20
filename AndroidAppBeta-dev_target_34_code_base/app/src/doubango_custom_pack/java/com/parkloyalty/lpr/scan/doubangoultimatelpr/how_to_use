@@ -1,0 +1,28 @@
+Point & Scan
+Step 1: Call activity for result
+            val i = Intent(<Source Activity>, AlprVideoParallelActivity::class.java)
+            i.putExtra(KEY_FROM, FROM_POINT_AND_SCAN)
+            i.putExtra(KEY_IS_VIDEO_STAB, videoStab)
+            i.putExtra(KEY_IS_LENS_STAB, lensOpticalStab)
+            startActivityForResult(i, REQUEST_CODE_POINT_AND_SCAN)
+
+Step 2: handle result on the same Source Activity
+
+ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_CODE_POINT_AND_SCAN && resultCode == Activity.RESULT_OK){
+
+            val vehicleDetailDataModel = data?.getParcelableExtra<VehicleDetailDataModel>(KEY_VEHICLE_DETAIL_DATA)
+
+            showILog("==>License:","Number Plate : " + getValuesFromVariable(vehicleDetailDataModel?.licensePlateNumber))
+            showILog("==>License:","Make : " + getValuesFromVariable(vehicleDetailDataModel?.vehicleMakeBrand))
+            showILog("==>License:","Model : " + getValuesFromVariable(vehicleDetailDataModel?.vehicleModel))
+            showILog("==>License:","Color : " + getValuesFromVariable(vehicleDetailDataModel?.vehicleColor))
+            showILog("==>License:","country : " + getValuesFromVariable(vehicleDetailDataModel?.licensePlateCountry))
+            showILog("==>License:","State : " + getValuesFromVariable(vehicleDetailDataModel?.licensePlateState))
+            showILog("==>License:","Bitmap : " + getValuesFromVariable(vehicleDetailDataModel?.vehicleImageURL))
+        }
+    }
+
+
+Note : Right now we have added optimal code for Point & Scan only. We can modified it as per our requirement.

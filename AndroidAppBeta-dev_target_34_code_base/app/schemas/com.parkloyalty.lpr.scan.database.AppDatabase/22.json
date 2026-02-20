@@ -1,0 +1,1776 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 22,
+    "identityHash": "99a4192fed11f059077d84df65a66d72",
+    "entities": [
+      {
+        "tableName": "welcome_form",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`upload_status` INTEGER, `enable` INTEGER, `officer_badge_id` TEXT, `officer_shift` TEXT, `officer_supervisor` TEXT, `officer_supervisor_badge_id` TEXT, `officer_radio` TEXT, `officer_beat` TEXT, `officer_beat_name` TEXT, `agency` TEXT, `officer_lookup_code` TEXT, `officer_zone` TEXT, `officer_zone_name` TEXT, `city_zone_name` TEXT, `city_zone_name_code` TEXT, `payment_zone_name` TEXT, `payment_zone_ID` TEXT, `officer_first_name` TEXT, `officer_last_name` TEXT, `officer_middle_name` TEXT, `officer_squad` TEXT, `officer_superviser_id` TEXT, `officer_user_name` TEXT, `radio` TEXT, `role` TEXT, `shift` TEXT, `site_id` TEXT, `site_officer_id` TEXT, `officer_device_id` TEXT, `officer_device_name` TEXT, `equipment_id` TEXT, `squad_id` TEXT, `initiator_id` TEXT, `initiator_role` TEXT, `lot` TEXT, `_id` TEXT, `table_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "uploadStatus",
+            "columnName": "upload_status",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "enable",
+            "columnName": "enable",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "officerBadgeId",
+            "columnName": "officer_badge_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerShift",
+            "columnName": "officer_shift",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerSupervisor",
+            "columnName": "officer_supervisor",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mOfficerSuperVisorBadgeId",
+            "columnName": "officer_supervisor_badge_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerRadio",
+            "columnName": "officer_radio",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerBeat",
+            "columnName": "officer_beat",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerBeatName",
+            "columnName": "officer_beat_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "agency",
+            "columnName": "agency",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officer_lookup_code",
+            "columnName": "officer_lookup_code",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerZone",
+            "columnName": "officer_zone",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerZoneName",
+            "columnName": "officer_zone_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "cityZoneName",
+            "columnName": "city_zone_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "cityZoneNameCode",
+            "columnName": "city_zone_name_code",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "paymentZoneName",
+            "columnName": "payment_zone_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "paymentZoneID",
+            "columnName": "payment_zone_ID",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerFirstName",
+            "columnName": "officer_first_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerLastName",
+            "columnName": "officer_last_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerMiddleName",
+            "columnName": "officer_middle_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerSquad",
+            "columnName": "officer_squad",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerSuperviserId",
+            "columnName": "officer_superviser_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerUserName",
+            "columnName": "officer_user_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "radio",
+            "columnName": "radio",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "role",
+            "columnName": "role",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "shift",
+            "columnName": "shift",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "siteId",
+            "columnName": "site_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "siteOfficerId",
+            "columnName": "site_officer_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerDeviceId",
+            "columnName": "officer_device_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerDeviceName",
+            "columnName": "officer_device_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "equipmentId",
+            "columnName": "equipment_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "squadId",
+            "columnName": "squad_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "initiatorId",
+            "columnName": "initiator_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "initiatorRole",
+            "columnName": "initiator_role",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lot",
+            "columnName": "lot",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "table_id",
+            "columnName": "table_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "table_id"
+          ]
+        }
+      },
+      {
+        "tableName": "login",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`response` TEXT NOT NULL, `status` INTEGER, `metadata` TEXT, PRIMARY KEY(`response`))",
+        "fields": [
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "metadata",
+            "columnName": "metadata",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "response"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_number",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`metadata` TEXT, `response` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "metadata",
+            "columnName": "metadata",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_booklet",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`citation_booklet` TEXT NOT NULL, `status` INTEGER, PRIMARY KEY(`citation_booklet`))",
+        "fields": [
+          {
+            "fieldPath": "citationBooklet",
+            "columnName": "citation_booklet",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mStatus",
+            "columnName": "status",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "citation_booklet"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_images",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`citation_image` TEXT, `status` INTEGER NOT NULL, `type` INTEGER NOT NULL, `edit` INTEGER NOT NULL, `timeImagePath` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "citationImage",
+            "columnName": "citation_image",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "edit",
+            "columnName": "edit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timeImagePath",
+            "columnName": "timeImagePath",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "timing_images",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timing_image` TEXT, `status` INTEGER NOT NULL, `id` INTEGER NOT NULL, `timingRecordId` INTEGER NOT NULL, `showDeleteButton` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "timingImage",
+            "columnName": "timing_image",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timingRecordId",
+            "columnName": "timingRecordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deleteButtonStatus",
+            "columnName": "showDeleteButton",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_issurance",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`citation_number` TEXT NOT NULL, `form_status` INTEGER, `citation_data` TEXT, PRIMARY KEY(`citation_number`))",
+        "fields": [
+          {
+            "fieldPath": "citationNumber",
+            "columnName": "citation_number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "formStatus",
+            "columnName": "form_status",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "citationData",
+            "columnName": "citation_data",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "citation_number"
+          ]
+        }
+      },
+      {
+        "tableName": "activity_layout",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`data` TEXT, `message` TEXT, `status` INTEGER, `response` TEXT, `id` INTEGER NOT NULL, `upload_status` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uploadStatus",
+            "columnName": "upload_status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "timing_layout",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`data` TEXT, `message` TEXT, `status` INTEGER, `response` TEXT, `id` INTEGER NOT NULL, `upload_status` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uploadStatus",
+            "columnName": "upload_status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_layout",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`data` TEXT, `success` INTEGER, `response` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "success",
+            "columnName": "success",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "welcome_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`welcome_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "welcomeList",
+            "columnName": "welcome_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "updated_time",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`data` TEXT, `message` TEXT, `status` INTEGER, `response` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "timing_data",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `badge_id` TEXT, `form_status` INTEGER NOT NULL, `block` TEXT, `latitude` REAL, `longitiude` REAL, `lpr_number` TEXT, `lpr_state` TEXT, `mark_issue_timestamp` TEXT, `mark_start_timestamp` TEXT, `meter_number` TEXT, `officer_name` TEXT, `regulation_time` INTEGER, `remark` TEXT, `shift` TEXT, `side` TEXT, `source` TEXT, `status` TEXT, `street` TEXT, `supervisor` TEXT, `zone` TEXT, `location` TEXT, `make` TEXT, `model` TEXT, `color` TEXT, `address` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "badgeId",
+            "columnName": "badge_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "formStatus",
+            "columnName": "form_status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "block",
+            "columnName": "block",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "longitiude",
+            "columnName": "longitiude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "lprNumber",
+            "columnName": "lpr_number",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lprState",
+            "columnName": "lpr_state",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "markIssueTimestamp",
+            "columnName": "mark_issue_timestamp",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "markStartTimestamp",
+            "columnName": "mark_start_timestamp",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "meterNumber",
+            "columnName": "meter_number",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "officerName",
+            "columnName": "officer_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "regulationTime",
+            "columnName": "regulation_time",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "remark",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "shift",
+            "columnName": "shift",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "side",
+            "columnName": "side",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "source",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mStatus",
+            "columnName": "status",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "street",
+            "columnName": "street",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "supervisor",
+            "columnName": "supervisor",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "zone",
+            "columnName": "zone",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mLocation",
+            "columnName": "location",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mMake",
+            "columnName": "make",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mModel",
+            "columnName": "model",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mColor",
+            "columnName": "color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mAddress",
+            "columnName": "address",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "timestamp",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`time_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "timeList",
+            "columnName": "time_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_images_offline",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`citation_image` TEXT, `citation_number` INTEGER NOT NULL, `citation_number_text` TEXT, `status` INTEGER NOT NULL, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "citationImage",
+            "columnName": "citation_image",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mCitationNumber",
+            "columnName": "citation_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mCitationNumberText",
+            "columnName": "citation_number_text",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "offline_cancel_citation",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`lprnumber` TEXT, `uploadedCitationId` TEXT, `ticketNumber` TEXT NOT NULL, `status` TEXT, `note` TEXT, `reason` TEXT, `type` TEXT, `voidReasonLookupCode` TEXT, PRIMARY KEY(`ticketNumber`))",
+        "fields": [
+          {
+            "fieldPath": "lprNumber",
+            "columnName": "lprnumber",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "uploadedCitationId",
+            "columnName": "uploadedCitationId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "ticketNumber",
+            "columnName": "ticketNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "note",
+            "columnName": "note",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "reason",
+            "columnName": "reason",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "voidReasonLookupCode",
+            "columnName": "voidReasonLookupCode",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "ticketNumber"
+          ]
+        }
+      },
+      {
+        "tableName": "unUploadFacsimileImage",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`lprnumber` TEXT, `uploadedCitationId` TEXT, `ticketNumber` INTEGER NOT NULL, `ticketNumberText` TEXT, `status` INTEGER NOT NULL, `imageLink` TEXT, `imagePath` TEXT, `imageCount` INTEGER NOT NULL, `imageType` TEXT NOT NULL, PRIMARY KEY(`ticketNumber`))",
+        "fields": [
+          {
+            "fieldPath": "lprNumber",
+            "columnName": "lprnumber",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "uploadedCitationId",
+            "columnName": "uploadedCitationId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "dateTime",
+            "columnName": "ticketNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ticketNumberText",
+            "columnName": "ticketNumberText",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageLink",
+            "columnName": "imageLink",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "imagePath",
+            "columnName": "imagePath",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "imageCount",
+            "columnName": "imageCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageType",
+            "columnName": "imageType",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "ticketNumber"
+          ]
+        }
+      },
+      {
+        "tableName": "citation_issurance_printer",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`citation_number` TEXT NOT NULL, `form_status` INTEGER NOT NULL, `citation_data` TEXT, `print_command` TEXT, PRIMARY KEY(`citation_number`))",
+        "fields": [
+          {
+            "fieldPath": "citationNumber",
+            "columnName": "citation_number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "formStatus",
+            "columnName": "form_status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "citationData",
+            "columnName": "citation_data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "printCommand",
+            "columnName": "print_command",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "citation_number"
+          ]
+        }
+      },
+      {
+        "tableName": "activity_image_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `response_id` TEXT, `from` TEXT, `upload_status` TEXT, `image1` TEXT NOT NULL, `image2` TEXT NOT NULL, `image3` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activityResponseId",
+            "columnName": "response_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "from",
+            "columnName": "from",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "uploadStatus",
+            "columnName": "upload_status",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "image1",
+            "columnName": "image1",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image2",
+            "columnName": "image2",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image3",
+            "columnName": "image3",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "qr_code_inventory_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `equipment_id` TEXT, `equipment_name` TEXT, `equipment_value` TEXT, `is_required` INTEGER, `is_checked_out` INTEGER, `last_checked_out` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "equipmentID",
+            "columnName": "equipment_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "equipmentName",
+            "columnName": "equipment_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "equipmentValue",
+            "columnName": "equipment_value",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "required",
+            "columnName": "is_required",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "checkedOut",
+            "columnName": "is_checked_out",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "lastCheckedOut",
+            "columnName": "last_checked_out",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "inventory_to_show_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `equipment_id` TEXT, `equipment_name` TEXT, `equipment_value` TEXT, `is_required` INTEGER, `is_checked_out` INTEGER, `last_checked_out` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "equipmentID",
+            "columnName": "equipment_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "equipmentName",
+            "columnName": "equipment_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "equipmentValue",
+            "columnName": "equipment_value",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "required",
+            "columnName": "is_required",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "checkedOut",
+            "columnName": "is_checked_out",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "lastCheckedOut",
+            "columnName": "last_checked_out",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "municipal_citation_layout",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`data` TEXT, `success` INTEGER, `response` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "success",
+            "columnName": "success",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "owner_bill_layout",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`data` TEXT, `success` INTEGER, `response` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "success",
+            "columnName": "success",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "response",
+            "columnName": "response",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_decal_year_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`decal_year_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "decalYearList",
+            "columnName": "decal_year_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_car_make_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`car_make_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "carMakeList",
+            "columnName": "car_make_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_car_color_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`car_color_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "carColorList",
+            "columnName": "car_color_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_state_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`state_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "stateList",
+            "columnName": "state_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_block_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`block_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "blockList",
+            "columnName": "block_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_street_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`street_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "streetList",
+            "columnName": "street_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_meter_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`meter_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "meterList",
+            "columnName": "meter_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_space_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`space_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "spaceList",
+            "columnName": "space_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_car_body_style_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`car_body_style_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "carBodyStyleList",
+            "columnName": "car_body_style_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_violation_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`violation_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "violationList",
+            "columnName": "violation_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_vio_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`vio_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "vioList",
+            "columnName": "vio_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_side_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`side_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "sideList",
+            "columnName": "side_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_tier_stem_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`tier_stem_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "tierStemList",
+            "columnName": "tier_stem_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_notes_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`notes_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "notesList",
+            "columnName": "notes_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_remarks_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`remarks_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "remarksList",
+            "columnName": "remarks_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_regulation_time_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`regulation_time_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "regulationTimeList",
+            "columnName": "regulation_time_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_lot_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`lot_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "lotList",
+            "columnName": "lot_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_settings_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`settings_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "settingsList",
+            "columnName": "settings_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_cancel_reason_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`cancel_reason_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "cancelReasonList",
+            "columnName": "cancel_reason_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_pbc_zone_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`pbc_zone_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "pbcZoneList",
+            "columnName": "pbc_zone_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_void_and_reissue_reason_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`void_and_reissue_reason_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "voidAndReissueReasonList",
+            "columnName": "void_and_reissue_reason_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_municipal_violation_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`municipal_violation_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "municipalViolationList",
+            "columnName": "municipal_violation_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_municipal_block_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`municipal_block_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "municipalBlockList",
+            "columnName": "municipal_block_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_municipal_street_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`municipal_street_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "municipalStreetList",
+            "columnName": "municipal_street_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_municipal_city_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`municipal_city_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "municipalCityList",
+            "columnName": "municipal_city_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_municipal_state_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`municipal_state_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "municipalStateList",
+            "columnName": "municipal_state_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "dataset_holiday_calendar_list",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`holiday_calendar_list` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "holidayCalendatList",
+            "columnName": "holiday_calendar_list",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '99a4192fed11f059077d84df65a66d72')"
+    ]
+  }
+}

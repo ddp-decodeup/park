@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_semi_white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_gravity="center|right"
+            android:src="@drawable/ic_cross"
+            android:contentDescription="@string/ada_content_description_close"
+            />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/launchButton1_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Launch PTplusUS as user in Portrait mode" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/launchButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch PTplusUS as user" />
+
+        <Button
+            android:id="@+id/launchButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch PTplusUS as admin" />
+
+        <Button
+            android:id="@+id/launchButton2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:text="Launch PTplusUS as admin with ISO 500, shutter speed 1/2000s, and HD video" />
+
+        <Button
+            android:id="@+id/launchButton2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Launch PTplusUS with minimal UI and reset all settings to defaults" />
+
+        <!--<Button
+            android:id="@+id/launchButton1_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch PTplusUS as user in Portrait mode" />-->
+
+        <Button
+            android:id="@+id/launchButton2_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch PTplusUS as admin in Portrait mode" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

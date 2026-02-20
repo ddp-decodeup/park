@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Park Loyalty</string>
+    <string name="scr_btn_login">تسجيل الدخول</string>
+    <string name="scr_btn_dashboard">Dashboard</string>
+    <string name="scr_lbl_login_details">تفاصيل تسجيل الدخول</string>
+    <string name="scr_lbl_lpr_image">LPR Image</string>
+    <string name="scr_lbl_vehicle_details">تفاصيل المركبة</string>
+    <string name="scr_lbl_other_details">تفاصيل أخرى</string>
+    <string name="scr_lbl_asset_details">تفاصيل الأصول</string>
+    <string name="scr_lbl_forgot_password">هل نسيت كلمة السر</string>
+
+    <string name="scr_btn_save_small_letter">يحفظ</string>
+    <string name="val_msg_please_enter_email">Please enter email or username.</string>
+    <string name="val_msg_please_enter_email_">Please enter email.</string>
+    <string name="val_msg_please_enter_valid_email">Please enter valid email.</string>
+    <string name="val_msg_please_enter_password">Please Enter Password.</string>
+    <string name="val_msg_please_enter_user_id">Please Enter UserID.</string>
+    <string name="val_msg_minimum_password">Required password is between 6 to 12 characters</string>
+    <string name="val_msg_username_or_email_invalid">Invalid email or username</string>
+    <string name="val_msg_username_password_combination_incorrect">User Name, Password combination incorrect.</string>
+    <string name="err_msg_your_account_is_locked">Your account is locked out. Please contact your supervisor.</string>
+    <string name="err_msg_user_not_found">User not found.</string>
+    <string name="err_msg_forget_password">The Username and password combination don’t match. Please resubmit or contact Supervisor.</string>
+    <string name="scr_btn_check_setup">Check Setup</string>
+    <string name="success_msg_new_device">New device activated.</string>
+
+    <string name="success_msg_pass_will_be_emailed">The password will be emailed.</string>
+    <string name="scr_btn_refresh">Refresh</string>
+
+
+    <string name="scr_btn_cancel">Cancel</string>
+
+    <string name="scr_btn_continue">Continue</string>
+
+    <string name="finger_print_failed">Fingerprint not recognised. Please try again</string>
+    <string name="finger_print_succeed">Fingerprint Authentication succeeded.</string>
+
+    <string name="scr_btn_done_small_letter">Done</string>
+    <string name="scr_btn_permit">Permit</string>
+    <string name="scr_btn_exempt">Exempt</string>
+    <string name="scr_btn_scofflaw">Scofflaw</string>
+    <string name="scr_btn_scan">مسح</string>
+    <string name="scr_btn_payment">Payment</string>
+    <string name="scr_lbl_permit_detail">Permit detail</string>
+    <string name="scr_lbl_scoffkaw_detail">Scoffkaw detail</string>
+    <string name="scr_lbl_timing_detail">Timing detail</string>
+    <string name="scr_btn_stolen">Stolen</string>
+    <string name="scr_btn_timings">Timings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="scr_message_please_wait">Please wait..</string>
+
+
+    <string name="scr_lbl_password">كلمة المرور</string>
+
+    <string name="scr_lbl_check_setup">Check Setup</string>
+    <string name="scr_lbl_welcome_back">مرحبًا بعودتك</string>
+    <string name="scr_lbl_email_or_user">معرف المستخدم</string>
+    <string name="scr_lbl_email">Email</string>
+    <string name="scr_lbl_user_id">User ID</string>
+
+    <string name="scr_lbl_select">يختار</string>
+
+    <string name="scr_lbl_park_loyalty">PARKLOYALTY</string>
+    <string name="scr_lbl_enforcement">ENFORCEMENT</string>
+    <string name="scr_lbl_total_scan">Total Scan</string>
+    <string name="scr_lbl_total_enforce">Total Enforcement</string>
+
+    <string name="scr_lbl_home">Home</string>
+    <string name="scr_lbl_ticketing">Ticketing</string>
+    <string name="scr_lbl_my_activity">My Activity</string>
+    <string name="scr_lbl_setting">Setting</string>
+    <string name="scr_lbl_report">Report</string>
+    <string name="scr_lbl_logout">Logout</string>
+    <string name="scr_lbl_activity">Activity</string>
+    <string name="scr_lbl_comments">Comments</string>
+    <string name="scr_lbl_notes">Notes</string>
+    <string name="scr_lbl_supervisor">Supervisor</string>
+    <string name="scr_lbl_beat">Beat</string>
+
+    <string name="scr_lbl_zone">Zone</string>
+    <string name="scr_lbl_radio">Radio</string>
+    <string name="scr_lbl_morning_shift">Morning shift</string>
+    <string name="scr_lbl_previous_login">تسجيل الدخول السابق</string>
+    <string name="scr_lbl_current_login">تسجيل الدخول الحالي</string>
+
+    <string name="scr_lbl_officer_details">تفاصيل الضابط</string>
+    <string name="scr_lbl_officer_id">معرف الضابط</string>
+    <string name="scr_lbl_badge_id">معرف الشارة</string>
+    <string name="scr_lbl_lpr_number">LPR number</string>
+    <string name="scr_lbl_history">History</string>
+    <string name="scr_lbl_start">Start:</string>
+    <string name="scr_lb_permit_type">Permit Type:</string>
+    <string name="scr_lbl_end">End:</string>
+    <string name="scr_lbl_zonee">Zone:</string>
+    <string name="scr_lbl_type">Type:</string>
+    <string name="scr_lbl_locationn">Location:</string>
+    <string name="scr_lbl_regulation">Regulation:</string>
+    <string name="scr_btn_issue_ticket">Issue Ticket</string>
+    <string name="scr_lbl_scofflaw">Scofflaw</string>
+    <string name="scr_lbl_active_payment">Active payment</string>
+    <string name="scr_lbl_details">Details</string>
+    <string name="scr_lbl_last_updated_at">Last updated at</string>
+    <string name="scr_lbl_stolen_vehicles">Stolen vehicles</string>
+    <string name="scr_lbl_timing_records">Timing records</string>
+    <string name="scr_lbl_exempt">Exempt</string>
+
+</resources>

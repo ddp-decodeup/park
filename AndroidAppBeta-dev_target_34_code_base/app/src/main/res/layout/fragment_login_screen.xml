@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_semi_white"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".views.fragments.login.LoginScreenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_semi_white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layoutHeaderLogin"
+            layout="@layout/layout_header_login" />
+
+        <include
+            android:id="@+id/layoutContentLogin"
+            layout="@layout/layout_content_login" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

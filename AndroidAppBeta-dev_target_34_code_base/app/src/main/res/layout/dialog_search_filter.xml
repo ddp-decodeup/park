@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_250dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_20dp"
+    android:paddingLeft="@dimen/_20dp"
+    android:paddingRight="@dimen/_20dp"
+    android:gravity="center"
+    android:background="@drawable/shape_round_grey_dialog"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/scr_lbl_select_filter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:clipToPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        android:background="@color/deep_blue"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="0dp"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="@dimen/_15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_citation"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBlock"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="@dimen/_15dp"
+            android:cursorVisible="false"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_block"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardStreet"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="@dimen/_15dp"
+            android:cursorVisible="false"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_street"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecType"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextRecordType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="@dimen/_15dp"
+            android:cursorVisible="false"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_side_of_street"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardStatus"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="@dimen/_15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_status_"
+            android:cursorVisible="false"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNum"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="@dimen/_15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_lpr_number"
+            android:imeOptions="actionDone"
+            android:cursorVisible="false"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_side"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:clipToPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardElevation="0dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_side"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:paddingLeft="@dimen/_15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/scr_lbl_side_of_street"
+                android:imeOptions="actionDone"
+                android:cursorVisible="false"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/gray"
+                android:focusable="false"
+                android:textSize="@dimen/_15sp"
+                app:errorEnabled="true" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Button Continue anyway -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        style="@style/Button_shape_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/_120dp"
+        android:paddingStart="@dimen/_6dp"
+        android:paddingEnd="@dimen/_6dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:text="Close"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

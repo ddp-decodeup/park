@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_meter_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6dp"
+        android:layout_marginHorizontal="@dimen/_2dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/scr_lbl_meter_no"
+            android:textColor="@color/light_grey_100"
+            android:textSize="@dimen/_14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="@dimen/_7dp"
+            app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+            app:boxCornerRadiusBottomStart="@dimen/_10dp"
+            app:boxCornerRadiusTopEnd="@dimen/_10dp"
+            app:boxCornerRadiusTopStart="@dimen/_10dp"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/Editext.Theme"
+            app:placeholderTextAppearance="@style/Editext.Theme">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/AutoComTextViewVehMeterNo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_dropdown_arrow_blue"
+                android:editable="true"
+                android:ellipsize="start"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Select"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:maxLines="3"
+                android:paddingVertical="@dimen/_1dp"
+                android:textColor="@color/black_heading"
+                android:textColorHint="@color/black_heading"
+                android:textSize="@dimen/_12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

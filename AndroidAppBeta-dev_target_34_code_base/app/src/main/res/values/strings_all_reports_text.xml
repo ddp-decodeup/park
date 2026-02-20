@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list_true_false" translatable="false">
+        <item>TRUE</item>
+        <item>FALSE</item>
+    </string-array>
+
+    <string-array name="list_yes_no" translatable="false">
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+
+    <string-array name="list_pass_fail" translatable="false">
+        <item>PASS</item>
+        <item>FAIL</item>
+    </string-array>
+
+
+    <string-array name="list_active_inactive" translatable="false">
+        <item>ACTIVE</item>
+        <item>INACTIVE</item>
+    </string-array>
+
+
+    <string-array name="list_assigned_bike_type_one" translatable="false">
+        <item>BK M</item>
+        <item>BK L</item>
+        <item>BK M1</item>
+        <item>BK L1</item>
+        <item>BK M2</item>
+        <item>BK L2</item>
+    </string-array>
+
+    <string-array name="list_assigned_bike_type_two" translatable="false">
+        <item>BK-01</item>
+        <item>BK-02</item>
+    </string-array>
+
+
+    <string-array name="list_out_in_service" translatable="false">
+        <item>OUT OF SERVICE</item>
+        <item>IN-SERVICE</item>
+    </string-array>
+
+    <string-array name="list_color" translatable="false">
+        <item>RED</item>
+        <item>YELLOW</item>
+        <item>WHITE</item>
+        <item>BLUE</item>
+        <item>GREEN</item>
+    </string-array>
+
+    <string-array name="list_gas_level" translatable="false">
+        <item>Empty</item>
+        <item>1/4 Tank</item>
+        <item>1/2 Tank</item>
+        <item>3/4 Tank</item>
+        <item>Full Tank</item>
+    </string-array>
+
+    <string-array name="list_battery_charge" translatable="false">
+        <item>Full</item>
+        <item>1/2</item>
+        <item>1/4</item>
+        <item>No Charge</item>
+    </string-array>
+
+    <string-array name="list_meter_type" translatable="false">
+        <item>Pay Station</item>
+        <item>Single Head Meter</item>
+        <item>Multispace Meters</item>
+    </string-array>
+
+    <string-array name="list_device_type_one" translatable="false">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+    </string-array>
+
+    <string-array name="list_device_type_two" translatable="false">
+        <item>B 01</item>
+        <item>B 02</item>
+        <item>B 03</item>
+        <item>B 04</item>
+        <item>B 05</item>
+        <item>B 06</item>
+    </string-array>
+
+    <string-array name="list_device_type_three" translatable="false">
+        <item>SP10</item>
+        <item>SP11</item>
+        <item>SP12</item>
+        <item>SP13</item>
+        <item>SP14</item>
+        <item>SP15</item>
+    </string-array>
+
+    <string-array name="list_request_to_tow" translatable="false">
+        <item>Tow</item>
+        <item>Relocate</item>
+    </string-array>
+
+    <string-array name="list_unit_number_type_one" translatable="false">
+        <item>BK M</item>
+        <item>BK L</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+    </string-array>
+
+    <string-array name="list_unit_number_type_two" translatable="false">
+        <item>BK M</item>
+        <item>BK L</item>
+        <item>BK M1</item>
+        <item>BK L1</item>
+        <item>BK M2</item>
+        <item>BK L2</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+    </string-array>
+
+
+    <string-array name="list_assign_area" translatable="false">
+        <item>Beat 11</item>
+        <item>Beat 12</item>
+        <item>Beat 13</item>
+        <item>Beat 14</item>
+        <item>Beat 15</item>
+    </string-array>
+
+    <string-array name="list_duty_hour_area" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="list_reason_for_tow" translatable="false">
+        <item>Park in tow away zones, such as disabled, reserved and no parking areas</item>
+        <item>22651(k) VC - Parked Over 72 Hours in Violation of an Ordinance</item>
+        <item>22658 - Removal From Private Property</item>
+        <item>Abandoned Vehicle</item>
+        <item>Have expired vehicle registration (more than six months), or have no license plates or other evidence of registration displayed.</item>
+        <item>Have three or more outstanding (unpaid) METRO parking violations.</item>
+        <item>Have five or more outstanding (unpaid) parking violations from any agency in the State.</item>
+        <item>Vehicle Exceeds Load Size Limit</item>
+        <item>CVC 22651(O) - Vehicle Registration Expired Over Six Months</item>
+        <item>CVC 22651(j)</item>
+        <item>CVC 22651(n)  Local Ordinance Parking Violation</item>
+        <item>8 05 040 Failure to obey signs</item>
+        <item>CVC 22659(a)</item>
+        <item>CVC 22669</item>
+    </string-array>
+
+    <string-array name="list_vehicle_stored_at" translatable="false">
+        <item>601 N. Inglewood Ave. Inglewood, CA 90302 Bryant’s Inglewood Towing (310)419-8700</item>
+        <item>1654 12th Street Santa Monica CA 90404 Tip Top (310)314-4040","7891 Deering Ave. Canoga Park, CA 91304 Howard Sommers Towing Inc (818)884-5600</item>
+        <item>906 Westminster Ave. Alhambra, CA 91803 JM Towing LLC (626)289-3288","12565 Strathern St. N. Hollywood, CA 91605 Archers Vineland Service Inc (818)982-1464</item>
+        <item>8750 Vanalden Ave Northridge CA 91324 Ross Baker Towing Inc (818)886-7411","7817 Woodley Ave Van Nuys CA 91706 Keystone (818)782-1996</item>
+        <item>332 Foothill RD Beverly Hills CA 90210 Tip Top (310)314-4040","2119 East 25th Street Los Angeles CA 90058 US Tow (213)749-7100</item>
+        <item>1615 East Adams BL Los Angeles CA 90011 US Tow (213)749-7100","1615 East Mauretania Ave Wilmington CA 90744 7th Street Garage (310)856-1980</item>
+        <item>10857 San Fernando RD. Pacoima, CA 91331 Black and White Towing Inc (818)896-9511</item>
+    </string-array>
+
+    <string-array name="list_safety_report" translatable="false">
+        <item>Oil Spil</item>
+        <item>Trip Hazard</item>
+        <item>Electrical</item>
+        <item>Vehicle</item>
+        <item>Glass</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="list_required_services" translatable="false">
+        <item>Trash Pick-up</item>
+        <item>Broken Fence</item>
+        <item>Parking Stencils</item>
+        <item>Vehicle</item>
+        <item>Shopping Cart Removal</item>
+        <item>Parking Guidance System</item>
+        <item>Graffiti</item>
+        <item>Charging Station</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

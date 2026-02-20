@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_title_permissions_required" translatable="false">Permissions Required</string>
+    <string name="permission_title_all_files_access_required" translatable="false">All files access required</string>
+
+
+    <string name="permission_message_all_permission_required_to_login" translatable="false">All permissions are required to use the application without any interruption.</string>
+    <string name="permission_message_this_app_needs_all_file_access" translatable="false">This app needs All files access (manage external storage) to function correctly.</string>
+    <string name="permission_message_you_will_be_taken_to_system_setting_to_grant_it" translatable="false">\n\nYou will be taken to system settings to grant it.</string>
+    <string name="permission_message_this_app_needs_the_following_permissions" translatable="false">This app needs the following permissions:\n</string>
+    <string name="permission_message_permissions_are_denied_open_setting" translatable="false">These permissions are permanently denied. Open settings?</string>
+
+    <string name="permission_reason_user_chose_to_open_settings" translatable="false">User chose to open settings for permanently denied permissions</string>
+    <string name="permission_message_camera_permission_required" translatable="false">Camera permission is required to use the application without any interruption.</string>
+
+</resources>

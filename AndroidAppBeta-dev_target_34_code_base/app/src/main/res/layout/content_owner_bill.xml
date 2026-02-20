@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" android:id="@+id/layoutDashboardHeader" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_26dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEnforcementTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/scr_lbl_lpr_enforcement"
+                    android:textColor="@color/black_heading"
+                    android:textSize="@dimen/_20sp"
+                    android:accessibilityHeading="true"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCamera"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:src="@drawable/ic_camera_new"
+                        android:visibility="visible"
+                        android:contentDescription="@string/ada_content_description_camera" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTicketDetailsHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_ticket_details"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_20sp"
+                android:accessibilityHeading="true"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layTicketDetailsHide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layTicketNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_ticket_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_ticket_number"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTicketNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="@drawable/round_corner_shape_without_fill_gray"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:gravity="left|center"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingHorizontal="@dimen/_20dp"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:id="@+id/layTicketDate"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_ticket_date"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTicketDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:gravity="left|center"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_20dp"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_14sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_officer_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:paddingVertical="@dimen/_26dp"
+                android:visibility="gone"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:background="@drawable/round_corner_shape_fill_yellow_border_grey"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/scr_lbl_officer_details"
+                    android:textColor="@color/black_heading"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:textSize="@dimen/_20sp"
+                    android:accessibilityHeading="true" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_ticket_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_type_of_ticket"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_14sp"
+                    android:accessibilityHeading="true"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layCheckbox1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            style="@style/spc_checkbox_style"
+                            android:id="@+id/checkboxType1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_3dp"
+                            android:tag=""
+                            android:importantForAccessibility="no"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvType1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="@string/scr_lbl_warning"
+                            android:textColor="@color/black_tv"
+                            android:textSize="@dimen/_14sp"
+                            android:importantForAccessibility="no" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layCheckbox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            style="@style/spc_checkbox_style"
+                            android:id="@+id/checkboxType2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_3dp"
+                            android:tag=""
+                            android:importantForAccessibility="no"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvType2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="@string/scr_lbl_boot"
+                            android:textColor="@color/black_tv"
+                            android:textSize="@dimen/_14sp"
+                            android:importantForAccessibility="no" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layCheckbox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:visibility="invisible"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            style="@style/spc_checkbox_style"
+                            android:id="@+id/checkboxType3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_3dp"
+                            android:tag=""
+                            android:importantForAccessibility="no"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvType3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="@string/scr_lbl_tow"
+                            android:textColor="@color/black_tv"
+                            android:textSize="@dimen/_14sp"
+                            android:importantForAccessibility="no" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_vehicle_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:paddingVertical="@dimen/_26dp"
+                android:visibility="gone"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/scr_lbl_vehicle_details"
+                    android:textColor="@color/black_heading"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:textSize="@dimen/_20sp"
+                    android:accessibilityHeading="true"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <!-- <include layout="@layout/content_municipal_citation_motorist_information" android:id="@+id/layoutContentMunicipalCitationMotoristDetails"/>-->
+            <include layout="@layout/content_owner_bill_internal_note" android:id="@+id/layoutContentOwnerBillInternalNote"/>
+            <include layout="@layout/content_owner_bill_internal_camera_view" android:id="@+id/layoutContentOwnerBillInternalCameraView"/>
+       </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

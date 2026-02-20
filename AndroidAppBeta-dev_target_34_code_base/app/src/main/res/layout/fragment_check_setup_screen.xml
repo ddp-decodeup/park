@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCheckSetup"
+            style="@style/CustomTextViewSubToolbarPrimaryColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scr_lbl_check_setup" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin_half"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llScofflaw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_12dp"
+                    android:paddingVertical="@dimen/_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_scofflaw"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_details"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvScofflawCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_34sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_last_updated_at"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvScofflawDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin_half"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llActivePayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_12dp"
+                    android:paddingVertical="@dimen/_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_active_payment"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_details"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPaymentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_34sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_last_updated_at"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPaymentDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin_half"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llStolenVehicles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_12dp"
+                    android:paddingVertical="@dimen/_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_stolen_vehicles"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_details"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvStolenCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_34sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_last_updated_at"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvStolenDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin_half"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llTimingRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_12dp"
+                    android:paddingVertical="@dimen/_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_timing_records"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_details"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTimingCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_34sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_last_updated_at"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTimingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin_half"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llExempt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_12dp"
+                    android:paddingVertical="@dimen/_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_exempt"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_details"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvExtemptCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_34sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_last_updated_at"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvExtemptDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin_half"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llPermit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_12dp"
+                    android:paddingVertical="@dimen/_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_btn_permit"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_details"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPermitCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_34sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_last_updated_at"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPermitDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_12sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin_half"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_marginBottom="@dimen/screen_margin_half"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/screen_padding">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="StreetList:"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/streetlistcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_24sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="MeterList:"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/meterlistcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_24sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="ZoneList:"
+                        android:textColor="@color/black_sub_heading"
+                        android:textSize="@dimen/_18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/zonelistcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="0"
+                        android:textColor="@color/deep_blue"
+                        android:textSize="@dimen/_24sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRefresh"
+            style="@style/CustomPositiveButtonRegular"
+            android:layout_marginHorizontal="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:padding="@dimen/_16dp"
+            android:text="@string/scr_btn_refresh"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,281 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <!-- Status bar stuff. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+ <!--   <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>//TODO - added for blank screen
+    </style>-->
+
+    <style name="AppThemeGrey" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/light_grey</item>
+        <item name="colorAccent">@color/light_grey</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>//TODO - added for blank screen
+    </style>
+
+    <style name="Editext.Theme" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="colorAccent">@color/light_grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="colorPrimary">@color/light_grey</item>
+        <item name="colorPrimaryDark">@color/light_grey</item>
+    </style>
+    <style name="EditextTheme" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="colorAccent">@color/light_grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="colorPrimary">@color/light_grey</item>
+        <item name="colorPrimaryDark">@color/light_grey</item>
+    </style>
+    <!-- Style For Custom Dialog -->
+    <style name="ThemeDialogCustom">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="AppTheme.White." parent="AppTheme">
+        <!--Required Api 21 above-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <!--  <item name="android:windowBackground">@drawable/get_started_theme</item>-->
+    </style>
+    <style name="AppTheme_collapsedAppBar" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+
+    </style>
+
+    <style name="AppTheme_expandedAppBar" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.FullScreenGrey" parent="AppThemeGrey">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="spc_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:drawableLeft">@drawable/checkbox_indicator</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="Button_shape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape</item>
+    </style>
+
+    <style name="Button_shape_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape</item>
+    </style>
+    <style name="Button_shape_blue_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape</item>
+    </style>
+
+    <style name="Button_shape_blue_with_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape</item>
+    </style>
+
+    <style name="Button_shape_blue_with_font">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape</item>
+    </style>
+
+    <style name="Button_shape_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape_red</item>
+    </style>
+
+    <style name="Button_shape_yellow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape_yellow</item>
+    </style>
+
+    <style name="Button_shape_green">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape_green</item>
+    </style>
+
+
+    <style name="Button_shape_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape_greyy</item>
+    </style>
+
+  <style name="Button_shape_second">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/button_round_corner_shape_second</item>
+    </style>
+
+  <style name="Button_shape_without_fill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/round_corner_shape_without_fill</item>
+    </style>
+
+    <style name="Button_shape_without_fill_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/round_corner_shape_without_fill</item>
+    </style>
+
+    <style name="Button_shape_with_white_fill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/round_corner_shape_with_white_fill</item>
+    </style>
+
+
+    <style name="Button_shape_without_with_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/round_corner_shape_without_fill</item>
+    </style>
+
+    <style name="Button_shape_without_fill_with_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+        <item name="android:background">@drawable/round_corner_shape_without_fill</item>
+    </style>
+
+    <style name="Button_shape_without_fill_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/round_corner_shape_without_fill_grey</item>
+    </style>
+
+    <style name="Button_shape_without_fill_grey_with_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:background">@drawable/round_corner_shape_without_fill_grey_with_ht</item>
+    </style>
+
+
+    <!--<style name="keyboard_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@drawable/keyboard_divider</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:showDividers">beginning|middle|end</item>
+    </style>-->
+
+    <!-- Style For Custom Dialog With Full Screen -->
+    <style name="ThemeDialogCustomFullScreen">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:checkMark">@color/bright_foreground_material_dark</item>
+    </style>
+</resources>

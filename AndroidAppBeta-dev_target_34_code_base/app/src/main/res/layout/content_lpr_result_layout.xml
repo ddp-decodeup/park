@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_main"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:focusableInTouchMode="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_marginTop="@dimen/_2dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:focusableInTouchMode="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/content_continuous_result_row"
+                android:visibility="visible"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_22dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDone"
+                    android:layout_weight="1"
+                    style="@style/Button_shape_without_fill_wrap"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_done_small_letter"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnContinue"
+                    android:layout_weight="1"
+                    style="@style/Button_shape_blue_wrap"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_continue"
+                    android:textAllCaps="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

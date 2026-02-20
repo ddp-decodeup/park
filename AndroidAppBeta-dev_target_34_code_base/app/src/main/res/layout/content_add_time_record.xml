@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layTimingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:layout_marginVertical="@dimen/_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/scr_lbl_making_a_vehicle"
+                    android:textColor="@color/deep_blue"
+                    android:textSize="@dimen/_20sp"
+                    android:accessibilityHeading="true"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:src="@drawable/ic_camera_new"
+                    android:visibility="visible"
+                    android:contentDescription="@string/ada_content_description_camera"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_tire_stem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appcomptext_front_tire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_marginHorizontal="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_front_tire"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appcomimgview_front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/front_tire_black" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appcomimgview_rear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/back_tire_black"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appcomptext_rear_tire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_marginHorizontal="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_rear_tire"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appcomptext_valve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_marginHorizontal="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Valve Stem"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/appcomimgview_tire_valve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_car_tire_wheel_icon" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textstemvaluefront"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circle_red_shape"
+                            android:gravity="center"
+                            android:text="11"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sp"
+                            android:visibility="invisible" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textstemvaluerear"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circle_yellow_shape"
+                            android:gravity="center"
+                            android:text="11"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include
+                android:id="@+id/layoutContentBanner"
+                layout="@layout/content_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:visibility="gone"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                style="@style/Button_shape_blue"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:text="@string/scr_btn_submit"
+                android:onClick="onClick"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layBottomKeyboard"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

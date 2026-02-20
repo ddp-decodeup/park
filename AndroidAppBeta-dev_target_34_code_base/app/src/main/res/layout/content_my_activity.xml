@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_26dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_summary"
+                android:textColor="@color/deep_blue"
+                android:textSize="@dimen/_20sp"
+                android:accessibilityHeading="true" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_shape_without_fill_gray_padding"
+                android:padding="@dimen/_16dp">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/fragment_verticalbarchart_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26dp"
+                android:background="@drawable/round_corner_shape_without_fill_gray_padding"
+                android:padding="@dimen/_16dp">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/activity_main_linechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/content_my_activity_voilation_details" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

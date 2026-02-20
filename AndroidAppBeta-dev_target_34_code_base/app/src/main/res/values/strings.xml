@@ -1,0 +1,951 @@
+<resources>
+    <!--    <string name="app_name">Park Loyalty</string>-->
+    <string name="app_name">RiseTek</string>
+
+    <string name="scr_btn_login">Login</string>
+    <string name="scr_btn_add_timing_record">Add Timing Record</string>
+    <string name="scr_btn_preview">Preview</string>
+    <string name="scr_lbl_address">Address</string>
+    <string name="scr_lbl_address_colon">Address:</string>
+    <string name="scr_btn_print">Print</string>
+    <string name="scr_btn_issue_wo_print">Issue w/o Print</string>
+    <string name="scr_btn_check_ticket">Check Ticket</string>
+
+    <string name="scr_btn_rescind">Rescind</string>
+    <string name="scr_btn_submit">Submit</string>
+    <string name="scr_btn_dashboard">Dashboard</string>
+    <string name="scr_btn_void_and_reissue">Void/Reissue</string>
+    <string name="scr_btn_reissue">Reissue</string>
+    <string name="scr_lbl_login_details">Login Details</string>
+    <string name="scr_lbl_lpr_image">LPR Image</string>
+    <string name="scr_lbl_image">Images</string>
+    <string name="msg_add_note">Please add your note.</string>
+    <string name="scr_lbl_officer_details">Officer Details</string>
+    <string name="scr_lbl_parking_citation">Parking Citation</string>
+    <string name="scr_lbl_printing">Printing</string>
+    <string name="scr_lbl_voilation_details">Violation Details</string>
+    <string name="scr_lbl_motorist_details">Motorist Details</string>
+    <string name="scr_lbl_activity_log">Activity log</string>
+    <string name="scr_lbl_route_details">Route Details</string>
+    <string name="scr_lbl_voilation_type">Violation Type</string>
+    <string name="scr_lbl_count">Count</string>
+    <string name="scr_lbl_lpr_enforcement">Enforcement</string>
+    <string name="scr_lbl_lpr_reverse_geo">Address</string>
+    <string name="msg_ticket_posted">Ticket Posted\nSuccessfully</string>
+    <string name="msg_municipal_ticket_posted">Municipal Ticket Posted\nSuccessfully</string>
+    <string name="scr_lbl_citation">Citation</string>
+    <string name="scr_lbl_record_type">Record type</string>
+    <string name="scr_lbl_timing_type">Timing type</string>
+    <string name="scr_lbl_arrival_status">Arrival status</string>
+    <string name="msg_new_citation_added">New citation number range added</string>
+    <string name="scr_lbl_citation_number">Citation Number</string>
+    <string name="scr_lbl_officer_name">Officer Name</string>
+    <string name="scr_lbl_officer">Officer</string>
+    <string name="scr_lbl_tire_pressure">Tire Pressure</string>
+    <string name="scr_lbl_assigned_bike">Assigned Bike</string>
+    <string name="scr_lbl_breaks_rotors">Breaks Rotors</string>
+    <string name="scr_lbl_lights_and_reflectors">Lights And Reflectors</string>
+    <string name="scr_lbl_chain_crank">Chain Crank</string>
+    <string name="scr_lbl_battery_free_of_debris">Battery Free Of Debris</string>
+    <string name="scr_lbl_flat_pack">Flat Pack</string>
+    <string name="scr_lbl_officer_name_summary">Officer Name</string>
+    <string name="scr_lbl_internal_note">Internal note</string>
+    <string name="scr_lbl_location_details">Location Details</string>
+    <string name="scr_lbl_violation_details">Violation Details</string>
+    <string name="scr_lbl_citation_details">Citation Details</string>
+    <string name="scr_lbl_timing_images">Timing Images</string>
+    <string name="scr_lbl_agency">Agency</string>
+    <string name="scr_lbl_value">Value</string>
+    <string name="scr_lbl_vehicle_details">Vehicle Details</string>
+    <string name="scr_lbl_vehicle">Vehicle</string>
+    <string name="scr_lbl_starting_mileage">Starting Mileage</string>
+    <string name="scr_lbl_gas_level">Gas Level</string>
+    <string name="scr_lbl_light_bar">Light Bar</string>
+    <string name="scr_lbl_dashboard_indications">Dashboard Indications</string>
+    <string name="scr_lbl_seat_belt_operational">Seat Belt Operational</string>
+    <string name="scr_lbl_brakes">Brakes</string>
+    <string name="scr_lbl_brake_lights">Brake Lights</string>
+    <string name="scr_lbl_head_lights">Head Lights</string>
+    <string name="scr_lbl_turn_signals">Turn Signals</string>
+    <string name="scr_lbl_steering_wheel_operational">Steering Wheel Operational</string>
+    <string name="scr_lbl_windshield_visibility">Windshield Visibility</string>
+    <string name="scr_lbl_side_and_rear_view_mirrors_operational">Side And Rear View Mirrors Operational</string>
+    <string name="scr_lbl_windshield_wipers_operational">Windshield Wipers Operational</string>
+    <string name="scr_lbl_vehicle_registration_and_insurance">Vehicle Registration And Insurance</string>
+    <string name="scr_lbl_cones_six_per_vehicle">Cones Six Per Vehicle</string>
+    <string name="scr_lbl_first_aid_kit">First Aid Kit</string>
+    <string name="scr_lbl_helmet_visual_inspection">Helmet Visual Inspection</string>
+    <string name="scr_lbl_bike_glassess">Bike Glasses</string>
+    <string name="scr_lbl_battery_charge">Battery Charge</string>
+    <string name="scr_lbl_glove_visual_inspection">Glove Visual Inspection</string>
+    <string name="scr_lbl_horn">Horn</string>
+    <string name="scr_lbl_interior_cleanliness">Interior Cleanliness</string>
+    <string name="scr_lbl_exterior_cleanliness">Exterior Cleanliness</string>
+    <string name="scr_lbl_lpr_lens_free_of_debris">Lpr Lens Free Of Debris</string>
+    <string name="scr_lbl_visible_leaks">Visible Leaks</string>
+    <string name="scr_lbl_tires_visual_inspection">Tires Visual Inspection</string>
+    <string name="scr_lbl_ticket_details">Ticket Details</string>
+    <string name="scr_lbl_other_details">Other Details</string>
+    <string name="scr_lbl_lot">Lot</string>
+    <string name="scr_lbl_station">Station</string>
+    <string name="scr_lbl_lot_la_metro">Lot</string>
+    <string name="scr_lbl_vehicle_stored_at">Vehicle Stored At</string>
+    <string name="scr_lbl_asset_details">Asset Details</string>
+    <string name="scr_lbl_forgot_password">Forgot Password?</string>
+    <string name="val_msg_please_enter_email">Please enter email or username.</string>
+    <string name="val_msg_please_enter_officer_name">Please enter Officer Name.</string>
+    <string name="val_msg_please_enter_shift">Please enter Shift.</string>
+    <string name="val_msg_please_enter_meter_name">Please enter [] Name.</string>
+    <string name="val_msg_please_enter_badge_id">Please enter Badge ID.</string>
+    <string name="val_msg_please_enter_supervisor">Please enter Supervisor.</string>
+    <string name="val_msg_please_enter_device_id">Please enter Device id.</string>
+    <string name="val_msg_please_enter_beat">Please enter Beat.</string>
+    <string name="val_msg_please_enter_body_style">Please enter Body style.</string>
+    <string name="val_msg_please_enter_squad">Please enter Squad.</string>
+    <string name="val_msg_please_enter_agency">Please enter Agency.</string>
+    <string name="val_msg_please_enter_make">Please enter Make.</string>
+    <string name="val_msg_please_enter_lot">Please enter Lot.</string>
+    <string name="val_msg_please_enter_model">Please enter Model.</string>
+    <string name="val_msg_please_enter_expiry_date">Please enter Expiry date.</string>
+    <string name="val_msg_please_enter_valid_expiry_date">Please enter valid Expiry date.</string>
+    <string name="val_msg_please_enter_side">Please enter Side.</string>
+    <string name="val_msg_please_enter_color">Please enter Color.</string>
+    <string name="val_msg_please_enter_comments">Please enter Comments.</string>
+    <string name="val_msg_please_enter_lpr_number">Please enter Lpr Number.</string>
+    <string name="val_msg_please_enter_state">Please enter State.</string>
+    <string name="val_msg_please_enter_space">Please enter Space.</string>
+    <string name="val_msg_please_enter_vin_number">Please enter Vin Number.</string>
+    <string name="val_msg_please_enter_vin_number_min">Vin number is minimum length is [].</string>
+    <string name="val_msg_vin_number_IOQ_Validation">Vin field not accept I,O and Q.</string>
+    <string name="val_msg_please_enter_lpr_number_or_vin_number">Please enter Lpr Number or Vin Number</string>
+    <string name="val_msg_please_enter_street">Please enter Street.</string>
+    <string name="val_msg_please_enter_block">Please enter Block.</string>
+    <string name="val_msg_please_enter_code">Please enter Code.</string>
+    <string name="val_msg_please_enter_abbr_code">Please enter Violation abbrevation.</string>
+    <string name="val_msg_please_enter_activity">Please enter Activity.</string>
+    <string name="val_msg_please_enter_time_limit">Please enter Time Limit.</string>
+    <string name="val_msg_please_enter_tier_stem_left">Please enter Tier stem left.</string>
+    <string name="val_msg_please_enter_tier_stem_right">Please enter Tier stem right.</string>
+    <string name="val_msg_please_enter_description">Please enter Description.</string>
+    <string name="val_msg_please_enter_vio_type">Please enter vio type.</string>
+    <string name="val_msg_please_enter_decal_year">Please enter Decal year.</string>
+    <string name="val_msg_please_enter_direction">Please enter Direction.</string>
+    <string name="val_msg_please_enter_decal_num">Please enter Decal number.</string>
+    <string name="val_msg_please_enter_fine">Please enter Fine.</string>
+    <string name="val_msg_please_enter_zone">Please enter Zone.</string>
+    <string name="val_msg_please_enter_radio">Please enter Radio.</string>
+    <string name="val_msg_please_enter_late_fine">Please enter Late Fine.</string>
+    <string name="val_msg_please_enter_due_15_days">Please enter Due 15 days.</string>
+    <string name="val_msg_please_enter_due_30_days">Please enter Due 30 days.</string>
+    <string name="val_msg_please_enter_due_45_days">Please enter Due 45 days.</string>
+    <string name="val_msg_please_enter_remark1">Please enter Remark1.</string>
+    <string name="val_msg_please_enter_remark_max_limit">Remark : Max Char Limit Exceeded.</string>
+    <string name="val_msg_please_enter_ticket_pending">Ticket Upload\nPending.</string>
+    <string name="val_msg_please_enter_municipal_citation_ticket_pending">Municipal Ticket Upload\nPending.</string>
+    <string name="val_msg_please_enter_remark2">Please enter Remark2.</string>
+    <string name="val_msg_please_enter_note1">Please enter Note1.</string>
+    <string name="val_msg_please_enter_note">Please enter Note.</string>
+    <string name="val_msg_please_enter_status">Please enter Status.</string>
+    <string name="val_msg_please_enter_reason">Please enter Reason.</string>
+    <string name="val_msg_please_enter_cancel">Please enter Cancel.</string>
+    <string name="val_msg_please_enter_rescind">Please enter Rescind.</string>
+    <string name="val_msg_please_enter_note2">Please enter Note2.</string>
+    <string name="val_msg_please_enter_note3">Please enter Note3.</string>
+    <string name="val_msg_please_enter_email_">Please enter email.</string>
+    <string name="val_msg_please_enter_valid_email">Please enter valid email.</string>
+    <string name="val_msg_please_enter_password">Please Enter Password.</string>
+    <string name="val_msg_please_enter_user_id">Please Enter UserID.</string>
+    <string name="val_msg_please_enter_regulation">Please Enter Regulation.</string>
+    <string name="val_msg_please_enter">Please Enter </string>
+    <string name="val_msg_please_enter_valid_month">Please Enter Valid Month</string>
+    <string name="val_msg_please_date_invalidate">Date is invalidated dd/mm/yyyy HH:mm</string>
+    <string name="val_msg_minimum_password">Required password is between 6 to 12 characters</string>
+    <string name="val_msg_username_or_email_invalid">Invalid email or username</string>
+    <string name="val_msg_username_password_combination_incorrect">User Name, Password combination incorrect.</string>
+    <string name="err_msg_your_account_is_locked">Your account is locked out. Please contact your supervisor.</string>
+    <string name="err_msg_user_not_found">User not found.</string>
+    <string name="err_msg_forget_password">The Username and password combination don’t match. Please resubmit or contact Supervisor.</string>
+    <string name="scr_btn_check_setup">Check Setup</string>
+    <string name="success_msg_new_device">New device activated.</string>
+    <string name="success_msg_pass_will_be_emailed">The password will be emailed.</string>
+    <string name="scr_btn_refresh">Refresh</string>
+    <string name="scr_btn_clear">Clear</string>
+    <string name="err_msg_location_could_not_shared">Something went wrong,Location could not been logged!</string>
+    <string name="scr_msg_do_you_want_to_logout">Do you want to Logout?</string>
+
+    <!--Motorist information-->
+    <string name="val_msg_please_enter_motorist_first_name">Please enter first name</string>
+    <string name="val_msg_please_enter_motorist_middle_name">Please enter middle name</string>
+    <string name="val_msg_please_enter_motorist_last_name">Please enter last name</string>
+    <string name="val_msg_please_enter_motorist_dob">Please enter date of birth</string>
+    <string name="val_msg_please_enter_valid_motorist_dob">Please enter valid date of birth</string>
+    <string name="val_msg_please_enter_motorist_dl_number">Please enter dl number</string>
+    <string name="val_msg_please_enter_motorist_address_block">Please enter block</string>
+    <string name="val_msg_please_enter_motorist_address_street">Please enter street</string>
+    <string name="val_msg_please_enter_motorist_address_city">Please enter city</string>
+    <string name="val_msg_please_enter_motorist_address_state">Please enter state</string>
+    <string name="val_msg_please_enter_motorist_address_zip">Please enter zip</string>
+
+    <!--Motorist information-->
+
+    <string name="err_msg_connection_was_refused">Please check your internet connection or try again later</string>
+    <string name="err_msg_there_is_some_data_in_device">There is some spaceData on the device that has to be transferred by the admin.</string>
+    <string name="err_msg_there_is_no_data_found">There are no spaceData found.</string>
+    <string name="err_msg_pls_select_space_id">Please select space id.</string>
+    <string name="err_msg_pls_select_zone_id">Please select zone id.</string>
+    <string name="err_msg_down_load_image">There are some problem to download image. please try again later</string>
+
+    <string name="err_msg_error">Something went wrong,\n Please re-login.</string>
+    <string name="err_msg_logout">Do you want to close the App?</string>
+    <string name="scr_btn_cancel">Cancel</string>
+    <string name="scr_btn_regenerate_facsimile_image">Regenerate Facsimile Image</string>
+    <string name="scr_btn_total_cancel">Total Cancel</string>
+    <string name="scr_lbl_cancelled">Cancelled</string>
+    <string name="err_lbl_select_any_one">Please select any one of check box</string>
+
+    <string name="scr_btn_continue">Continue</string>
+
+    <string name="finger_print_failed">Fingerprint not recognised. Please try again</string>
+    <string name="finger_print_succeed">Fingerprint Authentication succeeded.</string>
+
+    <string name="scr_btn_done_small_letter">Done</string>
+    <string name="scr_btn_save_small_letter">Save</string>
+    <string name="scr_btn_save_cite_small_letter">Save &amp; Cite</string>
+    <string name="scr_btn_print_and_cite">Print &amp; Cite</string>
+    <string name="scr_btn_save_time_small_letter">Save &amp; Time</string>
+    <string name="scr_btn_cite_small_letter">Cite</string>
+    <string name="scr_btn_permit">Permit</string>
+    <string name="scr_btn_no_permit">Permit</string>
+    <string name="scr_btn_exempt">Exempt</string>
+    <string name="scr_btn_no_exempt">Exempt</string>
+    <string name="scr_btn_edit">Edit</string>
+    <string name="scr_btn_rescan">Re-Scan</string>
+    <string name="scr_btn_check">Check</string>
+    <string name="scr_btn_scofflaw">Scofflaw</string>
+    <string name="scr_btn_no_scofflaw">Scofflaw</string>
+    <string name="scr_btn_scan">Scan</string>
+    <string name="scr_btn_municipal_citation">Municipal Citation</string>
+    <string name="scr_btn_owner_bill">Owner Bill</string>
+    <string name="scr_btn_payment">Payment</string>
+    <string name="scr_btn_payment_colon">Payment:</string>
+    <string name="scr_btn_generate">Generate</string>
+    <string name="scr_btn_no_payment">Payment</string>
+    <string name="scr_lbl_permit_detail">Permit detail</string>
+    <string name="scr_lbl_permit_id">Permit Id:</string>
+    <string name="scr_lbl_scoffkaw_detail">Scofflaw detail</string>
+    <string name="scr_lbl_timing_detail">Timing detail</string>
+    <string name="scr_btn_stolen">Stolen</string>
+    <string name="scr_btn_stolen_det">Stolen detail</string>
+    <string name="scr_btn_exempt_det">Exempt detail</string>
+    <string name="scr_btn_camera_raw_feed_Data_det">Camera Feed</string>
+    <string name="scr_btn_no_stolen">Stolen</string>
+    <string name="scr_btn_timings">Timings</string>
+    <string name="scr_btn_no_timings">Timings</string>
+    <string name="scr_btn_no_camera_raw_feed_data">Camera Violation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="scr_message_please_wait">Please wait..</string>
+
+
+    <string name="scr_lbl_password">Password</string>
+    <string name="scr_lbl_lpr_payment">LPR Payment</string>
+    <string name="scr_lbl_lpr_permit">LPR Permit</string>
+    <string name="scr_lbl_lpr_exempt">LPR Exempt</string>
+    <string name="scr_lbl_lpr_stolen">LPR Stolen</string>
+    <string name="scr_lbl_lpr_scofflaw">LPR Scofflaw</string>
+
+    <string name="scr_lbl_date_pay">Occupancy:</string>
+
+    <string name="scr_lbl_check_setup">Check Setup</string>
+    <string name="scr_lbl_welcome_back">Welcome Back</string>
+    <string name="scr_lbl_email_or_user">User ID</string>
+    <string name="scr_lbl_email">Email</string>
+    <string name="scr_lbl_user_id">User ID</string>
+
+    <!--    <string name="scr_lbl_park_loyalty">RISETEK</string>-->
+    <!--    <string name="scr_lbl_enforcement">GLOBAL</string>-->
+    <string name="scr_lbl_park_loyalty">PARKLOYALTY</string>
+    <string name="scr_lbl_enforcement">ENFORCEMENT</string>
+
+    <string name="scr_lbl_total_scan">Total Scan</string>
+    <string name="scr_lbl_total_scans">Total Scans</string>
+    <string name="scr_lbl_total_enforce">Total Enforcement</string>
+
+    <string name="scr_lbl_home">Home</string>
+    <string name="scr_lbl_issue">Issue</string>
+    <string name="scr_lbl_issue_more">Issue More</string>
+    <string name="scr_lbl_issue_more_details">Do you want to Issue More!!</string>
+    <string name="scr_lbl_ticketing">Ticketing</string>
+    <string name="scr_lbl_lookup">Lookup</string>
+    <string name="scr_lbl_my_activity">My Activity</string>
+    <string name="scr_lbl_setting">Setting</string>
+    <string name="scr_lbl_report">Report Service</string>
+    <string name="scr_lbl_generate_qr_code">QR Code</string>
+    <string name="scr_lbl_sunlight_mode">Sunlight Mode</string>
+    <string name="scr_btn_paper_feed">Paper Feed</string>
+    <string name="scr_btn_cancellation_request">Cancellation Request</string>
+    <string name="scr_lbl_guide_enforcement">Guided Enforcement</string>
+    <string name="scr_lbl_logout">Logout</string>
+    <string name="scr_lbl_activity">Activity</string>
+    <string name="scr_lbl_comments">Comments</string>
+    <string name="scr_lbl_comment1">Comment1</string>
+    <string name="scr_lbl_comment2">Comment2</string>
+    <string name="scr_lbl_comment3">Comment3</string>
+    <string name="scr_lbl_lunch_taken">Lunch Taken</string>
+    <string name="scr_lbl_first_10_mins_break">1st 10- min break</string>
+    <string name="scr_lbl_second_10_mins_break">2nd 10-min break</string>
+    <string name="scr_lbl_unit_no">Unit Number</string>
+    <string name="scr_lbl_assigned_area">Assigned Area</string>
+    <string name="scr_lbl_schedule_tow_date_time">Schedule Tow Date and Time</string>
+    <string name="scr_lbl_vehicle_relocated_to_different_stall_within_the_lot">Vehicle Relocated To Different Stall Within The Lot</string>
+    <string name="scr_lbl_violation_descriptions">Violation Description</string>
+    <string name="scr_lbl_ossi_device_no">Ossi Device No</string>
+    <string name="scr_lbl_handheld_unit_no">Handheld Unit No</string>
+    <string name="scr_lbl_tried_to_restart_hand_held">Tried To Restart Hand Held</string>
+    <string name="scr_lbl_citation_issue">Citation Issue</string>
+    <string name="scr_lbl_printing_correctly">Printing Correctly</string>
+    <string name="scr_lbl_over_heating">Over Heating</string>
+    <string name="scr_lbl_internet_connectivity">Internet Connectivity</string>
+    <string name="scr_lbl_describe_hand_held_malfunction_in_detail">Describe Hand Held Malfunction In Detail</string>
+    <string name="scr_lbl_battery_hold_charge">Battery Hold Charge</string>
+    <string name="scr_lbl_special_enforcement_request">Special Enforcement Request</string>
+    <string name="scr_lbl_notes">Notes</string>
+    <string name="scr_lbl_note1">Note 1</string>
+    <string name="scr_lbl_note2">Note 2</string>
+    <string name="scr_lbl_note3">Note 3</string>
+    <string name="scr_lbl_note">Note:</string>
+    <string name="scr_lbl_cancel_time">Cancel Time</string>
+    <string name="scr_lbl_facsimile_view">Facsimile Image View</string>
+    <string name="scr_lbl_vin">VIN</string>
+    <string name="scr_lbl_supervisor">Supervisor</string>
+    <string name="scr_lbl_beat">Beat</string>
+    <string name="scr_lbl_beat_summary">Beat</string>
+    <string name="scr_lbl_search">Search</string>
+    <string name="scr_lbl_add_time_record">Add Timing Record</string>
+    <string name="scr_lbl_making_a_vehicle">Marking a vehicle</string>
+    <string name="scr_lbl_abandoned_vehicle_details">Abandoned Vehicle Details</string>
+    <string name="scr_lbl_front_tire">Front Tire</string>
+    <string name="scr_lbl_rear_tire">Rear Tire</string>
+    <string name="scr_lbl_summary">Summary</string>
+    <string name="scr_shift_1">Shift - 1</string>
+    <string name="scr_shift_2">Shift - 2</string>
+    <string name="scr_ibi_shift">Shift Details</string>
+    <string name="scr_lbl_recent_added">Recent Added</string>
+    <string name="scr_lbl_submit_goa">Mark GOA</string>
+    <string name="scr_count_item_selected">%s item(s) selected</string>
+    <string name="scr_select_all">Select All</string>
+    <string name="scr_select_item">Select Item</string>
+    <string name="scr_unselect_all">Unselect All</string>
+    <string name="scr_lbl_zone">Zone</string>
+    <string name="scr_lbl_reason_for_tow">Reason For Tow</string>
+    <string name="scr_lbl_notice_to_tow_posted_on">Notice to Tow Posted on</string>
+    <string name="scr_lbl_visible_interior_item">Visible Interior items</string>
+    <string name="scr_lbl_trailer_attached_to_vehicle">Trailer attached to vehicle</string>
+    <string name="scr_lbl_vehicle_condition">Vehicle Condition</string>
+    <string name="scr_lbl_request_to">Request to</string>
+    <string name="scr_lbl_garage_clearance">Garage Clearance</string>
+    <string name="scr_lbl_file_number">File Number</string>
+    <string name="scr_lbl_ro_name_address">RO (Name and Address)</string>
+    <string name="scr_lbl_vehicle_within_the_lot">Vehicle\'s Location Within The Lot</string>
+    <string name="scr_lbl_comment_driver_side">Comments - Driver Side</string>
+    <string name="scr_lbl_comment_rear_side">Comments - Rear Side</string>
+    <string name="scr_lbl_comment_front_side">Comments - Front Side</string>
+    <string name="scr_lbl_comment_passenger_side">Comments - Passenger Side</string>
+    <string name="scr_lbl_comment_trailer">Comments - Trailer</string>
+    <string name="scr_lbl_pbc_zone">PBC Zone</string>
+    <string name="scr_lbl_expiration">Expiration</string>
+    <string name="scr_lbl_expiray_year">Expiry year</string>
+    <string name="scr_lbl_radio">Radio</string>
+    <string name="scr_lbl_morning_shift">Morning shift</string>
+    <string name="scr_lbl_previous_login">Previous login*</string>
+    <string name="scr_lbl_current_login">Current login*</string>
+    <string name="scr_lbl_officer_id">Officer ID*</string>
+    <string name="scr_lbl_officer_phone_number">Officer Phone Number</string>
+    <string name="scr_lbl_officer_id_without_star">Officer ID</string>
+    <string name="scr_lbl_badge_id">Badge ID*</string>
+    <string name="scr_lbl_report_number">Report Number</string>
+    <string name="scr_lbl_squad">Squad</string>
+    <string name="scr_lbl_lpr_number">LPR number</string>
+    <string name="scr_lbl_lpr_number_">LPR number:</string>
+    <string name="scr_lbl_fine_amount_sum">Fine Sum:</string>
+    <string name="scr_lbl_fine_amount_sum_with_value">Fine Sum: $%s</string>
+    <string name="scr_lbl_lic_no_">Lic. No:</string>
+    <string name="scr_lbl_ticket_number">Ticket number*</string>
+    <string name="scr_lbl_type_of_ticket">Type of Ticket</string>
+    <string name="scr_lbl_boot">Boot</string>
+    <string name="scr_lbl_tow">Tow</string>
+    <string name="scr_lbl_ticket_date">Ticket Date*</string>
+    <string name="scr_lbl_history">History</string>
+    <string name="scr_lbl_cite_history">CITE HISTORY</string>
+    <string name="scr_lbl_cite_history_with_value">CITE HISTORY - %s</string>
+
+    <string name="scr_lbl_start">Start:</string>
+    <string name="scr_lbl_rate_name">Rate Name:</string>
+    <string name="scr_lbl_permit_number">Permit Number:</string>
+    <string name="scr_lbl_start_time_colon">Start:</string>
+    <string name="scr_lbl_start_colon">Start:</string>
+    <string name="scr_lbl_time">Time</string>
+    <string name="scr_lbl_end_time_colon">End:</string>
+    <string name="scr_lbl_ticket_type">Ticket Type</string>
+    <string name="scr_lbl_ticket_driveoof_tvr">Drive Off/TVR</string>
+    <string name="scr_lbl_ticket_issue_detail">Ticket Issue Details</string>
+    <string name="scr_lbl_warning">Warning</string>
+    <string name="scr_lb_permit_type">Permit Type:</string>
+    <string name="scr_lbl_end">End:</string>
+    <string name="scr_lbl_end_en">End</string>
+    <string name="scr_lbl_zonee">Zone:</string>
+    <string name="msg_update_status">Update record status</string>
+    <string name="msg_add_cancel_reasons">Choose cancel reasons</string>
+    <string name="msg_add_void_reissue_reasons">Choose Void and Reissue reasons</string>
+    <string name="msg_add_rescind_reasons">Choose Rescind reasons</string>
+    <string name="scr_lbl_type">Type:</string>
+    <string name="scr_lbl_locationn">Location:</string>
+    <string name="scr_lbl_location">Location</string>
+    <string name="scr_lbl_regulation">Regulation:</string>
+    <string name="scr_btn_issue_ticket">Issue Ticket</string>
+    <string name="scr_btn_Valid">Validate</string>
+    <string name="scr_lbl_scofflaw">Scofflaw</string>
+    <string name="scr_lbl_active_payment">Active payment</string>
+    <string name="scr_lbl_details">Details</string>
+    <string name="scr_lbl_last_updated_at">Last updated at</string>
+    <string name="scr_lbl_stolen_vehicles">Stolen vehicles</string>
+    <string name="scr_lbl_timing_records">Timing records</string>
+    <string name="scr_lbl_exempt">Exempt</string>
+    <string name="find_your_location_service_turn_on_services">Find your location service, Would you like to turn on the service?</string>
+    <string name="scr_lbl_make">Make</string>
+    <string name="scr_lbl_model">Model</string>
+    <string name="scr_lbl_color">Color</string>
+    <string name="scr_lbl_make_colon">Make:</string>
+    <string name="scr_lbl_model_colon">Model:</string>
+    <string name="scr_lbl_color_colon">Color:</string>
+    <string name="scr_lbl_citation_number_colon">Citation Number:</string>
+    <string name="scr_lbl_status">Status:</string>
+    <string name="scr_lbl_remaining_time">Remaining time:</string>
+    <string name="scr_lbl_remaining">Remaining:</string>
+    <string name="scr_lbl_status_">Status</string>
+    <string name="scr_lbl_select_filter">Please select filter</string>
+    <string name="scr_lbl_state">State</string>
+    <string name="scr_lbl_state_colon">State:</string>
+    <string name="scr_lbl_body_style">Body Style</string>
+    <string name="scr_lbl_decal_year">Decal Year</string>
+    <string name="scr_lbl_vin_number">Vin Number</string>
+    <string name="scr_lbl_decal_number">Decal number</string>
+    <string name="scr_lbl_license_plate">License Plate</string>
+    <string name="scr_lbl_license_plate_colon">License Plate:</string>
+    <string name="scr_lbl_tow_file_number">Tow File Number</string>
+    <string name="scr_lbl_block">Block</string>
+    <string name="scr_lbl_street">Street</string>
+    <string name="scr_lbl_direction">Direction</string>
+    <string name="scr_lbl_direction_Colon">Direction</string>
+    <string name="scr_lbl_side_of_street">Side Of Street</string>
+    <string name="err_lbl_side_of_street">Please select Side Of Street.</string>
+    <string name="err_lbl_enter_side_of_street">Please enter Side Of Street.</string>
+    <string name="scr_lbl_side">Side:</string>
+    <string name="scr_lbl_side_print">Side</string>
+    <string name="scr_lbl_meter_name">Meter</string>
+    <string name="scr_lbl_code">Code</string>
+    <string name="scr_lbl_amount">Amount</string>
+    <string name="scr_lbl_fine">Fine</string>
+    <string name="scr_lbl_late_fine">Late Fine</string>
+    <string name="scr_lbl_due_15">Due 15 Days</string>
+    <string name="scr_lbl_due_30">Due 30 Days</string>
+    <string name="scr_lbl_due_45">Due 45 Days</string>
+    <string name="scr_lbl_violation_vio_type">Vio Type</string>
+    <string name="scr_lbl_violation_vio_type_code">Vio Code</string>
+    <string name="scr_lbl_violation_vio_type_description">Vio Description</string>
+    <string name="scr_lbl_total_due_now">Total Due Now</string>
+    <string name="scr_lbl_due_date">Due Date</string>
+    <string name="scr_lbl_date">Date:</string>
+    <string name="scr_lbl_week_of_day">Week Of Day:</string>
+    <string name="scr_lbl_date_without_colon">Date</string>
+    <string name="scr_lbl_amount_due_date">Amount after Due Date</string>
+    <string name="scr_lbl_description">Description</string>
+    <string name="scr_lbl_remarks">Remarks</string>
+    <string name="err_lbl_remarks">Please select Remarks</string>
+    <string name="scr_lbl_remark1">Remark 1</string>
+    <string name="scr_lbl_remark2">Remark 2</string>
+    <string name="scr_lbl_remark3">Remark 3</string>
+    <string name="scr_lbl_mark">Mark</string>
+    <string name="scr_lbl_active">Active</string>
+    <string name="scr_lbl_inactive">Inactive</string>
+    <string name="scr_lbl_present">Present</string>
+    <string name="scr_lbl_on_leave">On Leave</string>
+    <string name="scr_lbl_select">Select</string>
+    <string name="scr_lbl_time_limit_select">Time Limit Select</string>
+    <string name="scr_lbl_print_issue_time">Issue Time</string>
+    <string name="scr_lbl_meter">Meter(Loc)</string>
+    <string name="scr_lbl_tier_stem_left">Tier stem left</string>
+    <string name="scr_lbl_tier_stem_right">Tier stem right</string>
+    <string name="scr_lbl_tier_stem_front_back">Tier stem</string>
+    <string name="scr_lbl_lic_no">Lic. No</string>
+    <string name="scr_lbl_lic_state">Lic. State</string>N
+    <string name="err_msg_plate_is_empty">License Plate number is empty.</string>
+    <string name="scr_lbl_data_loading">Please wait, spaceData is loading.....</string>
+    <string name="msg_max_image">Max only # image limit.</string>
+    <string name="msg_min_image">Min # image required.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="doller_sign">$</string>
+    <string name="loader_message_fetching_address">Fetching address…</string>
+
+
+    <string name="MainActivity_PairedDevices">Bluetooth Paired Devices</string>
+    <string name="MainActivity_TapToPair">Tap or Scan to Pair</string>
+    <string name="MainActivity_AttemptToPair">Attempting to pair with\n %s</string>
+    <string name="MainActivity_PairSuccessful">Successfully paired with %s</string>
+    <string name="MainActivity_BtPairingMessage">Attempting to pair with </string>
+    <string name="MainActivity_PairComplete">Pairing Complete</string>
+    <string name="MainActivity_PrintPrompt">Are you sure you want to print a test page?</string>
+    <string name="MainActivity_AlreadyPaired">%s is already paired</string>
+    <string name="MainActivity_PrintTestPage">Click to print test label</string>
+    <string name="select_issue">-- Select Issue</string>
+    <string name="notes">Notes</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="submit">Submit</string>
+    <string name="submit_and_isuue">Submit and Issue</string>
+
+    <string name="date_format">Date format</string>
+    <string name="mm_dd_yyy">MM/DD/YYY</string>
+    <string name="printer_type">Printer Type</string>
+    <string name="scr_lbl_printer">Printer</string>
+    <string name="zebra_510">Zebra 510</string>
+    <string name="image_recycle_schedule">Image recycle schedule</string>
+    <string name="_5_days">5 days</string>
+    <string name="license_plate_format">License plate format</string>
+    <string name="_1abc123">1ABC123</string>
+    <string name="has_exempt">Has Exempt</string>
+    <string name="yes">Yes</string>
+    <string name="has_stolen">Has Stolen</string>
+    <string name="has_permits">Has Permits</string>
+    <string name="has_timing">Has Timing</string>
+    <string name="has_scofflaw">Has Scofflaw</string>
+    <string name="has_payments">Has Payments</string>
+    <string name="has_pay_by_plate">Pay By Plate</string>
+    <string name="has_pay_by_space">Pay By Space</string>
+    <string name="has_camera_violation">Camera Feed</string>
+    <string name="lbl_directed_enforcement">Directed Enforcement</string>
+    <string name="has_camera_genetic_list">Camera Enforcement</string>
+    <string name="barcode_url">Barcode URL</string>
+    <string name="qr_code_url">QR Code URL</string>
+    <string name="max_picture">Max picture</string>
+    <string name="_4">4</string>
+    <string name="min_picture">Min picture</string>
+    <string name="_1">1</string>
+    <string name="scr_lbl_valid_until">Valid Unitl</string>
+    <string name="scr_lbl_start_enforcement">Start</string>
+    <string name="alt_lbl_OK">Ok</string>
+    <string name="err_title_server_error">Server Error</string>
+    <string name="err_title_api_failed">API Failed</string>
+    <string name="err_title_api_successful">API Successful</string>
+    <string name="err_msg_something_went_wrong">Something went wrong,Please try again later!</string>
+    <string name="err_msg_similar_citation_check_api_failed">Similar citation check API returns error code! click OK to try once</string>
+    <string name="err_msg_something_went_wrong_image">Please delete and retake the images!</string>
+    <string name="err_msg_something_went_wrong_imagearray">Something went wrong,getting empty image array response form API side!</string>
+    <string name="err_msg_failed_to_fetch_address">Failed to fetch address</string>
+    <string name="scr_lbl_phila">PHILA \u0020 847794542 \u0020 003600</string>
+
+    <string name="app_name_title">RiseTek</string>
+    <string name="cmp_name_title">RISETEK - Music Factory</string>
+    <string name="cmp_name_title_innova">RISETEK - Innova</string>
+    <string name="scr_lbl_set_drive_off">Set Drive Off</string>
+    <string name="scr_lbl_set_TVR">Refused TVR</string>
+    <string name="scr_lbl_TVR">TVR</string>
+    <string name="scr_lbl_drive_off">Drive Off</string>
+    <string name="scr_lbl_descriptions">Descriptions</string>
+    <string name="scr_lbl_elapsed">Elapsed:</string>
+    <string name="scr_lbl_regular">Regular</string>
+    <string name="scr_lbl_heavy">Heavy</string>
+    <string name="scr_lbl_medium">Medium</string>
+    <string name="scr_lbl_meter_outage">Meter Outage</string>
+    <string name="scr_lbl_outage">Outage</string>
+    <string name="scr_lbl_meter_no">Meter No</string>
+    <string name="scr_lbl_meter_type">Meter Type</string>
+    <string name="scr_lbl_meter_label">Meter Label Visible</string>
+    <string name="scr_lbl_digital_display_visible">Digital Display Visible</string>
+    <string name="scr_lbl_broken_meter">Broken Meter</string>
+    <string name="scr_lbl_coin_jam">Coin Jam</string>
+    <string name="scr_lbl_credit_card_jam">Credit Card Jam</string>
+    <string name="scr_lbl_line">Line</string>
+    <string name="scr_lbl_towing_officer">Towing Officer</string>
+    <string name="scr_lbl_broken_asset_report">Broken Asset Report</string>
+    <string name="scr_lbl_broken_meter_report">Broken Meter Report</string>
+    <string name="err_lbl_meter_outage">Please select Meter outage.</string>
+    <string name="err_lbl_meter_no">Please select Meter No.</string>
+    <string name="scr_lbl_observation_time">Observation Time</string>
+    <string name="scr_lbl_generate_qr_code_1">Generate QR Code</string>
+    <string name="scr_lbl_scan_qr_code">Scan QR-Code</string>
+    <string name="scr_lbl_device">Device</string>
+    <string name="scr_lbl_date_report">Date</string>
+    <string name="scr_lbl_enforceable">Enforceable</string>
+    <string name="scr_lbl_graffiti">Graffiti</string>
+    <string name="scr_lbl_missing_sign">Missing Sign</string>
+    <string name="scr_lbl_duty_hours">Duty Hours</string>
+    <string name="scr_lbl_curb_color">Curb Color</string>
+    <string name="scr_lbl_first_city">First Cite</string>
+    <string name="scr_lbl_last_city">Last Cite</string>
+    <string name="scr_lbl_first_scan">First Scan</string>
+    <string name="scr_lbl_lunch">Lunch</string>
+    <string name="scr_lbl_break_1">Break 1</string>
+    <string name="scr_lbl_break_2">Break 2</string>
+    <string name="scr_lbl_departure">Departure</string>
+    <string name="scr_lbl_issuance_info">Issuance Info</string>
+    <string name="scr_lbl_refused_tvr">Refused TVR</string>
+    <string name="scr_lbl_pbc_cancel">PBC Cancel</string>
+    <string name="scr_lbl_scan_hit_info">Scan Hit Info</string>
+    <string name="scr_lbl_drop_off">Drop Off</string>
+    <string name="scr_lbl_daily_summary">Daily Summary</string>
+    <string name="scr_lbl_supervisor_view">Supervisor View</string>
+    <string name="scr_lbl_special_assignment_report">Special Assignment</string>
+    <string name="scr_lbl_lpr_hits">Lpr Hits</string>
+    <string name="scr_lbl_map_view">Graph View</string>
+    <string name="scr_lbl_total_count">Total Count</string>
+    <string name="scr_lbl_id">ID</string>
+    <string name="scr_lbl_void">Void</string>
+    <string name="scr_lbl_scans">Scans</string>
+    <string name="scr_lbl_site">Site</string>
+    <string name="scr_lbl_timing">Timing</string>
+    <string name="scr_lbl_shift">Shift</string>
+    <string name="scr_lbl_continuous">Continuous Mode</string>
+    <string name="scr_lbl_lpr_mode">LPR Mode</string>
+    <string name="scr_lbl_continuous_scan_mode">Continuous Scan Mode</string>
+    <string name="scr_lbl_rpp">RPP</string>
+    <string name="scr_lbl_meter_continuous">Meter</string>
+    <string name="scr_lbl_meter_colon">Meter:</string>
+    <string name="scr_lbl_all">All</string>
+    <string name="scr_lbl_regulation_without_star">Regulation  </string>
+    <string name="scr_lbl_space">Space:</string>
+    <string name="scr_lbl_space_without_colon">Space</string>
+    <string name="scr_lbl_citation_result">Citation Result</string>
+    <string name="scr_lbl_lpr_result">LPR Result</string>
+    <string name="scr_lbl_lpr_alert_type">Alert Type</string>
+    <string name="scr_lbl_add_note">Add Note</string>
+    <string name="scr_lbl_hot_restart">Hot Restart</string>
+
+    <string name="error_bluetooth_permission_is_not_granted">Bluetooth permission is not granted</string>
+    <string name="error_no_timing_records_found">No Timing records Found</string>
+    <string name="error_generate_facsimile_image">There is problem to print, would you cancel and reissue ticket again</string>
+
+    <string name="notification_channel_live_location">Live Location</string>
+    <string name="is_default_state_plate_validation">License plate does not match the standard state plate format.</string>
+    <string name="star_printer_error">Bluetooth not enabled!.</string>
+    <string name="scr_lbl_curb_report">Curb Report</string>
+    <string name="scr_lbl_full_time_report">Full Time Report</string>
+    <string name="scr_lbl_EOW_Officer_report">Full Time EOW Officer Report</string>
+    <string name="scr_lbl_part_EOW_Officer_report">Part Time EOW Officer Report</string>
+    <string name="scr_lbl_hand_held_malfunction_report">Hand Held Malfunction</string>
+    <string name="scr_lbl_sign_report">Sign Report</string>
+    <string name="scr_lbl_vehicle_inspection_report">Vehicle Inspection Report</string>
+    <string name="scr_lbl_72_hour_marked_vehicle_report">72 Hour Marked Vehicles</string>
+    <string name="scr_lbl_bike_inspection_report">Bike Inspection</string>
+    <string name="scr_lbl_72hr_notice_tow_report">72hrs Notice To Tow</string>
+    <string name="scr_lbl_tow_report">Tow Report</string>
+    <string name="scr_lbl_sign_off_report">Sign Off Report</string>
+    <string name="scr_lbl_nfl_report">NFL Special Assignment</string>
+    <string name="scr_lbl_hard_report">Special Event Report</string>
+    <string name="scr_lbl_after_seven_report">PCH Daily Updates</string>
+    <string name="scr_lbl_pay_station_report">Pay Station Report</string>
+    <string name="scr_lbl_pay_signage_report">Signage Report</string>
+    <string name="scr_lbl_pay_homeless_report">Homeless Report</string>
+    <string name="scr_lbl_pay_safety_report">Safety Report Immediate Attention Required</string>
+    <string name="scr_lbl_pay_trash_report">Trash Lot Maintenance Report</string>
+    <string name="scr_lbl_pay_lot_report">Lot Count Vio Rate Report</string>
+    <string name="scr_lbl_pay_lot_inspection_report">Lot Inspection Report</string>
+    <string name="scr_lbl_total_enforcement_personnel">Total Enforcement Personnel</string>
+    <string name="scr_lbl_complaints_towards_officer">Complaints Towards Officer</string>
+    <string name="scr_lbl_resident_complaints">Resident Complaints</string>
+    <string name="scr_lbl_warnings_issued">Warnings Issued</string>
+    <string name="scr_lbl_citation_issued">Citation Issued</string>
+    <string name="scr_lbl_vehicles_marked">Vehicles Marked</string>
+    <string name="scr_lbl_time_marked">1st Time Marking</string>
+    <string name="scr_lbl_time_marked_2">2nd Time Marking</string>
+    <string name="scr_lbl_time_marked_3">3rd Time Marking</string>
+    <string name="scr_lbl_time_marked_4">4th Time Marking</string>
+    <string name="scr_lbl_eow_supervisor_shift_report">EOW Supervisor Shift Report</string>
+    <string name="request_permission">Cmaera2 needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="scr_lbl_payment_for_similar_plates">Payment plates:</string>
+    <string name="scr_lbl_payment_for_similar_plates_with_value">Payment plates:%s</string>
+    <string name="scr_lbl_payment_for_similar_plate">Payment plate:</string>
+    <string name="scr_lbl_payment_for_similar_plate_with_value">Payment plate:%s</string>
+    <string name="scr_lbl_permit_for_similar_plates">Permit plates:</string>
+    <string name="scr_lbl_permit_for_similar_plates_with_value">Permit plates:%s</string>
+    <string name="scr_lbl_permit_for_similar_plate">Permit plate:</string>
+    <string name="scr_lbl_permit_for_similar_plate_with_value">Permit plate:%s</string>
+    <string name="scr_lbl_time_colon">Time:</string>
+    <string name="scr_wrn_signature_must">Officer signature is must</string>
+    <string name="scr_expired_time">Expire:</string>
+    <string name="scr_pitts_officer_text">Subject to the penalties of the crimes code (18PA C.S. #4904): I verify that the facts set forth in this ticket are true and correct to the best of my knowledge"</string>
+    <string name="scr_pitts_officer_signature">"Officer's Signature:"</string>
+    <string name="error_login">"We encountered some error to fetching your data from the server, can you please log out and login again!!"</string>
+
+    <string name="key_secure_connection">key_secure_connection</string>
+    <string name="print_page_mode">printPageMode</string>
+    <string name="msg_ng">" NG.[%d]"</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Ocr Detector Sample</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+
+    <string name="no_text_found">Couldn\'t Find any text in here…</string>
+    <string name="error_default_msg">Oops , Something went wrong</string>
+    <string name="camera_error_default_msg">Oops , Couldn\'t get image from camera</string>
+    <string name="permission_denied_msg">Permissions not granted by the user.</string>
+    <string name="clipboard_text">Copied to Clipboard</string>
+    <string name="torch_not_available_msg">Oops , Torch Not Available</string>
+    <string name="share_text_title">Share via</string>
+    <string name="text_in_image">Text In Image</string>
+    <string name="copy_to_clipboard">Copy To ClipBoard</string>
+    <string name="close_dialog">Close Dialog</string>
+    <string name="torch_button">Torch Button</string>
+    <string name="share_text">Share Text</string>
+    <string name="scr_lbl_car_counted">Cars Counted</string>
+    <string name="scr_lbl_car_space">Car Space</string>
+    <string name="scr_lbl_vendor_counted">Number Of Vendors On Site</string>
+    <string name="scr_lbl_machine_number1">Machine Number 1</string>
+    <string name="scr_lbl_machine_number2">Machine Number 2</string>
+    <string name="scr_lbl_machine_number3">Machine Number 3</string>
+    <string name="scr_lbl_description1">Description1</string>
+    <string name="scr_lbl_description2">Description2</string>
+    <string name="scr_lbl_description3">Description3</string>
+    <string name="scr_lbl_empty_space">Empty Spaces</string>
+    <string name="scr_lbl_vendor_locations">Location Of Each Vendor</string>
+    <string name="scr_lbl_number_of_violating_vehicles">Number of Vehicles in Violation</string>
+    <string name="scr_lbl_number_of_security_observation">Security Observation</string>
+    <string name="scr_lbl_number_of_violating_rate">Violation Rate (Cars in Violations/Cars counted*100)</string>
+    <string name="scr_lbl_citation_count">Citation Count:</string>
+    <string name="scr_lbl_event_name">Event Name</string>
+    <string name="scr_lbl_amount_due">Amount Due:</string>
+    <string name="scr_lbl_all_signs_reported">All Signs Reported</string>
+    <string name="scr_lbl_all_paystations_reported">All Pay stations Reported</string>
+    <string name="scr_lbl_any_homeless_reported">Any Homeless Reported</string>
+    <string name="scr_lbl_any_safety_issues_reported">Any SafetyIssues Reported</string>
+    <string name="scr_lbl_sign">Sign</string>
+    <string name="scr_lbl_actions_required">Actions Required</string>
+    <string name="scr_lbl_work_order_report">Work Order Report</string>
+    <string name="scr_lbl_safety_issue">Safety Issue</string>
+    <string name="scr_lbl_description_level_quadrant">Description/Level/Quadrant</string>
+    <string name="scr_lbl_qr_code_inventory">QR Code Inventory</string>
+
+    <string name="btn_text_submit_and_logout">Submit &amp; Logout</string>
+    <string name="error_red_box_inventory_is_mandatory_to_proceed">Red box inventory is mandatory to proceed.</string>
+    <string name="error_red_box_qr_code_inventory_is_mandatory_to_proceed">Red box QR code inventory is mandatory to proceed.</string>
+    <string name="error_inventory_already_checkout_out">This inventory is already checked out. Do you want to check-in the inventory back ?</string>
+    <string name="error_all_inventory_items_are_scanned">All inventory items are scanned.</string>
+    <string name="title_inventory_update">Inventory Update</string>
+    <string name="msg_add_note_before_logout">Oops, Seems you haven\'t check-in some equipment back. Please add your note before logout.</string>
+
+
+    <string name="lbl_something_went_wrong">Something went wrong</string>
+    <string name="lbl_not_scanned">Not Scanned</string>
+    <string name="msg_this_qr_code_is_already_scanned_and_equipment_is_checked_out">This QR code is already scanned &amp; equipment is checked out.</string>
+    <string name="msg_the_qr_code_you_scanned_is_not_found_in_the_our_inventory_system">The QR code you scanned is not found in the our inventory system. Please check the QR code again</string>
+
+    <string name="msg_one_of_the_inventory_is_already_checked_out_please_check_in_that_first">"One of the %s is already checked out, Please check in that %s first"</string>
+    <string name="msg_unexpected_logout">Unexpected Logout</string>
+
+    <!--Genetic Enforcement Screen-->
+    <string name="hintTypeOfHit">Type of Hit</string>
+    <string name="hintLicensePlateNumber">License Plate Number</string>
+    <string name="errMsgNoDataFoundForGeneticEnforcement">No data found for %s</string>
+    <string name="lblHitColon">Hit:</string>
+    <string name="lblPatrollerColon">Patroller:</string>
+    <string name="lblTypeColon">Type:</string>
+    <!--Genetic Enforcement Screen-->
+    <!--Dialog Utils-->
+    <string name="btn_text_ok">OK</string>
+    <string name="btn_text_yes">Yes</string>
+    <string name="btn_text_no">No</string>
+    <string name="dialog_title_permit_api_failed">Permit API Failed</string>
+    <string name="dialog_desc_permit_api_failed">Permit API failed unexpectedly, Please click CHECK button above to get the permit data before creating the ticket.</string>
+    <string name="dialog_title_ticket_check_required">Ticket Check Required</string>
+    <string name="dialog_desc_ticket_check_required">To proceed, Please add first name, last name &amp; date of birth first and then click Check Ticket button to get the older offence of this person. After that you are allowed to create ticket.</string>
+    <string name="dialog_title_offence_found">Offence Found</string>
+    <plurals name="dialog_desc_offence_found">
+        <item quantity="one">This person already has %d offense that is logged.</item>
+        <item quantity="other">This person already has %d offense that are logged.</item>
+    </plurals>
+
+
+    <string name="dialog_title_no_offence_found">No Offence Found</string>
+    <string name="dialog_desc_no_offence_found">This person has no offense logged.</string>
+    <!--Dialog Utils-->
+
+    <string name="scr_lbl_print_ticket">Print Ticket</string>
+    <string name="scr_lbl_fine_amount">Fine Amount</string>
+    <string name="scr_lbl_delinquent_amt_due">Delinquent Amt Due</string>
+    <string name="warnings_lbl_dataset_empty_message">All dropdown lists appear to be broken. Could you please try logging in again?</string>
+    <string name="warnings_lbl_dataset_empty_header">Dropdown lists</string>
+
+    <!--Battery Optimization-->
+    <string name="title_battery_optimisation" translatable="false">Battery Optimization</string>
+    <string name="desc_battery_optimisation_old" translatable="false">This app comes under battery optimization and it may leads to functionality break.
+        \nDo you want to exclude the app from battery optimization ?
+        \n\nSteps to follow:-
+        \n(1) Click YES and Select All Apps from the Optimize Battery Usage Screen
+        \n(2) Search %s
+        \n(3) Turn the switch off
+        \nHere we go…"</string>
+
+    <string name="desc_battery_optimisation_fallback" translatable="false">This app comes under battery optimization and it may leads to functionality break like location services.
+        \nDo you want to exclude the app from battery optimization ?
+        \n\nSteps to follow:-
+        \n(1) Click YES and Select Battery option from app settings for %s
+        \n(2) Choose Unrestricted &amp; Come back to app.</string>
+
+    <string name="desc_battery_optimisation" translatable="false">By tapping YES, You will be redirected to a system dialog asking you exclude the app from battery optimization.
+        \n\nPlease click Allow to exclude %s from battery optimization from the system dialog.</string>
+
+    <string name="dialog_button_i_will_do_this_later" translatable="false">I WILL DO THIS LATER</string>
+    <string name="dialog_button_yes" translatable="false">YES</string>
+    <!--Battery Optimization-->
+
+    <!--Bluetooth Setting-->
+    <string name="title_bluetooth_settings" translatable="false">Bluetooth Settings</string>
+
+    <string name="desc_bluetooth_settings" translatable="false">It seems Nearby devices permission is disabled/denied. This will impact print services.
+        \nPlease enable/allow Nearby devices permission.
+        \n\nSteps to follow:-
+        \n(1) Click YES and Select Nearby devices from app settings for %s
+        \n(2) Choose Allow &amp; Come back to app and try again.</string>
+    <!--Bluetooth Setting-->
+
+    <!--Auto Warning for Memorial herman-->
+    <string name="scr_lbl_auto_warning_ticket">Auto Warning Ticket</string>
+    <string name="scr_lbl_auto_warning_ticket_response">Warning Ticket Response</string>
+    <string name="scr_lbl_auto_warning_desc">There is no citation or permit data available. Would you like to proceed with issuing a warning ticket?</string>
+    <string name="scr_lbl_auto_warning_success">Warning ticket created successfully</string>
+    <string name="scr_lbl_violation_list">There is issue in violation list, please upload it again</string>
+    <string name="scr_lbl_booklet">Booklet Alter</string>
+    <string name="scr_lbl_booklet_desc">There is no booklet number, Re-login again</string>
+    <!--Auto Warning for Memorial herman-->
+
+    <!--Sticker Scan Screen-->
+    <string name="btn_text_scan_sticker">Scan Sticker</string>
+    <string name="btn_text_re_scan_sticker">Re-Scan Sticker</string>
+    <!--Sticker Scan Screen-->
+
+    <!--Vehicle Mode Scan-->
+    <string name="btn_text_start_caps">START</string>
+    <string name="btn_text_stop_caps">STOP</string>
+    <!--Vehicle Mode Scan-->
+
+    <!--Ultimate ALPR-->
+    <string name="toolbar_title_vehicle_mode_scan">Vehicle Mode Scan</string>
+    <string name="toolbar_title_license_plate__scan">License Plate Scan</string>
+
+
+    <string name="request_permission_for_camera">This sample needs camera permission.</string>
+    <string name="error_camera_not_supported">This device doesn\'t support Camera2 API.</string>
+    <string name="error_camera_capture_session_failed">Camera Capture Session Failed</string>
+    <string name="msg_scan_started">Scan Started</string>
+
+    <string name="scr_lbl_expiry_year">Please select an expiry year</string>
+    <string name="scr_lbl_expiry_month">Please select an expiry month</string>
+    <string name="scr_lbl_expiry_year_month">Please select an expiry year and month</string>
+
+    <string name="confirmation_msg_do_you_want_to_start_vehicle_mode_scan">Do you want to start vehicle mode scan ?</string>
+    <string name="confirmation_msg_vehicle_mode_scan_started_do_you_want_to_go_back">Vehicle mode scan is started, If you go back result will be erased.\n Do you want to go back ?</string>
+
+    <string name="error_msg_no_vehicle_scanned_yet_please_scan_a_vehicle_to_proceed">No vehicle scanned yet, Please scan a vehicle to proceed.</string>
+    <string name="confirmation_msg_do_you_want_to_stop_vehicle_mode_scan">Do you want to stop vehicle mode scan ?</string>
+
+    <string name="btn_capture">CAPTURE</string>
+    <string name="btn_capturing">CAPTURING…</string>
+    <!--Ultimate ALPR-->
+
+    <!--Vehicle Mode Form-->
+    <string name="lbl_scan_run_for">Scan Run for</string>
+    <string name="lbl_vehicle_run_for">Vehicle Run for</string>
+    <string name="radio_button_lbl_timing">Timing</string>
+    <string name="radio_button_lbl_street_sweeping">Street Sweeping</string>
+    <string name="radio_button_lbl_rpp">RPP</string>
+    <string name="radio_button_lbl_all">All</string>
+    <string name="radio_button_no">No</string>
+    <string name="radio_button_yes">Yes</string>
+    <string name="lbl_flash_light_required">Flash Light Required</string>
+    <!--Vehicle Mode Form-->
+
+    <!--Result Filter Form-->
+    <string name="lbl_result_for">Result for</string>
+    <string name="btn_text_show_result">Show Result</string>
+    <string name="lbl_from">From</string>
+    <string name="lbl_to">To</string>
+    <!--Result Filter Form-->
+
+    <!--Print Header & Footer-->
+    <string name="print_label_footer">See reverse for more information</string>
+    <!--Print Header & Footer-->
+
+    <!--Misc Error Text-->
+    <string name="error_list_is_empty" translatable="false">Empty List</string>
+    <!--Misc Error Text-->
+
+    <!--General-->
+    <string name="lbl_not_available" translatable="false">Not Available</string>
+    <string name="msg_bluetooth_permission_denied" translatable="false">Bluetooth permission denied, Please allow bluetooth permission to print.</string>
+    <!--General-->
+
+    <!--Septa Tow Notice Print-->
+    <string name="septa_tow_notice_header" translatable="false">FINAL NOTICE-Tow</string>
+    <string name="septa_tow_notice_issued_with_value" translatable="false">Issued: %s</string>
+
+    <string name="septa_tow_notice_citation_number_colon" translatable="false">Citation Number:</string>
+    <string name="septa_tow_notice_violation_number_colon" translatable="false">Citation Number:</string>
+    <string name="septa_tow_notice_violation_date_colon" translatable="false">Violation Date:</string>
+    <string name="septa_tow_notice_officer_id_colon" translatable="false">Officer ID:</string>
+    <string name="septa_tow_notice_lot_name_colon" translatable="false">Lot Name:</string>
+    <string name="septa_tow_notice_space_number_colon" translatable="false">Space Number:</string>
+    <string name="septa_tow_notice_license_plate_number_colon" translatable="false">License Plate Number:</string>
+    <string name="septa_tow_notice_license_plate_state_colon" translatable="false">License Plate State:</string>
+    <string name="septa_tow_notice_vehicle_make_colon" translatable="false">Vehicle Make:</string>
+    <string name="septa_tow_notice_vehicle_model_colon" translatable="false">Vehicle Model:</string>
+    <string name="septa_tow_notice_vehicle_color_colon" translatable="false">Vehicle Color:</string>
+    <string name="septa_tow_notice_violation_type_colon" translatable="false">Violation Type:</string>
+    <string name="septa_tow_notice_peo_remarks_colon" translatable="false">PEO Remarks:</string>
+
+    <string name="septa_tow_notice_desc_one" translatable="false">Your vehicle has numerous outstanding unpaid parking violations. In accordance w/ SEPTA Tariff this vehicle is now subject to towing and impoundment until all fines, SEPTA costs, expenses and charges are paid in full (including towing fee and storage charges).</string>
+    <string name="septa_tow_notice_desc_two" translatable="false">In order to avoid the aforementioned consequences, you must contact SEPTA IMMEDIATELY to make arrangements to resolve the unpaid parking violations.</string>
+    <string name="septa_tow_notice_desc_three" translatable="false">You may contact us via Email at PARKING@SEPTA.ORG or telephone at 215-580-3400. Be sure to provide your license plate number.</string>
+    <string name="septa_tow_notice_footer" translatable="false">This Parking Violation has been issued in accordance with Septa\'s Parking Tariff. Tariff can be viewed on the SEPTA web site WWW.SEPTA.ORG</string>
+    <!--Septa Tow Notice Print-->
+
+
+    <string name="scr_lbl_motorist_first_name">First Name</string>
+    <string name="scr_lbl_motorist_middle_name">Middle Name</string>
+    <string name="scr_lbl_motorist_last_name">Last Name</string>
+    <string name="scr_lbl_motorist_date_of_birth">Date Of Birth</string>
+    <string name="scr_lbl_motorist_dl_number">DL Number</string>
+    <string name="scr_lbl_motorist_address_block">Block</string>
+    <string name="scr_lbl_motorist_address_street">Street</string>
+    <string name="scr_lbl_motorist_address_city">City</string>
+    <string name="scr_lbl_motorist_address_state">State</string>
+    <string name="scr_lbl_motorist_address_zip">Zip</string>
+
+    <!-- Camera feed form-->
+    <string name="scr_lbl_violation_type_colon">Violation Type:</string>
+    <string name="scr_lbl_violation_id_colon">Violation Id:</string>
+    <string name="scr_lbl_occurred_at_colon">In Time:</string>
+
+
+    <string name="scr_lbl_operator_id">Operator Id</string>
+    <string name="scr_lbl_zone_id">Zone Id</string>
+    <string name="scr_lbl_detection_type">Detection Type</string>
+    <string name="scr_lbl_violation_id">Violation Id</string>
+    <string name="scr_lbl_violation_type">Violation Type</string>
+    <string name="scr_lbl_sanction_type_label">Sanction Type</string>
+    <string name="scr_lbl_cancel_citation">Cancel Citation</string>
+
+
+    <string name="wrn_lbl_capture_image">Image capture failed. Please try again. Image was not saved properly.</string>
+    <string name="wrn_lbl_image_upload_service">Service is down. Ticket images saved. Images will upload automatically once service is up..</string>
+    <string name="scr_lbl_genetic_type">Genetic Type</string>
+    <string name="scr_lbl_payment_not_fount_for_selected_violation">Last second check is enabled for selected violation, but no payment record was returned from the server.</string>
+
+</resources>

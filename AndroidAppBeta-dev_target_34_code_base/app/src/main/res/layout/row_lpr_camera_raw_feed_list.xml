@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_8dp"
+    android:layout_marginTop="@dimen/_14dp"
+    android:background="@drawable/round_corner_shape_without_fill_grey"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/_14dp"
+    android:paddingHorizontal="@dimen/_8dp"
+    android:id="@+id/layRowCameraRaw"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="State:"
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStateValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvState"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Direction:"
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDirectionValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvDirection"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_14dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Make:"
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMakeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvMake"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_14dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Color:"
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvColorValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvColor"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_14dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_vehicle_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="In Time: "
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_vehicle_in_time_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_vehicle_in_time"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_14dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_vehicle_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Out Time: "
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_vehicle_out_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_vehicle_out_time"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+

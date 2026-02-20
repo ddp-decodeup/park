@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_text_ok" translatable="false">OK</string>
+    <string name="button_text_yes" translatable="false">Yes</string>
+    <string name="button_text_no" translatable="false">No</string>
+    <string name="button_text_retry" translatable="false">Retry</string>
+    <string name="button_text_on" translatable="false">ON</string>
+    <string name="button_text_off" translatable="false">OFF</string>
+    <string name="button_text_save" translatable="false">Save</string>
+    <string name="button_text_clear" translatable="false">Clear</string>
+
+    <string name="button_text_continue" translatable="false">Continue</string>
+    <string name="button_text_cancel" translatable="false">Cancel</string>
+    <string name="button_text_allow" translatable="false">Allow</string>
+    <string name="button_text_dont_allow" translatable="false">Don\'t allow</string>
+    <string name="button_text_open_settings" translatable="false">Open settings</string>
+
+    <string name="button_text_login" translatable="false">Login</string>
+    <string name="button_text_logout" translatable="false">Logout</string>
+
+    <string name="button_text_day_mode" translatable="false">Day Mode</string>
+    <string name="button_text_night_mode" translatable="false">Night Mode</string>
+
+    <string name="button_text_turn_on" translatable="false">Turn On</string>
+
+
+</resources>

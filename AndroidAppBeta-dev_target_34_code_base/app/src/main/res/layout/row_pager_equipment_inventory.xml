@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/_6dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvEquipmentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_3dp"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding_half"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:strokeColor="@color/deep_red"
+        app:strokeWidth="@dimen/_3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEquipmentTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black_heading"
+                    android:textSize="@dimen/_14sp"
+                    tools:text="Printers" />
+
+                <ImageView
+                    android:id="@+id/ivIsScanned"
+                    android:layout_width="@dimen/_15dp"
+                    android:layout_height="@dimen/_15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_right"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEquipmentValue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="center"
+                android:padding="@dimen/_4dp"
+                android:textAlignment="center"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_16sp"
+                tools:text="Printer 001" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

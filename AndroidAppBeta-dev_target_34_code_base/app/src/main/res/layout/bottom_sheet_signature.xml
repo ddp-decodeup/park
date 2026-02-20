@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_top_corners"
+    android:clipToOutline="true"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CustomTextViewSegmentHeaderBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/label_draw_your_signature_here" />
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/screen_margin"
+            android:contentDescription="@string/ada_content_description_close"
+            android:src="@drawable/ic_cross" />
+
+    </RelativeLayout>
+
+
+    <com.parkloyalty.lpr.scan.utils.custom_views.CustomSignaturePad
+        android:id="@+id/signaturePad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250dp"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        app:signBorderColor="@color/black"
+        app:signBorderEnabled="true"
+        app:signBorderPadding="@dimen/_8dp"
+        app:signBorderRadius="@dimen/_4dp"
+        app:signBorderWidth="@dimen/_1dp"
+        app:signPadBackgroundColor="@color/white"
+        app:signPenColor="@color/black"
+        app:signPenMaxWidth="@dimen/_3dp"
+        app:signPenMinWidth="@dimen/_3dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clear"
+            style="@style/CustomNegativeButtonDialog"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_text_clear" />
+
+        <Space
+            android:layout_width="@dimen/screen_margin"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save"
+            style="@style/CustomPositiveButtonDialog"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_text_save" />
+
+    </LinearLayout>
+</LinearLayout>

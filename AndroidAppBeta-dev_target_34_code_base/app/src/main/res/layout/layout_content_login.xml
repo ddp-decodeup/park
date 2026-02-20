@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/layoutHeaderLogin"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/screen_padding">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CustomTextViewHeaderPrimaryColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_21dp"
+            android:layout_marginBottom="@dimen/_26dp"
+            android:text="@string/label_login" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmail"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_user_id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPassword"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_input_layouts"
+            android:hint="@string/hint_password"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputHearingDate"
+            style="@style/CustomTextInputLayoutForDropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_input_layouts"
+            android:visibility="gone"
+            tools:hint="Hearing Date">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/AutoComTextViewHearingDate"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="start"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:maxLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputHearingTime"
+            style="@style/CustomTextInputLayoutForDropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_input_layouts"
+            android:visibility="gone"
+            tools:hint="Hearing Time">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/AutoComTextViewHearingTime"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="start"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:maxLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputShift"
+            style="@style/CustomTextInputLayoutForDropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_input_layouts"
+            tools:hint="Shift">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/AutoComTextViewVehShift"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="start"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:maxLines="3"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_16dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="@string/scr_lbl_forgot_password"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_regular" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            style="@style/CustomPositiveButtonRegular"
+            android:layout_marginTop="@dimen/_28dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/button_text_login"
+            android:textAllCaps="false" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="@dimen/_30dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/toggleNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/gray"
+            android:textOff="@string/button_text_day_mode"
+            android:textOn="@string/button_text_night_mode"
+            android:thumb="@drawable/custom_thumb"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:track="@drawable/custom_track">
+
+        </androidx.appcompat.widget.SwitchCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0dp"
+            android:layout_weight="1" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivResetAndReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_5dp"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_baseline_sync_24" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5dp"
+        android:layout_marginVertical="@dimen/screen_margin"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_site_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="@string/cmp_name_title"
+                android:textAlignment="center"
+                android:textColor="@color/graph_1"
+                android:textSize="@dimen/text_size_x_large"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_version_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/_4dp"
+                android:text="@string/scr_lbl_park_loyalty"
+                android:textAlignment="center"
+                android:textColor="@color/graph_1"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="visible" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

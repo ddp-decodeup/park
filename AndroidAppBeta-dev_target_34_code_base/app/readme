@@ -1,0 +1,111 @@
+key store password : Rfv@12345
+alias : park
+C:\APK\KEYSTORE\KEYSTORE
+
+// RiseTek DEV
+1. Constants:
+   String BUILDTYPE = "RiseTek";
+   String RELEASETYPE = "UAT";
+2. AppUtils:
+   public static String getSiteId(Context mContext)
+3. NetworkURLs :
+   String BASE_URL = "https://devapi.parkloyalty.com/"; //UAT ALL
+4. LogUtil:
+    public static boolean isEnableLogs = false;
+    public static boolean isEnableAPILogs = false;
+    public static boolean isEnableToast = true;
+    public static boolean isEnableGoogleAnalytics= false;
+
+    Carta && duncan demo
+
+
+    SEPTA : increase version code and number for play store
+
+Star printer :
+Ridge hill : star Printer : StarPrinterActivity  : Risetek
+Glendale
+Leavenworth  : star printer : StarPrinterActivity  :RiseTek
+ACE FINIX & ENCINITAS  : star printer : StarPrinterActivity
+"SOL"  Printer Star
+RiseTek OKC : star printer
+Hilton Head
+City of Virginia
+Mystic CT
+Memorial herman
+
+
+
+
+Zebra :
+City of vallejo : Zebra
+Burbank ca
+Durango
+CFFB(City of Folly Beach)
+Satellite beach
+Clemens
+Bellingham
+Pilot Pittsburg, PA
+Vallejo
+cedar
+Mansfields
+Greenville
+Charleston
+Burlington
+OceanCity
+San Diego
+Risetek Innova
+LAZ
+LAZ CCP
+LAZ LB
+NORTHERN CALIFORNIA
+Adobe
+Martin resort0
+Carta
+IOP
+Lawrence
+Bismarck
+City of Bangor (COB)
+Beaufort
+Amazon
+FashionCity
+Riveroaks
+Ashland
+
+2T printer :
+ Cohasset : image printing
+ South Miami : cmd printing
+ Norwalk : image printing
+
+
+
+White paper wihtout black mark:
+1. Danville va
+
+
+JACKSON
+
+                                    val responseModel = ObjectMapperProvider.instance.readValue(
+                                        apiResponse.data.toString(),
+                                        DropdownDatasetResponse::class.java
+                                    ) //as DropdownDatasetResponse
+
+//                                    3. If you are parsing a list, use TypeReference
+//                                    val responseList: List<DatasetResponse> = ObjectMapperProvider.instance.readValue(
+//                                        jsonString,
+//                                        object : com.fasterxml.jackson.core.type.TypeReference<List<DatasetResponse>>() {}
+//                                    )
+
+
+github prompt:
+convert this to data class & use jackson,
+add json property, keep, Parcelize, Parcelizable & JsonIgnoreProperties = true
+
+convert this to data class & use jackson,
+add json property, keep, Parcelize, Parcelizable & JsonIgnoreProperties = true along with databse table property, columninfo as well
+
+
+add @field for JsonProperty & add @get:JsonProperty as well (Copy field JsonProperty value for it) & remove existing JsonProperty & change all val to var
+
+
+add @field for JsonProperty & add @get:JsonProperty as well (Copy field JsonProperty value from it) & remove existing JsonProperty & change all val to var & keep all variable name as it is
+

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+<!--    <style name="Theme.MyApp.Starting" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Logo shown in center &ndash;&gt;-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>-->
+
+<!--        &lt;!&ndash; Background color &ndash;&gt;-->
+<!--        <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>-->
+
+<!--        &lt;!&ndash; (Optional) branding image at bottom &ndash;&gt;-->
+<!--        &lt;!&ndash;        <item name="windowSplashScreenBrandingImage">@drawable/my_brand</item>&ndash;&gt;-->
+
+<!--        &lt;!&ndash; Fallback if system splash not supported &ndash;&gt;-->
+<!--        &lt;!&ndash;        <item name="postSplashScreenTheme">@style/Theme.MyApp</item>&ndash;&gt;-->
+<!--    </style>-->
+</resources>

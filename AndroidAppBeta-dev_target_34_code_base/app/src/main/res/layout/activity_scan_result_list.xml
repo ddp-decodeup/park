@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llParentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+   >
+
+<!--    <include layout="@layout/toolbar_header_inner" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llLocationHeader"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/bgColorForAllScreen"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingHorizontal="@dimen/_10dp"-->
+<!--        android:paddingVertical="@dimen/_5dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvBlock"-->
+<!--                style="@style/TextTitleBlackSemiBold"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                tools:text="21 Block" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvStreetSide"-->
+<!--                style="@style/TextTitleBlackSemiBold"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:text="East Side" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvStreet"-->
+<!--                style="@style/TextTitleBlackSemiBold"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                tools:text="4 Street" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvStartTime"-->
+<!--                style="@style/TextTitleBlackSemiBold"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:text="08:20 PM" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_1dp"-->
+<!--            android:layout_marginTop="@dimen/_5dp"-->
+<!--            android:background="@color/underlineColorGray" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llEditSelectedItemBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="@dimen/_10dp"-->
+<!--        android:background="@color/bgColorForAllScreen"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/sf_pro_display_regular"-->
+<!--            android:text="@string/desc_note_for_edit_location_from_result_screen"-->
+<!--            android:textColor="@color/textColorBlack"-->
+<!--            android:textSize="@dimen/_12sp"-->
+<!--            tools:visibility="visible" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_5dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvCountItemSelected"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="start|center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/sf_pro_text_semibold"-->
+<!--                android:text="@string/lbl_count_item_selected"-->
+<!--                android:textColor="@color/textColorPurple"-->
+<!--                android:textSize="@dimen/_14sp"-->
+<!--                android:visibility="invisible"-->
+<!--                tools:visibility="visible" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvSelectAndUnselectAll"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end|center"-->
+<!--                android:background="@drawable/button_round_corner_shape"-->
+<!--                android:fontFamily="@font/sf_pro_display_regular"-->
+<!--                android:gravity="end"-->
+<!--                android:paddingHorizontal="@dimen/_10dp"-->
+<!--                android:paddingVertical="@dimen/_2dp"-->
+<!--                android:text="@string/lbl_select_all"-->
+<!--                android:textColor="@color/textColorForPurpleButton"-->
+<!--                android:textSize="@dimen/_15sp"-->
+<!--                tools:visibility="visible" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:id="@+id/ivEditRecords"-->
+<!--                android:layout_width="@dimen/_26dp"-->
+<!--                android:layout_height="@dimen/_26dp"-->
+<!--                android:layout_marginStart="@dimen/_15dp"-->
+<!--                android:src="@drawable/ic_edit_new"-->
+<!--                android:visibility="gone"-->
+<!--                tools:visibility="gone" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:id="@+id/ivDeleteRecords"-->
+<!--                android:layout_width="@dimen/_26dp"-->
+<!--                android:layout_height="@dimen/_26dp"-->
+<!--                android:layout_marginStart="@dimen/_10dp"-->
+<!--                android:layout_marginEnd="@dimen/_0dp"-->
+<!--                android:src="@drawable/delete"-->
+<!--                android:visibility="gone"-->
+<!--                tools:visibility="gone" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/svSearchByPlate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/bgColorForAllScreen"-->
+<!--        android:focusable="false"-->
+<!--        android:paddingVertical="@dimen/_5dp"-->
+<!--        app:iconifiedByDefault="false"-->
+<!--        app:queryHint="@string/hint_search_by_plate_number" />-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rvScanResult"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:clipToPadding="true"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="@dimen/_5dp"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        tools:itemCount="5"-->
+<!--        tools:listitem="@layout/item_scan_result_with_location" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnDone"-->
+<!--        style="@style/ButtonPositiveCustomBig"-->
+<!--        android:layout_height="@dimen/_50dp"-->
+<!--        android:layout_margin="@dimen/_10dp"-->
+<!--        android:padding="@dimen/_6dp"-->
+<!--        android:text="@string/btn_text_done"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="@dimen/_16sp"-->
+<!--        android:visibility="gone" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnSubmitAndVerify"-->
+<!--        style="@style/ButtonPositiveCustomBig"-->
+<!--        android:layout_height="@dimen/_50dp"-->
+<!--        android:layout_marginHorizontal="@dimen/_10dp"-->
+<!--        android:layout_marginTop="@dimen/_5dp"-->
+<!--        android:layout_marginBottom="@dimen/_10dp"-->
+<!--        android:padding="@dimen/_6dp"-->
+<!--        android:text="@string/btn_text_submit_and_verify"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="@dimen/_16sp" />-->
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:id="@+id/layButtons"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/_10dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:visibility="gone">-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnVerify"-->
+<!--            style="@style/ButtonNegativeCustomBig"-->
+<!--            android:layout_height="@dimen/_50dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="@dimen/_6dp"-->
+<!--            android:text="@string/btn_text_verify"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="@dimen/_16sp" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnSubmit"-->
+<!--            style="@style/ButtonPositiveCustomBig"-->
+<!--            android:layout_height="@dimen/_50dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="@dimen/_10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="@dimen/_6dp"-->
+<!--            android:text="@string/btn_text_submit"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="@dimen/_16sp" />-->
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+</LinearLayout>

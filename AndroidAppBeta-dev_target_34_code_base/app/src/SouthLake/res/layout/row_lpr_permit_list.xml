@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_8dp"
+    android:layout_marginTop="@dimen/_14dp"
+    android:layout_width="match_parent"
+    android:paddingVertical="@dimen/_14dp"
+    android:paddingHorizontal="@dimen/_8dp"
+    android:weightSum="2"
+    android:background="@drawable/round_corner_shape_fill_drak_green"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llPermitNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermitNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_permit_number"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermitNumberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvPermitNumber"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:weightSum="2"
+        android:id="@+id/llRateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRateName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_rate_name"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRateNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvRateName"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStartPermit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_start"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvStartPermit"
+                android:fontFamily="@font/poppins_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEndPermit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_end"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvEndPermit"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatusPermit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_status"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatusValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvStatusPermit"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvZonePermit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_zonee"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvZonePermit"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rlPermitType"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermitType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lb_permit_type"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermitTypeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvPermitType"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14dp"
+            android:visibility="gone"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Id:"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvId"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBannerNote"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermitId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/scr_lbl_permit_id"
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvpermit_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvPermitId"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/bg_semi_white"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14dp"
+            android:visibility="gone"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Id:"
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_13sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvIdValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv1Id"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_sub_heading"
+                android:textSize="@dimen/_13sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

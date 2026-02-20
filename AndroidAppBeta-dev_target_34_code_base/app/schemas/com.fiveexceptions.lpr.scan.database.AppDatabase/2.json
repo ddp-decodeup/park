@@ -1,0 +1,206 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "478f78e74bf9dc73ebdd68eb257ea665",
+    "entities": [
+      {
+        "tableName": "welcome_form",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`upload_status` INTEGER, `enable` INTEGER, `officer_badge_id` TEXT, `officer_shift` TEXT, `officer_supervisor` TEXT, `officer_radio` TEXT, `officer_beat` TEXT, `officer_zone` TEXT, `officer_first_name` TEXT, `officer_last_name` TEXT, `officer_middle_name` TEXT, `officer_squad` TEXT, `officer_superviser_id` TEXT, `officer_user_name` TEXT, `radio` TEXT, `role` TEXT, `shift` TEXT, `site_id` TEXT, `site_officer_id` TEXT, `_id` TEXT NOT NULL, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "mUploadStatus",
+            "columnName": "upload_status",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mEnable",
+            "columnName": "enable",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerBadgeId",
+            "columnName": "officer_badge_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerShift",
+            "columnName": "officer_shift",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerSupervisor",
+            "columnName": "officer_supervisor",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerRadio",
+            "columnName": "officer_radio",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerBeat",
+            "columnName": "officer_beat",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerZone",
+            "columnName": "officer_zone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerFirstName",
+            "columnName": "officer_first_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerLastName",
+            "columnName": "officer_last_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerMiddleName",
+            "columnName": "officer_middle_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerSquad",
+            "columnName": "officer_squad",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerSuperviserId",
+            "columnName": "officer_superviser_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOfficerUserName",
+            "columnName": "officer_user_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mRadio",
+            "columnName": "radio",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mRole",
+            "columnName": "role",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mShift",
+            "columnName": "shift",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mSiteId",
+            "columnName": "site_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mSiteOfficerId",
+            "columnName": "site_officer_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mId",
+            "columnName": "_id",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "login",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`response` TEXT NOT NULL, `status` INTEGER, `metadata` TEXT, PRIMARY KEY(`response`))",
+        "fields": [
+          {
+            "fieldPath": "mResponse",
+            "columnName": "response",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mStatus",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mMetadata",
+            "columnName": "metadata",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "response"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "dataset_type",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Dataset` TEXT, `id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "mDataset",
+            "columnName": "Dataset",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mId",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '478f78e74bf9dc73ebdd68eb257ea665')"
+    ]
+  }
+}

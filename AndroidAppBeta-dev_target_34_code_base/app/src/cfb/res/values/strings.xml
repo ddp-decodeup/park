@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="SITE_ID">d57ca4fd-53f2-4894-8cb4-51061b569670</string>-->
+    <string name="SITE_ID"> fc8e66d7-e7f3-4b5d-b2f5-5758ed941afd</string>
+    <string name="app_name">Folly Beach</string>
+<!--    <string name="app_name_title">Glendale Solutions</string>-->
+    <string name="app_name_title">Folly Beach Enforcement</string>
+<!--    <string name="cmp_name_title">Glendale Parking Authority</string>-->
+    <string name="cmp_name_title">Folly Beach</string>
+    <string name="scr_lbl_violation_print">Failure to remit payment or to appeal within fifteen (15) days
+    will result in significant late penalties.</string>
+    <string name="scr_lbl_ofc_print">The Officer below being duly sworn, upon oath deposes and says that in the City of Philadelphia, Pennsylvania, the vehicle
+                            described above was observed in violation of the Philadelphia Traffic Code specified herein and a copy of this notice was
+                           served upon the violator as required by law</string>
+    <string name="scr_lbl_fine">Due Now</string>
+    <string name="scr_lbl_lpr_number">License No.</string>
+    <string name="scr_lbl_ticket_number">Issue No.</string>
+    <string name="scr_lbl_badge_id">Officer ID</string>
+    <string name="scr_lbl_citation_details">Citation Images</string>
+    <string name="scr_lbl_expiray_year">Exp</string>
+    <string name="scr_lbl_print_issue_time">Time</string>
+    <string name="scr_lbl_ticket_type">Issue Type</string>
+
+
+
+</resources>

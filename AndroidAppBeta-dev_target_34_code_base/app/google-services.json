@@ -1,0 +1,580 @@
+{
+  "project_info": {
+    "project_number": "436326076919",
+    "project_id": "parkloyalty-max30",
+    "storage_bucket": "parkloyalty-max30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:767fd2b6d5626e5443def2",
+        "android_client_info": {
+          "package_name": "com.adobe.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:960d05b8d8ff1ee343def2",
+        "android_client_info": {
+          "package_name": "com.amazon.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:9c62258b0e2c1ba343def2",
+        "android_client_info": {
+          "package_name": "com.ashland.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:efad060fd110db5b43def2",
+        "android_client_info": {
+          "package_name": "com.beaufort.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:13f80c28c1f1808743def2",
+        "android_client_info": {
+          "package_name": "com.bismarck.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:8b80370b6575a0ff43def2",
+        "android_client_info": {
+          "package_name": "com.cob.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:140bb87b7fb352af43def2",
+        "android_client_info": {
+          "package_name": "com.fashioncity.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:10dd90eb576ec66343def2",
+        "android_client_info": {
+          "package_name": "com.fresno.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:2e04959ba42931ff43def2",
+        "android_client_info": {
+          "package_name": "com.hartford.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:92a31458d4a07c1e43def2",
+        "android_client_info": {
+          "package_name": "com.isleofpalms.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:0dce3076e2a13aab43def2",
+        "android_client_info": {
+          "package_name": "com.kalamzoo.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:8bc7ae1e608538bc43def2",
+        "android_client_info": {
+          "package_name": "com.laketahoe.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:038116e494e0daf643def2",
+        "android_client_info": {
+          "package_name": "com.lametro.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:680029e10d52099c43def2",
+        "android_client_info": {
+          "package_name": "com.lawrence.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:61b62d497077989443def2",
+        "android_client_info": {
+          "package_name": "com.lazatlanta.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:c062211e5e8dbe3243def2",
+        "android_client_info": {
+          "package_name": "com.lazccp.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:2194cf248a732c9f43def2",
+        "android_client_info": {
+          "package_name": "com.lazlb.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:c4ba585118c67b1943def2",
+        "android_client_info": {
+          "package_name": "com.lazpilot.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:676107e9a3138c6f43def2",
+        "android_client_info": {
+          "package_name": "com.mackay.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:72e2fa149d5cd0c843def2",
+        "android_client_info": {
+          "package_name": "com.mackaysample.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:ced0cf7eefa7d9d143def2",
+        "android_client_info": {
+          "package_name": "com.martin.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:06ef66f083c38da143def2",
+        "android_client_info": {
+          "package_name": "com.mysticct.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:e697803afe6fdeb543def2",
+        "android_client_info": {
+          "package_name": "com.northerncalifornia.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:e89df71e9d00950743def2",
+        "android_client_info": {
+          "package_name": "com.oakland.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:c0cc2b55195f53a043def2",
+        "android_client_info": {
+          "package_name": "com.risetekinnova.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:3933099c5220156943def2",
+        "android_client_info": {
+          "package_name": "com.riveroaks.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:f5978f497c34ca2a43def2",
+        "android_client_info": {
+          "package_name": "com.sanantonio.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:c16c810075be5b0d43def2",
+        "android_client_info": {
+          "package_name": "com.sanfrancisco.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:3875c4280b14cd6a43def2",
+        "android_client_info": {
+          "package_name": "com.sanibel.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:6ea7f5d06600423d43def2",
+        "android_client_info": {
+          "package_name": "com.valetdivision.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTimeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="@string/scr_shift_1"
+                android:textColor="@color/light_grey_100"
+                android:textSize="@dimen/_14sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_shift_1"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvActivityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="190dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text=""
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_14sp" />
+
+        </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

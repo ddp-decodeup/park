@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/laydoubleText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/print_label_value" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFieldValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvField"
+            android:backgroundTint="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto_black"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text=""
+            android:textStyle="bold"
+            android:padding="@dimen/_0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/print_label_12"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_tickettype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvField"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_check_box_outline_blank_24"
+                android:text="RPP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/print_label_5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_check_box_outline_blank_24"
+                android:text="PD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/print_label_5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/check_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_check_box_outline_blank_24"
+                android:text="TAZ"
+                android:textColor="@color/black"
+                android:textSize="@dimen/print_label_5" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_secondview"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFieldTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/print_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFieldValueTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFieldTwo"
+            android:backgroundTint="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto_black"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text=""
+            android:padding="@dimen/_0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/print_label"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFieldthree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/print_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFieldThreeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFieldthree"
+            android:backgroundTint="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto_black"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text=""
+            android:padding="@dimen/_0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/print_label"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

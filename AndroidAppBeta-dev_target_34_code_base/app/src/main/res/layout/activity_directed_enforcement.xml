@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_semi_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_semi_white">
+
+            <include layout="@layout/content_directed_enforcement_layout" android:id="@+id/layoutContentDirectedEnforcementLayout"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNoDataView"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_32dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/errMsgNoDataFoundForGeneticEnforcement"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_20sp"
+                android:drawablePadding="@dimen/_5dp"
+                android:drawableStart="@drawable/ic_baseline_error_outline_24"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/right_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp">
+
+            <include layout="@layout/content_options_layout" />
+
+        </FrameLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

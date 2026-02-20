@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/CustomTextViewSubToolbarPrimaryColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_option_inner_title_dashboard" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_semi_white"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_total_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin_half"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                android:importantForAccessibility="yes"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/screen_padding">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llTotalScan"
+                        android:layout_width="@dimen/_54dp"
+                        android:layout_height="@dimen/_54dp"
+                        android:background="@drawable/ic_bg_scan"
+                        android:gravity="center"
+                        android:importantForAccessibility="no"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_scan" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvScanCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="0"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_total_scan"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_total_enforcement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_margin_half"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginEnd="@dimen/screen_margin"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:layout_weight="1"
+                android:importantForAccessibility="yes"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="@dimen/card_view_elevation">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/screen_padding">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ll_total_enforcement"
+                        android:layout_width="@dimen/_54dp"
+                        android:layout_height="@dimen/_54dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_enforcement" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvEnforcementCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="0"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/scr_lbl_total_enforce"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_12sp" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin_half"
+            android:layout_marginBottom="@dimen/screen_margin"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgScan"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/_45dp"
+                android:clickable="true"
+                android:contentDescription="@string/ada_content_description_scan_plate"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_scan" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnScanSticker"
+        style="@style/CustomPositiveButtonRegular"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        android:layout_marginVertical="@dimen/screen_margin"
+        android:text="@string/btn_text_scan_sticker"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCheckSetup"
+        style="@style/CustomPositiveButtonRegular"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/screen_margin"
+        android:text="@string/scr_btn_check_setup"
+        android:textAllCaps="false" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

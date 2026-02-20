@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">false</bool>
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_4sp">4sp</dimen>
+    <dimen name="_5sp">5sp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_6sp">6sp</dimen>
+    <dimen name="_7dp">7dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_11dp">11dp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_9dp">9dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_8sp">8sp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_13dp">13dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_17dp">17dp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_19dp">19dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_22dp">22dp</dimen>
+    <dimen name="_21dp">21dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_28dp">28dp</dimen>
+    <dimen name="_26dp">26dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_34dp">34dp</dimen>
+    <dimen name="_35dp">35dp</dimen>
+    <dimen name="_36dp">36dp</dimen>
+    <dimen name="_37dp">37dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_42dp">42dp</dimen>
+    <dimen name="_44dp">44dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_46dp">46dp</dimen>
+    <dimen name="_47dp">47dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_54dp">54dp</dimen>
+    <dimen name="_58dp">58dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_27dp">27dp</dimen>
+    <dimen name="_38dp">38dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_62dp">62dp</dimen>
+    <dimen name="_66dp">66dp</dimen>
+    <dimen name="_67dp">67dp</dimen>
+    <dimen name="_72dp">72dp</dimen>
+    <dimen name="_75dp">75dp</dimen>
+    <dimen name="_77dp">77dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_83dp">83dp</dimen>
+    <dimen name="_85dp">85dp</dimen>
+
+    <dimen name="_96dp">96dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_102dp">102dp</dimen>
+    <dimen name="_106dp">106dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_130dp">130dp</dimen>
+    <dimen name="_135dp">135dp</dimen>
+    <dimen name="_140dp">140dp</dimen>
+    <dimen name="_145dp">145dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_160dp">160dp</dimen>
+    <dimen name="_165dp">165dp</dimen>
+    <dimen name="_170dp">170dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_190dp">190dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_205dp">205dp</dimen>
+    <dimen name="_210dp">210dp</dimen>
+    <dimen name="_216dp">216dp</dimen>
+    <dimen name="_218dp">218dp</dimen>
+    <dimen name="_220dp">220dp</dimen>
+    <dimen name="_222dp">222dp</dimen>
+    <dimen name="_223dp">223dp</dimen>
+    <dimen name="_225dp">225dp</dimen>
+    <dimen name="_226dp">226dp</dimen>
+    <dimen name="_228dp">228dp</dimen>
+    <dimen name="_230dp">230dp</dimen>
+    <dimen name="_232dp">232dp</dimen>
+    <dimen name="_234dp">234dp</dimen>
+    <dimen name="_236dp">236dp</dimen>
+    <dimen name="_240dp">240dp</dimen>
+    <dimen name="_242dp">242dp</dimen>
+    <dimen name="_243dp">243dp</dimen>
+    <dimen name="_244dp">244dp</dimen>
+    <dimen name="_245dp">244dp</dimen>
+    <dimen name="_252dp">252dp</dimen>
+    <dimen name="_253dp">253dp</dimen>
+    <dimen name="_254dp">254dp</dimen>
+    <dimen name="_258dp">258dp</dimen>
+    <dimen name="_264dp">254dp</dimen>
+    <dimen name="_275dp">275dp</dimen>
+    <dimen name="_290dp">290dp</dimen>
+    <dimen name="_250dp">250dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_330dp">330dp</dimen>
+    <dimen name="_90dp">90dp</dimen>
+
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_13sp">13sp</dimen>
+    <dimen name="_15sp">15sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="_28sp">28sp</dimen>
+    <dimen name="_34sp">34sp</dimen>
+    <dimen name="_112dp">112dp</dimen>
+
+    <dimen name="print_label_value">10sp</dimen>
+    <dimen name="print_label_value_duncan">9sp</dimen>
+    <dimen name="print_label_7">7sp</dimen>
+    <dimen name="print_label_8">8sp</dimen>
+    <dimen name="print_label_9">9sp</dimen>
+    <dimen name="print_label_10">10sp</dimen>
+    <dimen name="print_label_11">11sp</dimen>
+    <dimen name="print_label_12">12sp</dimen>
+    <dimen name="print_label_13">13sp</dimen>
+    <dimen name="print_label_14">14sp</dimen>
+    <dimen name="print_label_5">5sp</dimen>
+    <dimen name="print_label_6">6sp</dimen>
+    <dimen name="print_label">7sp</dimen>
+    <dimen name="print_title">11sp</dimen>
+    <dimen name="print_title_6">6sp</dimen>
+    <dimen name="print_right_side_title">11sp</dimen>
+
+    <dimen name="print_label_value_encinitas">12sp</dimen>
+    <dimen name="print_label_10_encinitas">12sp</dimen>
+
+    <dimen name="section_print_title">11sp</dimen>
+    <dimen name="print_title_8">8sp</dimen>
+    <dimen name="print_label_15">15sp</dimen>
+    <dimen name="print_label_16">16sp</dimen>
+    <dimen name="print_label_20">20sp</dimen>
+    <dimen name="print_right_side_title_pittsburgh">13sp</dimen>
+
+
+    <dimen name="_border_line_print_box">1dp</dimen>
+
+    <!--Paper width-->
+    <dimen name="container_zebra_three_inch_paper_width">252dp</dimen>
+    <dimen name="container_zebra_four_inch_paper_width">336dp</dimen>
+
+    <dimen name="facsimile_zebra_three_inch_paper_width">236dp</dimen>
+    <dimen name="facsimile_zebra_four_inch_paper_width">314dp</dimen>
+    <!--Paper width-->
+
+    <!--Negative-->
+    <dimen name="negative_6_dp">-6dp</dimen>
+
+    <!--Negative-->
+
+    <!--JANAK : NEW-->
+    <!--Start of Text Size-->
+    <dimen name="text_size_button">18sp</dimen>
+    <dimen name="text_size_dialog_button">16sp</dimen>
+    <dimen name="text_size_regular">15sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_x_large">18sp</dimen>
+    <dimen name="text_size_xl_large">20sp</dimen>
+    <dimen name="text_size_xll_large">22sp</dimen>
+    <dimen name="text_size_header">28sp</dimen>
+    <!--Start of Text Size-->
+
+    <!--Start Of Dialog Dimension-->
+    <dimen name="dialog_width">290dp</dimen>
+    <dimen name="confirmation_dialog_width">330dp</dimen>
+    <dimen name="confirmation_dialog_height">480dp</dimen>
+    <dimen name="dialog_radius">8dp</dimen>
+    <!--End Of Dialog Dimension-->
+
+    <!--Start of Screens Dimension-->
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="screen_padding_half">8dp</dimen>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="screen_margin_half">8dp</dimen>
+    <dimen name="margin_between_input_layouts">12dp</dimen>
+    <!--End of Screens Dimension-->
+
+    <!--Start of Button Dimensions-->
+    <dimen name="button_height_regular">56dp</dimen>
+    <dimen name="button_height_medium">52dp</dimen>
+    <dimen name="button_height_dialog">48dp</dimen>
+    <!--End of Button Dimensions-->
+
+    <!--Start of Cards-->
+    <dimen name="card_view_elevation">5dp</dimen>
+    <dimen name="card_view_corner_radius">8dp</dimen>
+
+    <!--Start of Cards-->
+
+</resources>

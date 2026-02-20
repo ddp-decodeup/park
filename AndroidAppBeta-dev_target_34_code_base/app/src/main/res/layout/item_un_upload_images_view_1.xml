@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/darker_gray">
+
+    <!-- Ticket Number (Left aligned) -->
+    <TextView
+        android:id="@+id/tvTicketNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ticket #123"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="start" />
+
+    <!-- LP Number (Right aligned) -->
+    <TextView
+        android:id="@+id/tvLpNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MH12AB1234"
+        android:textSize="16sp"
+        android:gravity="end" />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ridge Hill</string>
+    <string name="cmp_name_title">Ridge Hill</string>
+    <string name="scr_lbl_ticket_type">Notice Type</string>
+</resources>

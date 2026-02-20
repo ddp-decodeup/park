@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_40dp"
+    android:layout_marginRight="@dimen/_40dp"
+    android:background="@drawable/shape_round_grey_dialog"
+    android:gravity="center"
+    android:minWidth="@dimen/_290dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10dp"
+    android:paddingTop="@dimen/_20dp"
+    android:paddingRight="@dimen/_10dp"
+    android:paddingBottom="@dimen/_20dp">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:src="@drawable/ic_camera_new"
+            android:visibility="gone"
+            android:contentDescription="@string/ada_content_description_camera"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/_22dp"
+            android:layout_height="@dimen/_22dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="@string/ada_content_description_close"/>
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/msg_add_note"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sp"
+        android:accessibilityHeading="true"/>
+
+    <!--TAG Text filed-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_textStatus"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_54dp"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_6dp"
+        android:visibility="gone"
+        app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/_10dp"
+        app:boxCornerRadiusTopStart="@dimen/_10dp"
+        app:hintEnabled="false"
+        app:hintTextAppearance="@style/Editext.Theme"
+        app:placeholderTextAppearance="@style/Editext.Theme">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/etStatus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:background="@drawable/round_corner_shape_without_fill_thin_grey"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_dropdown_arrow"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/scr_lbl_select"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/black_heading"
+            android:textColorHint="@color/black_heading"
+            android:textSize="@dimen/_14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--TAG Text box-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_textNote"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:imeOptions="actionDone"
+        app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/_10dp"
+        app:boxCornerRadiusTopStart="@dimen/_10dp"
+        app:hintTextAppearance="@style/Editext.Theme"
+        app:placeholderTextAppearance="@style/Editext.Theme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180dp"
+            android:layout_marginTop="@dimen/_6dp"
+            android:background="@drawable/round_corner_shape_without_fill_thin_yellow"
+            android:gravity="start"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_15sp"
+            app:errorEnabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="@dimen/_4dp"
+            android:background="@drawable/round_corner_shape_with_fill_lpr_images"
+            android:elevation="10dp"
+            android:gravity="center"
+            app:cardCornerRadius="@dimen/_15dp"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCamera_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image"
+                android:visibility="visible" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="@dimen/_4dp"
+            android:background="@drawable/round_corner_shape_with_fill_lpr_images"
+            android:elevation="10dp"
+            android:gravity="center"
+            app:cardCornerRadius="@dimen/_15dp"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCamera_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image"
+                android:visibility="visible" />
+
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+    <!-- Button Continue anyway -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        style="@style/Button_shape_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_3dp"
+        android:minWidth="@dimen/_120dp"
+        android:paddingStart="@dimen/_6dp"
+        android:paddingEnd="@dimen/_6dp"
+        android:text="@string/scr_btn_done_small_letter"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_citation"
+            style="@style/Button_shape_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_3dp"
+            android:minWidth="@dimen/_120dp"
+            android:paddingStart="@dimen/_6dp"
+            android:paddingEnd="@dimen/_6dp"
+            android:text="@string/scr_btn_cite_small_letter"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

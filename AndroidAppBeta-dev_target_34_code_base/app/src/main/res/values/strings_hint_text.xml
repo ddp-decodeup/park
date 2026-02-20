@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_start_typing_your_value" translatable="false">Start Typing Your %s</string>
+    <string name="hint_select" translatable="false">Select</string>
+    <string name="hint_select_or_type" translatable="false">Select or Type</string>
+
+
+    <string name="hint_shift" translatable="false">Shift</string>
+    <string name="hint_hearing_date" translatable="false">Hearing Date</string>
+    <string name="hint_hearing_time" translatable="false">Hearing Time</string>
+
+    <string name="hint_user_id" translatable="false">User ID</string>
+    <string name="hint_email" translatable="false">Email</string>
+    <string name="hint_password" translatable="false">Password</string>
+
+
+    <string name="hint_enter_user_id" translatable="false">Enter Your User ID</string>
+    <string name="hint_enter_email_address" translatable="false">Enter Your Email Address</string>
+    <string name="hint_enter_password" translatable="false">Enter Your Password</string>
+
+
+</resources>

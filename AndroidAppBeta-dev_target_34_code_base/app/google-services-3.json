@@ -1,0 +1,276 @@
+{
+  "project_info": {
+    "project_number": "1008376197661",
+    "project_id": "parkloyalty-max60",
+    "storage_bucket": "parkloyalty-max60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:cb198f30c960f56f300cf4",
+        "android_client_info": {
+          "package_name": "com.clifton.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:40c81c49e3ed9d46300cf4",
+        "android_client_info": {
+          "package_name": "com.cohasset.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:e6e06d6eb73670a0300cf4",
+        "android_client_info": {
+          "package_name": "com.dallas.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:6a2c04645c936b72300cf4",
+        "android_client_info": {
+          "package_name": "com.ephrata.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:25f7c1c2697f9687300cf4",
+        "android_client_info": {
+          "package_name": "com.kansas.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:3b2e805c6e1c362a300cf4",
+        "android_client_info": {
+          "package_name": "com.littlerock.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:6e507eb3bb063c94300cf4",
+        "android_client_info": {
+          "package_name": "com.memorial.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:b29a4fb5cac200fe300cf4",
+        "android_client_info": {
+          "package_name": "com.miami.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:7595b49e778890d4300cf4",
+        "android_client_info": {
+          "package_name": "com.peak.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:dca1c8f0479c1b0b300cf4",
+        "android_client_info": {
+          "package_name": "com.peaktexas.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:0a5ab7a23af57844300cf4",
+        "android_client_info": {
+          "package_name": "com.rutgers.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:01f64dcc6a7f0585300cf4",
+        "android_client_info": {
+          "package_name": "com.smyrna.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:a0ca1cd060e876cb300cf4",
+        "android_client_info": {
+          "package_name": "com.westchester.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008376197661:android:5bb00c6130aacab1300cf4",
+        "android_client_info": {
+          "package_name": "org.septa.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNYCHKNB5uNHvegSPXgveLGBNOQqzUOxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

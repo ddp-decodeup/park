@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CR" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <!-- General Bluetooth Permissions-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- Bluetooth Permissions For Android 12+ -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="31" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!-- Bluetooth Permissions For Android 14+ -->
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="31" />
+
+
+    <!-- Devices running Android 13 (API level 33) or higher -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- To handle the reselection within the app on devices running Android 14
+         or higher if your app targets Android 14 (API level 34) or higher.  -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+
+
+
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!--
+ Needed only if your app looks for Bluetooth devices.
+            If your app doesn't use Bluetooth scan results to derive physical
+            location information, you can strongly assert that your app
+            doesn't derive physical location.
+    -->
+    <!--
+ Needed only if your app makes the device discoverable to Bluetooth
+      devices.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.NEARBY_WIFI_DEVICES"
+        android:usesPermissionFlags="neverForLocation" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+            <data android:mimeType="vnd.android.cursor.dir/image" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        android:minSdkVersion="30" />
+
+<!--    <uses-sdk-->
+<!--        android:minSdkVersion="24"-->
+<!--        android:targetSdkVersion="31" />-->
+
+    <application
+        android:name=".basecontrol.BaseApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".ui.check_setup.activity.graph.LprHitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reprint.ReprintReuploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".camera2.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ticket.AddNotesAndImagesActivity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.check_setup.activity.AbandonedVehicleActivity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".startprinterfull.StarPrinterActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".basecontrol.RefreshTokenBaseActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".startprinterfull.CommonActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.ticket.LprContinuousResultActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.guide_enforcement.PayBySpaceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.guide_enforcement.GeneticHitListActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.guide_enforcement.DirectedEnforcementActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.guide_enforcement.CameraGuidedEnforcementActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.continuousmode.ContinuousResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.continuousmode.ContinuousModeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.supervisor.SupervisorActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.officerdailysummary.OfficerDailySummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.brokenmeter.BrokenMeterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.allreport.AllReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.boot.BootActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.guide_enforcement.GuideEnforecementActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.dashboard.ReportIssueActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.dashboard.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ticket.IndividualTicketDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".util.DynamicLayoutUtil"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.check_setup.activity.AddTimeRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.check_setup.activity.graph.MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+<!--        <activity-->
+<!--            android:name=".ui.check_setup.activity.graph.LprHitsActivity"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/AppTheme.FullScreen"-->
+<!--            android:windowSoftInputMode="adjustPan" />-->
+        <activity
+            android:name=".ui.check_setup.activity.graph.MyActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ticket.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ticket.TicketDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ticket.ViewFacsimileImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.check_setup.activity.LprPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.check_setup.activity.LprDetails2Activity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.municipalcitation.MunicipalCitationDetailsActivity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.municipalcitation.MunicipalCitationPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.municipalcitation.MunicipalCitationTicketDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.municipalcitation.MunicipalCitationAddNotesAndImagesActivity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.municipalcitation.MunicipalCitationReprintReuploadActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.check_setup.activity.CitationHistoryPrinterActivity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.check_setup.license.LprScanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.NewLprScanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.continuousmode.LprContinuousScanModeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.check_setup.activity.LprDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.login.activity.WelcomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".ui.check_setup.activity.CheckSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.login.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".qrcode.QRCodeScanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.uploadfacsimile.MissingFacsimileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.unuploadimages.UnUploadImagesActivityView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+<!--        <activity-->
+<!--            android:name=".ui.printer.PrinterActivity"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/AppTheme.FullScreenGrey"-->
+<!--            android:windowSoftInputMode="adjustPan" />-->
+        <activity
+            android:name=".qrcode.GenerateQRCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".crop.OcrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.guide_enforcement.CameraViolationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenGrey"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".vehiclestickerscan.VehicleStickerScanActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".views.NewVehicleStickerScanActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".views.NewOcrActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!--use this for existing impl-->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.White">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--use this for new impl-->
+        <activity android:name=".views.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDkERbq-WMwhHl2jah3jRu0LvgUPKqI_0c" />
+
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDkERbq-WMwhHl2jah3jRu0LvgUPKqI_0c" />-->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <service
+            android:name=".locationservice.BackgroundLocationUpdateService"
+            android:foregroundServiceType="location|dataSync"
+            android:exported="true"
+            android:enabled="true"
+            tools:ignore="ForegroundServicePermission" />
+
+        <service
+            android:name=".locationservice.NewBackgroundLocationUpdateService"
+            android:foregroundServiceType="location|dataSync"
+            android:exported="true"
+            android:enabled="true"
+            tools:ignore="ForegroundServicePermission" />
+
+<!--        <service-->
+<!--            android:name=".locationservice.LocationService"-->
+<!--            android:foregroundServiceType="location|dataSync"-->
+<!--            android:exported="true"-->
+<!--            android:enabled="true" />-->
+
+<!--        <service-->
+<!--            android:name=".locationservice.LocationServiceUpdated"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="false" />-->
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

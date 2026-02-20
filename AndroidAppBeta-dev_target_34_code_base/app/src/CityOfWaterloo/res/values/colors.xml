@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#293A7B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pastel_orange">#FFB34D</color>
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+
+    <color name="_FF5C47">#FF5C47</color>
+
+    <!-- dots inactive colors -->
+
+    <!-- dots active colors -->
+
+    <color name="app_gray">#bcbcbc</color>
+<!--     park-->
+    <color name="deep_blue">#293A7B</color>
+    <color name="back_button">#293A7B</color>
+
+<!--    RiseTek-->
+<!--    <color name="deep_blue">#4f7f56</color>
+    <color name="back_button">#4f7f56</color>-->
+
+
+    <color name="deep_green">#026112</color>
+    <color name="deep_red">#E80000</color>
+    <color name="deep_yellow">#FFB44F</color>
+    <color name="light_yellow_5">#0DFFB34D</color>
+    <color name="light_yellow">#FFB34D</color>
+    <color name="light_yellow_30">#4DFFB44F</color>
+    <color name="light_grey_30">#4D707070</color>
+    <color name="light_grey_graph">#707070</color>
+    <color name="light_grey_10">#1A707070</color>
+    <color name="grey_dialog_color">#FBF8F8</color>
+    <color name="black_heading">#122448</color>
+    <color name="light_grey">#4D707070</color>
+    <color name="light_grey_100">#FF707070</color>
+    <color name="black_sub_heading">#060606</color>
+    <color name="app_green">#71C951</color>
+    <color name="colorSemiTransparentWhite">#B2FFFFFF</color>
+    <color name="fed02d">#fed02d</color>
+    <color name="black_tv">#060606</color>
+    <color name="bg_semi_white">#FFFFFF</color>
+    <color name="_E5E5E5">#E5E5E5</color>
+    <color name="orange">#FA5944</color> <!--FFA500-->
+    <color name="magenta">#9A0F73</color>
+    <color name="dark_yellow">#99FFB44F</color>
+    <color name="new_orange">#FF8C00</color>
+    <color name="graph_1">#282828</color>
+    <color name="graph_2">#044271</color>
+    <color name="graph_2Red">#DA1D1D</color>
+
+    <color name="map_color">#AADAFF</color>
+
+</resources>

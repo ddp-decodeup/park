@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Leavenworth</string>
+    <string name="app_name_title">RiseTek</string>
+    <string name="cmp_name_title">RISETEK - Leavenworth</string>
+    <string name="scr_lbl_ticket_number">Infraction Number</string>
+</resources>

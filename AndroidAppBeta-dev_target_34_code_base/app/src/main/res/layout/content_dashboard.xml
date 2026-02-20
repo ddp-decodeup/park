@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/btnCheckSetup"
+    android:background="@color/bg_semi_white"
+    android:layout_below="@+id/toolbar_layout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_semi_white"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/dashboard_header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rel_main"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_semi_white"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_26dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_btn_dashboard"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:textColor="@color/deep_blue"
+                android:textSize="@dimen/_20sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_total_scan"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:elevation="@dimen/_12dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="@dimen/_15dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_marginLeft="@dimen/_3dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    app:cardElevation="@dimen/_3dp"
+                    android:importantForAccessibility="yes">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="@dimen/_20dp"
+                        android:paddingLeft="@dimen/_20dp"
+                        android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/ll_total_scan"
+                        android:layout_width="@dimen/_54dp"
+                        android:layout_height="@dimen/_54dp"
+                        android:background="@drawable/ic_bg_scan"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:importantForAccessibility="no">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_weight="1"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_scan"
+                            android:importantForAccessibility="no"
+                            />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvScanCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="@dimen/_16dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="0"
+                            android:textColor="@color/black_tv"
+                            android:textSize="@dimen/_20sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/scr_lbl_total_scan"
+                            android:textColor="@color/light_grey_100"
+                            android:textSize="@dimen/_12sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_total_enforcement"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:cardCornerRadius="@dimen/_15dp"
+                    android:layout_marginLeft="8dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:elevation="@dimen/_12dp"
+                    android:layout_marginRight="@dimen/_3dp"
+                    app:cardElevation="@dimen/_3dp"
+                    android:importantForAccessibility="yes">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:paddingVertical="@dimen/_20dp"
+                        android:paddingLeft="@dimen/_20dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ll_total_enforcement"
+                            android:layout_width="@dimen/_54dp"
+                            android:layout_height="@dimen/_54dp"
+                            android:layout_weight="1"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center|left"
+                            android:src="@drawable/ic_enforcement"
+                            />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvEnforcementCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="@dimen/_16dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="0"
+                            android:textColor="@color/black_tv"
+                            android:textSize="@dimen/_20sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/scr_lbl_total_enforce"
+                            android:textColor="@color/light_grey_100"
+                            android:textSize="@dimen/_12sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_12dp"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_marginTop="@dimen/_26dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                app:cardElevation="@dimen/_6dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgScan"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginBottom="@dimen/_60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/img_scan"
+                android:contentDescription="@string/ada_content_description_scan_plate"
+                />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

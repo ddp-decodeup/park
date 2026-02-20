@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/cardTicketing"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="160dp"
+        android:accessibilityTraversalAfter="@id/layTicketing"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layIssue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ada_content_description_issue_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_issue"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_scan_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_btn_scan"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layScanSticker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_scan_sticker_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/btn_text_scan_sticker"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_lpr_mode_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_lpr_mode"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layMunicipalCitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_municipal_citation_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_btn_municipal_citation"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layOwnerBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_municipal_citation_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_btn_owner_bill"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/cardMyActivity"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="200dp"
+        android:accessibilityTraversalAfter="@id/layMyActivity"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ada_content_description_graph_view_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_map_view"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laySummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_daily_summary_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_daily_summary"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laySuperVisorView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_supervisor_view_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_supervisor_view"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layLprHits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_lpr_hits_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_lpr_hits"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/cardGuide"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="300dp"
+        android:accessibilityTraversalAfter="@id/layGuideEnforcement"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laypaybyplate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ada_content_description_pay_by_plate_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/has_pay_by_plate"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laypaybyspace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_pay_by_space_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/has_pay_by_space"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laycameraviolation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_camera_feed_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/has_camera_violation"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layDirectedEnforcement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_directed_enforcement"
+                android:gravity="center|end"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|end"
+                    android:importantForAccessibility="no"
+                    android:text="@string/lbl_directed_enforcement"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laygenetichit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_camera_feed_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/has_camera_genetic_list"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/cardlookup"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="245dp"
+        android:accessibilityTraversalAfter="@id/layLookup"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laycitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ada_content_description_citation_result_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_citation_result"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laylpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_lpr_result_sub_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_lpr_result"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/cardAllReport"
+        android:layout_width="@dimen/_180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:accessibilityTraversalAfter="@id/layAllReport"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layBrokenMeterReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/ada_content_description_broken_meter_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_broken_meter_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layCurbReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_curb_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_curb_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layFullTimeReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_full_time_eow_officer_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_EOW_Officer_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layPartTimeReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_part_time_eow_officer_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_part_EOW_Officer_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lay_eow_supervisor_shift_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_eow_supervisor_shift_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_eow_supervisor_shift_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/laySpecialAssignmentReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_special_assignment_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_special_assignment_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layHandHeldMalfunctionReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_hand_held_malfunction_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_hand_held_malfunction_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/laySignReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_sign_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_sign_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layVehicleInspectionReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_vehicle_inspection_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_vehicle_inspection_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lay72HourMarkedVehiclesReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_72_hour_marked_vehicles_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_72_hour_marked_vehicle_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layBikeInspectionReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_bike_inspection_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_bike_inspection_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lay72hrNoticeToTowReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_72_hours_notice_to_tow_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_72hr_notice_tow_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layTowReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_tow_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_tow_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/laySignOffReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_sign_off_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_sign_off_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layNFL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_nfl_special_assignment_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_nfl_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layHardSummer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_special_event_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_hard_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layAfterSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_pch_daily_updates_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_after_seven_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layPayStationReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_pay_station_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_pay_station_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/laySignageReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_signage_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_pay_signage_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layHomelessReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_homeless_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_pay_homeless_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/laySafetyReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_safety_report_immediate_attention_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:text="@string/scr_lbl_pay_safety_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layTrashReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_trash_lot_maintenance_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_pay_trash_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layLotCountVioRateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_lot_count_vio_rate_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_pay_lot_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layLotInspectionReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_lot_inspection_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_pay_lot_inspection_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layWordOrderReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_work_order_report_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_work_order_report"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/cardQRCode"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_120dp"
+        android:accessibilityTraversalAfter="@id/layQRCode"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layGenerateQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/ada_content_description_generate_qr_code_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_generate_qr_code_1"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layScanQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:contentDescription="@string/ada_content_description_scan_qr_code_sub_menu_option"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="yes"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center|right"
+                        android:importantForAccessibility="no"
+                        android:text="@string/scr_lbl_scan_qr_code"
+                        android:textColor="@color/black_tv"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="@dimen/_170dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_top_bottom_corner_shape_white_fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_54dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCross"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:contentDescription="@string/ada_content_description_close_hamburger_menu"
+                    android:src="@drawable/ic_cross" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_54dp"
+                android:contentDescription="@string/ada_content_description_home_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_home"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_home" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layTicketing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_ticketing_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_ticketing"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_ticket_blue" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layMyActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_my_activity_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_my_activity"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgO"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_my_activity" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layLookup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_lookup_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_lookup"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_lookup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/lookup_icon" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layGuideEnforcement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_guide_enforcement_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_guide_enforcement"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/enforcement_icon" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laySetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_setting_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_setting"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_setting" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_broken_asset_report_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_broken_asset_report"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_report" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layClearcache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_hot_restart_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_hot_restart"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCache"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_baseline_model_training_24" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layAllReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_report_service_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_report"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgAllReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_baseline_report_problem_24" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_qr_code_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_lbl_generate_qr_code"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_qr_code_24" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/laySunlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22dp"
+                android:contentDescription="@string/ada_content_description_paper_feed_menu_option"
+                android:gravity="center|right"
+                android:importantForAccessibility="yes"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:importantForAccessibility="no"
+                    android:text="@string/scr_btn_paper_feed"
+                    android:textColor="@color/black_tv"
+                    android:textSize="@dimen/_16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgSunlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="2.5"
+                    android:clickable="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_feed_24" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_32dp"
+            android:contentDescription="@string/ada_content_description_logout_menu_option"
+            android:gravity="center|right"
+            android:importantForAccessibility="yes"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16dp"
+                android:layout_weight="0.5"
+                android:gravity="center|right"
+                android:importantForAccessibility="no"
+                android:text="@string/scr_lbl_logout"
+                android:textColor="@color/black_tv"
+                android:textSize="@dimen/_16sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_weight="2.5"
+                android:clickable="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_logout" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

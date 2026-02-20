@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:scrollbars = "vertical"
+            app:iconifiedByDefault="false"
+            android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+            android:layoutDirection="rtl"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_text_zone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:visibility="visible"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+            app:boxCornerRadiusBottomStart="@dimen/_10dp"
+            app:boxCornerRadiusTopEnd="@dimen/_10dp"
+            app:boxCornerRadiusTopStart="@dimen/_10dp"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/Editext.Theme"
+            app:placeholderTextAppearance="@style/Editext.Theme">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/et_zone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54dp"
+                android:background="@drawable/round_corner_shape_without_fill_thin_grey"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_dropdown_arrow"
+                android:focusable="true"
+                android:editable="true"
+                android:imeOptions="actionDone"
+                android:focusableInTouchMode="true"
+                android:inputType="textAutoComplete"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/scr_lbl_zone"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black_heading"
+                android:textColorHint="@color/black_heading"
+                android:textSize="@dimen/_14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_paybyspace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10dp"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/content_paybyspace_row"
+            android:visibility="visible"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

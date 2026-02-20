@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pittsburgh</string>
+    <string name="app_name_title">Pittsburgh Enforcement Solutions</string>
+    <string name="cmp_name_title">Pittsburgh Parking Authority</string>
+    <string name="scr_lbl_violation_print">Failure to remit payment or to appeal within fifteen (15) days
+    will result in significant late penalties.</string>
+    <string name="scr_lbl_ofc_print">The Officer below being duly sworn, upon oath deposes and says that in the City of Philadelphia, Pennsylvania, the vehicle
+                            described above was observed in violation of the Philadelphia Traffic Code specified herein and a copy of this notice was
+                           served upon the violator as required by law</string>
+
+    <string name="scr_lbl_ticket_number">Citation#</string>
+    <string name="scr_lbl_date_without_colon">Date:</string>
+    <string name="scr_lbl_print_issue_time">Issue Time</string>
+    <string name="scr_lbl_ticket_type">Sign Notes</string>
+    <string name="scr_lbl_officer_name">Officer:</string>
+    <string name="scr_lbl_officer_id">Officer ID*</string>
+    <string name="scr_lbl_badge_id">Badge No</string>
+    <string name="scr_lbl_beat">Beat/District</string>
+    <string name="scr_lbl_squad">Squad</string>
+    <string name="scr_lbl_agency">Agency</string>
+    <string name="scr_lbl_notes">Notes</string>
+    <string name="scr_lbl_note1">Note 1</string>
+    <string name="scr_lbl_note2">Note 2</string>
+    <string name="scr_lbl_remarks">Remarks</string>
+    <string name="scr_lbl_remark1">Remark 1</string>
+    <string name="scr_lbl_remark2">Remark 2</string>
+    <string name="scr_lbl_location">Location:</string>
+    <string name="scr_lbl_direction">Direction</string>
+    <string name="scr_lbl_meter_name">Meter#</string>
+    <string name="scr_lbl_lot">Lot</string>
+    <string name="scr_lbl_zone">Zone</string>
+    <string name="scr_lbl_pbc_zone">PBC Zone</string>
+    <string name="scr_lbl_lpr_number">License Plate</string>
+    <string name="scr_lbl_state">State</string>
+    <string name="scr_lbl_make">Make</string>
+    <string name="scr_lbl_model">Model</string>
+    <string name="scr_lbl_color">Color</string>
+    <string name="scr_lbl_body_style">Body style</string>
+    <string name="scr_lbl_decal_year">Decal Year</string>
+    <string name="scr_lbl_vin_number">Vin</string>
+    <string name="scr_lbl_decal_number">Decal number</string>
+    <string name="scr_lbl_expiray_year">Expiry year</string>
+    <string name="scr_lbl_code">Violation</string>
+    <string name="scr_lbl_fine">Fine</string>
+    <string name="scr_lbl_late_fine">Late Fine</string>
+    <string name="scr_lbl_due_15">Due 15 Days</string>
+    <string name="scr_lbl_due_30">Due 30 Days</string>
+    <string name="scr_lbl_due_45">Due 45 Days</string>
+    <string name="scr_lbl_observation_time">Observed Time</string>
+
+
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appcomptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/_6dp"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text=""
+        android:textColor="@color/light_grey_100"
+        android:textSize="@dimen/_14sp" />
+
+    <!--TAG Text filed-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_140dp"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_6dp"
+        app:boxCornerRadiusTopEnd="@dimen/_10dp"
+        app:boxCornerRadiusTopStart="@dimen/_10dp"
+        app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/_10dp"
+        app:hintTextAppearance="@style/Editext.Theme"
+        app:endIconDrawable="@android:color/transparent"
+        app:startIconContentDescription="$"
+        app:placeholderTextAppearance="@style/Editext.Theme">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/AutoComTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:background="@drawable/round_corner_shape_without_fill_thin_grey"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            app:errorEnabled="true"
+            android:gravity="start"
+            android:imeOptions="actionDone"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="@color/black_heading"
+            android:textColorHint="@color/black_heading"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_6dp"
+            android:maxLines="6"
+            android:textSize="@dimen/_14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

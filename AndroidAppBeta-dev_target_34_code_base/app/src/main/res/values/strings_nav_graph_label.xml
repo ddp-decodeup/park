@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_graph_label_my_first_fragment" translatable="false">My First Fragment</string>
+    <string name="nav_graph_label_splash_screen" translatable="false">Splash Screen</string>
+    <string name="nav_graph_label_login_screen" translatable="false">Login Screen</string>
+    <string name="nav_graph_label_welcome_screen" translatable="false">Welcome Screen</string>
+    <string name="nav_graph_label_forgot_password_screen" translatable="false">Forgot Password Screen</string>
+    <string name="nav_graph_label_settings_screen" translatable="false">Settings Screen</string>
+    <string name="nav_graph_label_dashboard_screen" translatable="false">Dashboard Screen</string>
+    <string name="nav_graph_label_check_setup_screen" translatable="false">Check Setup Screen</string>
+    <string name="nav_graph_label_scan_result_screen" translatable="false">Scan Result Screen</string>
+    <string name="nav_graph_label_citation_form_screen" translatable="false">Citation Form Screen</string>
+    <string name="nav_graph_label_citation_preview_screen" translatable="false">Citation Preview Screen</string>
+    <string name="nav_graph_label_boot_screen" translatable="false">Boot Screen Screen</string>
+    <string name="nav_graph_label_add_time_record_screen" translatable="false">Add Time Record Screen</string>
+    <string name="nav_graph_label_abandoned_vehicle_screen" translatable="false">Abandoned Vehicle Screen</string>
+    <string name="nav_graph_label_citation_history_printer_screen" translatable="false">Citation History Printer Screen</string>
+    <string name="nav_graph_label_all_reports_screen" translatable="false">All Reports Screen</string>
+    <string name="nav_graph_label_search_screen" translatable="false">Search Screen</string>
+    <string name="nav_graph_label_my_activity_screen" translatable="false">My Activity Screen</string>
+    <string name="nav_graph_label_broken_asset_report_screen" translatable="false">Broken Asset Report Screen</string>
+</resources>

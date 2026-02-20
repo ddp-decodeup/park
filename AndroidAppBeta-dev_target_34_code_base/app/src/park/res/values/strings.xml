@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SITE_ID">d57ca4fd-53f2-4894-8cb4-51061b569670</string>
+    <string name="app_name">Greenville</string>
+
+    <string name="app_name_title">Greenville Loyalty</string>
+    <string name="cmp_name_title">City of Greenville Parking Authority</string>
+    <string name="scr_lbl_observation_time">Observed Time</string>
+</resources>

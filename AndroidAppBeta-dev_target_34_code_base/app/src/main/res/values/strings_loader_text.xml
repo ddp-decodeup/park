@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loader_text_please_wait" translatable="false">Please wait</string>
+    <string name="loader_text_please_wait_we_are_loading_data" translatable="false">Please wait, We are loading application data for you..</string>
+    <string name="loader_text_clearing_existing_data_and_setting_up_new_data" translatable="false">Clearing existing data &amp; setting up new data</string>
+
+</resources>

@@ -1,0 +1,53 @@
+[
+  {
+    "holiday": "Thanksgiving Day",
+    "date": "11/28/2024",
+    "day": "Thursday"
+  },
+  {
+    "holiday": "Juneteenth National Independance Day",
+    "date": "06/19/2025",
+    "day": "Thursday"
+  },
+  {
+    "holiday": "Veterans Day",
+    "date": "11/11/2025",
+    "day": "Tuesday"
+  },
+  {
+    "holiday": "Thanksgiving Day",
+    "date": "11/27/2025",
+    "day": "Thursday"
+  },
+  {
+    "holiday": "Christmas Day",
+    "date": "12/25/2025",
+    "day": "Thursday"
+  },
+
+  {
+    "holiday": "New Years",
+    "date": "01/01/2026",
+    "day": "Thursday"
+  },
+  {
+    "holiday": "MLK Day",
+    "date": "01/19/2026",
+    "day": "Monday"
+  },
+  {
+    "holiday": "Presidents Day",
+    "date": "02/16/2026",
+    "day": "Monday"
+  },
+  {
+    "holiday": "Juneteenth",
+    "date": "06/19/2026",
+    "day": "Friday"
+  },
+  {
+    "holiday": "Independence Day",
+    "date": "07/03/2026",
+    "day": "Friday"
+  }
+]

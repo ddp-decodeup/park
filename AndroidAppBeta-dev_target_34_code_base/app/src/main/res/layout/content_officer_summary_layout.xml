@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_table_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tb_summary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10dp"
+                android:stretchColumns="1">
+                <!--   Officer Details-->
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="3dip"
+                        android:text="@string/scr_lbl_officer_details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_current_date"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="3dip"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:textAlignment="viewEnd"
+                        android:accessibilityHeading="true"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_officer_name_summary"
+                        android:accessibilityTraversalBefore="@id/txt_name"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_badge_id"
+                        android:accessibilityTraversalBefore="@id/txt_badgeid"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_beat_summary"
+                        android:accessibilityTraversalBefore="@id/txt_beat"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_squad"
+                        android:accessibilityTraversalBefore="@id/txt_squad"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_name"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_badgeid"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_beat"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_squad"
+                        style="@style/TextView_summary_field" />
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_supervisor"
+                        android:accessibilityTraversalBefore="@id/txt_supervisor"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_device"
+                        android:accessibilityTraversalBefore="@id/txt_device"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_printer"
+                        android:accessibilityTraversalBefore="@id/txt_printer"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_radio"
+                        android:accessibilityTraversalBefore="@id/txt_radio"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_supervisor"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_device"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_printer"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_radio"
+                        style="@style/TextView_summary_field" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tb_summary_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:stretchColumns="1">
+                <!--   Shift Details-->
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="3dip"
+                        android:text="@string/scr_ibi_shift"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_login"
+                        android:accessibilityTraversalBefore="@id/txt_login"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_first_city"
+                        android:accessibilityTraversalBefore="@id/txt_first_city"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_last_city"
+                        android:accessibilityTraversalBefore="@id/txt_last_city"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_first_scan"
+                        android:accessibilityTraversalBefore="@id/txt_first_scan"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_login"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_first_city"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_last_city"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_first_scan"
+                        style="@style/TextView_summary_field" />
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_lunch"
+                        android:accessibilityTraversalBefore="@id/txt_lunch"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_break_1"
+                        android:accessibilityTraversalBefore="@id/txt_break_1"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_break_2"
+                        android:accessibilityTraversalBefore="@id/txt_break_2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_departure"
+                        android:accessibilityTraversalBefore="@id/txt_departure"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lunch"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_break_1"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_break_2"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_departure"
+                        style="@style/TextView_summary_field"
+                        android:contentDescription="@string/lbl_no_data"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_drop_off"
+                        android:accessibilityTraversalBefore="@id/txt_dropoff"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_logout"
+                        android:accessibilityTraversalBefore="@id/txt_logout"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_dropoff"
+                        style="@style/TextView_summary_field"
+                        android:contentDescription="@string/lbl_no_data"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_logout"
+                        style="@style/TextView_summary_field" />
+
+                </TableRow>
+
+
+                <!--   Issuance Info  Details-->
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="3dip"
+                        android:text="@string/scr_lbl_issuance_info"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_issuance_count"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="3dip"
+                        android:gravity="right"
+                        android:text="@string/scr_lbl_total_count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_citation"
+                        android:accessibilityTraversalBefore="@id/txt_citation"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_total_cancel"
+                        android:accessibilityTraversalBefore="@id/txt_cancel"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_refused_tvr"
+                        android:accessibilityTraversalBefore="@id/txt_last_refused_tvr"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_drive_off"
+                        android:accessibilityTraversalBefore="@id/txt_drive_off"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_citation"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_cancel"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_last_refused_tvr"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_drive_off"
+                        style="@style/TextView_summary_field" />
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_reissue"
+                        android:accessibilityTraversalBefore="@id/txt_reisssue"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_rescind"
+                        android:accessibilityTraversalBefore="@id/txt_rescind"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_cancel"
+                        android:accessibilityTraversalBefore="@id/txt_warning"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_pbc_cancel"
+                        android:accessibilityTraversalBefore="@id/txt_pcb_cancel"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_reisssue"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_rescind"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_warning"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_pcb_cancel"
+                        style="@style/TextView_summary_field" />
+                </TableRow>
+
+
+                <!--  Scan Hit Info  Details-->
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="3dip"
+                        android:text="@string/scr_lbl_scan_hit_info"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_scan_count"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="3dip"
+                        android:gravity="right"
+                        android:text="@string/scr_lbl_total_scans"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_payment"
+                        android:accessibilityTraversalBefore="@id/txt_payment"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_permit"
+                        android:accessibilityTraversalBefore="@id/txt_permit"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_btn_scofflaw"
+                        android:accessibilityTraversalBefore="@id/txt_scofflaw"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_summary_field"
+                        android:text="@string/scr_lbl_mark"
+                        android:accessibilityTraversalBefore="@id/txt_mark"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_payment"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_permit"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_scofflaw"
+                        style="@style/TextView_summary_field" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_mark"
+                        style="@style/TextView_summary_field" />
+                </TableRow>
+
+                <!--  Comments  Details-->
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="3dip"
+                        android:text="@string/scr_lbl_comments"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp"
+                        android:accessibilityHeading="true"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:hint="@string/scr_lbl_comments"
+                        app:boxCornerRadiusBottomEnd="5dp"
+                        app:boxCornerRadiusBottomStart="5dp"
+                        app:boxCornerRadiusTopEnd="5dp"
+                        app:boxCornerRadiusTopStart="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittxt_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:ellipsize="end"
+                            android:maxLines="5"
+                            tools:ignore="KeyboardInaccessibleWidget" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lay_button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_submit"
+                    style="@style/Button_shape_blue"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_submit"
+                    android:textAllCaps="false" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

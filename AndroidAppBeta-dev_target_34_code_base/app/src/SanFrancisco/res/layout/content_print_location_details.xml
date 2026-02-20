@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layLocationDetailsPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_1dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvLocationDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:editable="false"
+            android:enabled="false"
+            android:fontFamily="@font/roboto_light"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/light_grey_100"
+            android:textSize="@dimen/_20dp"
+            android:visibility="visible" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

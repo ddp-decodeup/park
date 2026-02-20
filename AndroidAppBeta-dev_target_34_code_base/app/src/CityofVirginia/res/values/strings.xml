@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Virginia</string>
+    <string name="app_name_title">RISETEK</string>
+    <string name="cmp_name_title">RISETEK - Virginia Beach</string>
+    <string name="scr_lbl_location">LOCATION</string>
+    <string name="scr_lbl_print_issue_time">Time</string>
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_suppervisor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tb_suppervisor1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:stretchColumns="1">
+
+            <TableRow>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_supervisor_field"
+                    android:text="@string/scr_lbl_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_supervisor_field"
+                    android:text="@string/scr_btn_cancel" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_supervisor_field"
+                    android:text="@string/scr_lbl_pbc_cancel" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_supervisor_field"
+                    android:text="@string/scr_btn_rescind" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView_supervisor_field"
+                    android:text="@string/scr_lbl_void" />
+            </TableRow>
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclersuppervisor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/content_supervisor_row" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_suppervisor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_16dp">
+
+            <TableLayout
+                android:id="@+id/tb_suppervisor2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_id" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_scans" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_site" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_scofflaw" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_btn_permit" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_timing" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclersuppervisor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/content_supervisor_row" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_suppervisor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_16dp">
+
+            <TableLayout
+                android:id="@+id/tb_suppervisor3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_id" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_btn_login" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_break_1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_break_2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_logout" />
+
+
+
+                </TableRow>
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclersuppervisor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/content_supervisor_row" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_suppervisor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_16dp">
+
+            <TableLayout
+                android:id="@+id/tb_suppervisor4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_id" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_shift" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_beat" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_squad" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_device" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView_supervisor_field"
+                        android:text="@string/scr_lbl_printer" />
+
+                </TableRow>
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclersuppervisor4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/content_supervisor_row" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/simpleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        app:tabBackground="@android:color/white"
+        app:tabIndicatorColor="@color/deep_blue"
+        app:tabSelectedTextColor="@color/deep_blue"
+        app:tabTextColor="@color/light_grey_30" />
+
+    <FrameLayout
+        android:id="@+id/simpleFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+      <!--  <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_below="@+id/rel_main"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_26dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_search"
+                android:textColor="@color/deep_blue"
+                android:textSize="@dimen/_20sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_weight="0.7"
+                    app:iconifiedByDefault="false"
+                    android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+                    android:layoutDirection="rtl" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:src="@drawable/ic_filter"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_recent_added"
+                android:textColor="@color/deep_blue"
+                android:textSize="@dimen/_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_0dp"
+                    android:fillViewport="true"
+                    android:fitsSystemWindows="true"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:nestedScrollingEnabled="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_lpr_history_list" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

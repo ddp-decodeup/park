@@ -1,0 +1,1202 @@
+[
+  {
+    "customer_name": "ACE_AMAZON_UAT",
+    "site_id": "8dabbd02-04b7-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_AMAZON_PROD",
+    "site_id": "8f828b9c-04b7-11ef-8147-56d1ee6b2413",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_FASHION_UAT",
+    "site_id": "e88fbd3c-1e3d-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_FASHION_PROD",
+    "site_id": "6793d852-1e3e-11ef-96c0-c232bef35183",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_FRENSO_UAT",
+    "site_id": "66271d0a-af6f-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_FRENSO_PROD",
+    "site_id": "fa6879c8-af6f-11ee-aa58-82967aaeaa80",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_HGI_MANHATTAN_UAT",
+    "site_id": "e4ab4b60-826d-11f0-b813-6ada889afcec",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_HGI_MANHATTAN_PROD",
+    "site_id": "7e697980-8434-11f0-9ef0-d6b93f3bac71",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_LAKE_TAHOE_UAT",
+    "site_id": "e1ad1918-af72-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_LAKE_TAHOE_PROD",
+    "site_id": "36ccafc6-b086-11ee-aa58-82967aaeaa80",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_MILLBRAE_UAT",
+    "site_id": "d86aa070-ee94-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_MILLBRAE_PROD",
+    "site_id": "3d365966-eeba-11ef-aaf2-3ea9a466b6c5",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_SAN_ANTONIO_UAT",
+    "site_id": "7408a2fc-af71-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_SAN_ANTONIO_PROD",
+    "site_id": "f341093c-b085-11ee-9a11-c20b99673619",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_SAN_DIEGO_ZOO_UAT",
+    "site_id": "412da3ac-afdb-11f0-91e0-7a6c4906a76e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_SAN_DIEGO_ZOO_PROD",
+    "site_id": "d886f0e6-afdb-11f0-8b67-4ab6efa07e85",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_VALET_DIVISION_UAT",
+    "site_id": "065ddd44-af71-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ACE_VALET_DIVISION_PROD",
+    "site_id": "e6a5c340-af70-11ee-845b-0602968307f0",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ADOBE_UAT",
+    "site_id": "a2a68724-829d-11ee-b1a6-8e41d72fde5f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ADOBE_PROD",
+    "site_id": "d91e6376-82a2-11ee-af97-7e6c461c5070",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ALAMEDA_COUNTY_SHERIFF_UAT",
+    "site_id": "4fd55a20-ee9e-11ef-959d-c2bb038608a2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ALAMEDA_COUNTY_TRANSIT_UAT",
+    "site_id": "f0e3a6d2-ee9f-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ASHLAND_UAT",
+    "site_id": "c1a843e4-fe2e-11ee-ae3f-92040ec4c6a4",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ASHLAND_PROD",
+    "site_id": "28022506-fe2f-11ee-aa58-82967aaeaa80",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ATLANTIC_BEACH_NC_UAT",
+    "site_id": "8431023a-fb8a-11ef-8dfc-721539541a40",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ATLANTIC_BEACH_NC_PROD",
+    "site_id": "82e6b970-fb89-11ef-85f4-866763168a95",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ATLANTIC_BEACH_SC_UAT",
+    "site_id": "dcc3edcc-03af-11f0-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ATLANTIC_BEACH_SC_PROD",
+    "site_id": "b4fd7898-03b0-11f0-85f4-866763168a95",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "A_BOBS_TOWING_UAT",
+    "site_id": "2a57096c-8d43-11f0-bd74-8269c32d74e2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "A_BOBS_TOWING_PROD",
+    "site_id": "871de3e0-8d44-11f0-b5e4-ee775f4253ca",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BANGOR_UAT",
+    "site_id": "b87d467a-dbd3-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BANGOR_PROD",
+    "site_id": "3aba432e-dbd7-11ee-845b-0602968307f0",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BEAUFORT_UAT",
+    "site_id": "2b6d81e0-0d25-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BEAUFORT_PROD",
+    "site_id": "3e2116e8-0d26-11ef-9818-ee2c79e2244c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BELLINGHAM_UAT",
+    "site_id": "7b4bc424-a7dc-11ed-a1e8-42e281654476",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BISMARCK_UAT",
+    "site_id": "9db6bd50-3681-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BISMARCK_PROD",
+    "site_id": "ead64c86-3681-11ee-9c41-6ef2fb394a83",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BOSTON_UAT",
+    "site_id": "36d23a70-01a4-11f0-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BOTTLEWORKS_IN_UAT",
+    "site_id": "ffa6aab4-7d94-11f0-8fa0-8635b99bbe98",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BOTTLEWORKS_IN_PROD",
+    "site_id": "5b9ea9e8-7d95-11f0-ae1c-d275b17a2f31",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BOYNTON_UAT",
+    "site_id": "03d2bd6a-eea4-11ef-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BURBANK_CA_UAT",
+    "site_id": "1016ffce-dae1-11ed-8187-7ae65eb7fc1d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BURBANK_CA_PROD",
+    "site_id": "1fe4be32-fdeb-11ed-bd8f-42803422fd7d",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BURLINGTON_UAT",
+    "site_id": "25653706-52a0-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "BURLINGTON_PROD",
+    "site_id": "25653706-52a0-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CAMDEN_UAT",
+    "site_id": "d468fc74-3f6b-11f0-9907-6aa8651eef70",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CAMDEN_PROD",
+    "site_id": "1fd9ceea-3f6c-11f0-b8c2-46f4a53c28cf",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CEDAR_UAT",
+    "site_id": "fc8e66d7-e7f3-4b5d-b2f5-5758ed941afd",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CEDAR_PROD",
+    "site_id": "ba87910e-1268-11ed-8c34-6a51194b64dc",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CFFB_UAT",
+    "site_id": "a98dcd6a-cfc2-11ed-ad98-66070e279278",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CFFB_PROD",
+    "site_id": "33370b0e-e5fc-11ed-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CHARLESTON_UAT",
+    "site_id": "7b9fdc62-22ed-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CHARLESTON_PROD",
+    "site_id": "cdb0262e-22ed-11ee-bd8f-42803422fd7d",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CHULA_VISTA_UAT",
+    "site_id": "ef3bbc58-665f-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CHULA_VISTA_PROD",
+    "site_id": "5c5a3d94-6dd8-11ee-bd8f-42803422fd7d",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CITY_OF_WATERLOO_UAT",
+    "site_id": "fa2e7e88-1483-11f0-9913-a6fb5c3e8691",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CITY_OF_WATERLOO_PROD",
+    "site_id": "8b785782-1485-11f0-a70c-ae0a61d3b9dd",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CITY_OF_WILTON_MANORS_REIMAGINED_PARKING_UAT",
+    "site_id": "cf074b26-5d68-11f0-b341-56de25d2a69a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CITY_OF_WILTON_MANORS_REIMAGINED_PARKING_PROD",
+    "site_id": "aa7f3f1c-722f-11f0-a030-1a2b301ff7ac",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CLEMENSKICK_UAT",
+    "site_id": "4e79e4e2-e9ab-11ed-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CLEMENSKICK_PROD",
+    "site_id": "6f1b5db0-f91a-11ed-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CLIFTON_UAT",
+    "site_id": "048cca9a-94ed-11ef-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CLIFTON_PROD",
+    "site_id": "1fffc5dc-9521-11ef-9953-428aea8097ed",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "COHASSET_UAT",
+    "site_id": "b4fbe4d6-2ec4-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "COHASSET_PROD",
+    "site_id": "30c9b390-2ec5-11ef-ba31-ca0a5add8b0c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "CORPUS_UAT",
+    "site_id": "e0aa29e8-ce43-11ef-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "COVINA_UAT",
+    "site_id": "d5d777a8-eea2-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DALLAS_UAT",
+    "site_id": "aa6c4e4c-8d34-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DALLAS_PROD",
+    "site_id": "a96af934-8cb8-11ef-8395-72ea80e56d92",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DANVILLE_VA_UAT",
+    "site_id": "bb2d2dfc-2b02-11f0-a69b-1ed2671f5a0f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DANVILLE_VA_PROD",
+    "site_id": "1f686f98-2b03-11f0-8ece-2ee6f0ba96ea",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DEER_FIELD_BEACH_FL_UAT",
+    "site_id": "5030a936-b99e-11f0-91e0-7a6c4906a76e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DEER_FIELD_BEACH_FL_PROD",
+    "site_id": "9a42047e-b99f-11f0-bb6d-b6316d9f652f",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DURANGO_UAT",
+    "site_id": "b05f13b4-bf65-11ed-8d4c-ae98e284599d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "DURANGO_PROD",
+    "site_id": "816d72c4-0378-11ee-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EASTON_UAT",
+    "site_id": "915b1b54-a7dd-11ef-959d-c2bb038608a2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EASTON_PROD",
+    "site_id": "3baa48fc-ad81-11ef-aaf2-3ea9a466b6c5",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EL_CAMINO_COLLEGE_UAT",
+    "site_id": "59c89a8c-9ec6-11f0-9e97-be200e1b92ac",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EL_CAMINO_COLLEGE_PROD",
+    "site_id": "02fc4aa4-9ec7-11f0-a557-0616291eec49",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EL_PASO_TX_MACKAY_UAT",
+    "site_id": "8dc61c7c-8e6f-11f0-bd74-8269c32d74e2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EL_PASO_TX_MACKAY_PROD",
+    "site_id": "d26d85aa-8e73-11f0-ae1c-d275b17a2f31",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EPHRATA_UAT",
+    "site_id": "0a0bf864-7f31-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "EPHRATA_PROD",
+    "site_id": "8f541f5a-7f32-11ef-80ba-9e136e671e96",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "FAYETTEVILLE_NC_REIMAGINED_PARKING_UAT",
+    "site_id": "7f0016f2-5cb0-11f0-b813-6ada889afcec",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "FAYETTEVILLE_NC_REIMAGINED_PARKING_PROD",
+    "site_id": "f21b1cae-62c8-11f0-aa32-6e39c1718690",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "FLOWBIRD_UAT",
+    "site_id": "5b12f420-0868-11ed-80e1-faa36d4eb12e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "GLASGOW_UAT",
+    "site_id": "55c16a92-1f4f-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "GREENBURGH_NY_UAT",
+    "site_id": "037dcb54-7746-11f0-8fa0-8635b99bbe98",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "GREENBURGH_NY_PROD",
+    "site_id": "edecf89a-7746-11f0-ae1c-d275b17a2f31",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HAMTRAMCK_MI_UAT",
+    "site_id": "d73d9aa0-60a3-11f0-b813-6ada889afcec",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HAMTRAMCK_MI_PROD",
+    "site_id": "f6c9f724-60a3-11f0-be66-bab8e7405708",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HARTFORD_UAT",
+    "site_id": "0a8fe3b8-dc2f-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HARTFORD_PROD",
+    "site_id": "5bd20490-dc2f-11ee-bf9e-72127457a419",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HILLSBORO_OR_REIMAGINED_PARKING_UAT",
+    "site_id": "52f83a52-6d46-11f0-b341-56de25d2a69a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HILTON_HEAD_UAT",
+    "site_id": "a67bfed6-d9b2-11ed-8187-7ae65eb7fc1d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "HILTON_HEAD_PROD",
+    "site_id": "48b5af98-efb7-11ed-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "IMPARK_PHSA_UAT",
+    "site_id": "5762502e-9a04-11f0-86a2-e61012cde0ad",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "INDIANA_BOROUGH_UAT",
+    "site_id": "9ec9c6d4-eea3-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "INDIAN_HARBOUR_BEACH_UAT",
+    "site_id": "01d2d092-fd70-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "INDIAN_HARBOUR_BEACH_PROD",
+    "site_id": "296794a8-fd70-11ef-b402-4277d9a01b87",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "IRVINE_UAT",
+    "site_id": "2d390d86-6c54-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "IRVINE_PROD",
+    "site_id": "15db4326-6dd9-11ee-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ISLE_PLAMS_UAT",
+    "site_id": "7fc01b7c-c982-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ISLE_PLAMS_PROD",
+    "site_id": "c6443f42-c982-11ee-b39a-bebc79a4d1a3",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "JACKSONVILLE_UAT",
+    "site_id": "589a650e-eea0-11ef-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "JEFFERSON_CITY_MO_UAT",
+    "site_id": "452e2a60-aabf-11f0-91e0-7a6c4906a76e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "JEFFERSON_CITY_MO_PROD",
+    "site_id": "dd2ad69a-aac1-11f0-8290-ca2f412e0a1b",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "KALAMAZOO_UAT",
+    "site_id": "e7f5fbb4-a15d-11ee-9554-1a682a2f9ae8",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "KALAMAZOO_PROD",
+    "site_id": "183db4ec-a15e-11ee-b39a-bebc79a4d1a3",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "KANSAS_UAT",
+    "site_id": "70f9c966-4985-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "KANSAS_PROD",
+    "site_id": "a95c3734-4986-11ef-98e9-2a370f00fe52",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "KENOSHA_UAT",
+    "site_id": "9fb58872-eea2-11ef-8dfc-721539541a40",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "KENOSHA_PROD",
+    "site_id": "415c0548-58d9-11f0-be66-bab8e7405708",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAWRENCE_UAT",
+    "site_id": "b578fe02-d196-11ee-be9c-72ab48aba21d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAWRENCE_PROD",
+    "site_id": "09c94cae-d198-11ee-9818-ee2c79e2244c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_UAT",
+    "site_id": "e55ff60a-09bc-11ed-80e1-faa36d4eb12e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZLB_UAT",
+    "site_id": "44c9992e-e810-11ee-ab9f-fe86ecca5050",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZLB_PROD",
+    "site_id": "9ac3522a-e810-11ee-8147-56d1ee6b2413",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_CCP_UAT",
+    "site_id": "9e9a9880-8ff6-11ee-bfcc-f66b6709ac8e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_CCP_PROD",
+    "site_id": "8e9bc50c-95ab-11ee-9a11-c20b99673619",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_CONJUCTIVE_POINT_UAT",
+    "site_id": "468dfa1c-5bb3-11f0-b341-56de25d2a69a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_CONJUCTIVE_POINT_PROD",
+    "site_id": "7780d90a-5bb3-11f0-be66-bab8e7405708",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_KCMO_PRIVATE_UAT",
+    "site_id": "cbe98cf6-5048-11f0-89a5-267b79b8bf83",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_KCMO_PRIVATE_PROD",
+    "site_id": "5a25f24c-504a-11f0-b0cc-269eda569200",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LAZ_PILOT_UAT",
+    "site_id": "e6afb106-765f-11ee-b1a6-8e41d72fde5f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LA_METRO_UAT",
+    "site_id": "ae65f9fe-e5c3-11ed-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LA_METRO_PROD",
+    "site_id": "ed4b4850-d527-11ee-af97-7e6c461c5070",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LEAVENWORTH_UAT",
+    "site_id": "46b8a5e5-c1d0-420e-b825-c09712ee8665",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LEAVENWORTH_PROD",
+    "site_id": "267ccc30-1bdd-11ed-8edb-e6f96eaf3014",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LITTLE_ROCK_UAT",
+    "site_id": "8a5b9964-351e-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "LITTLE_ROCK_PROD",
+    "site_id": "3d7be566-375a-11ef-9008-06303a7b3284",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MACKAY_UAT",
+    "site_id": "4d195198-0868-11ed-80e1-faa36d4eb12e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MACKAY_SAMPLE_UAT",
+    "site_id": "f270f9be-8d48-11ee-b1a6-8e41d72fde5f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MANSFIELDCT_UAT",
+    "site_id": "c293c922-fa4c-11ed-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MANSFIELDCT_PROD",
+    "site_id": "98ccd4bc-fa4c-11ed-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MARTIN_UAT",
+    "site_id": "85f7c4f8-6c54-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MARTIN_PROD",
+    "site_id": "6a487514-6dd9-11ee-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MEMORIAL_HERMAN_UAT",
+    "site_id": "ac197ac6-436a-11ef-b49f-e202d2db16eb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MEMORIAL_HERMAN_PROD",
+    "site_id": "2065f2b8-441c-11ef-ba31-ca0a5add8b0c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MERRICK_PARK_FL_REIMAGINED_PARKING_UAT",
+    "site_id": "af6226e4-60b8-11f0-b813-6ada889afcec",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MERRICK_PARK_FL_REIMAGINED_PARKING_PROD",
+    "site_id": "fcb4be70-60b8-11f0-a030-1a2b301ff7ac",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MOBILE_AL_REIMAGINED_PARKING_UAT",
+    "site_id": "b3cf36ec-5d69-11f0-b341-56de25d2a69a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MONKTON_UAT",
+    "site_id": "817a67c0-5e66-11ed-a94c-ba4611676070",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MONKTON_PROD",
+    "site_id": "a60ed186-3961-11ed-8fa5-d258731daefc",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MOUNT_RAINIER_UAT",
+    "site_id": "d051af96-eea3-11ef-8dfc-721539541a40",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MTA_LONG_ISLAND_RAIL_ROAD_UAT",
+    "site_id": "cb46bf18-72b1-11f0-8fa0-8635b99bbe98",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MTA_LONG_ISLAND_RAIL_ROAD_PROD",
+    "site_id": "fa4ec404-72b1-11f0-8f49-529c2c709ebe",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MYSTICCT_UAT",
+    "site_id": "dd9bb726-e556-11ed-8bae-acde48001122",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "MYSTICCT_PROD",
+    "site_id": "cd1200ae-1fd5-11ee-8b64-665980bd7c45",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "NORWALK_UAT",
+    "site_id": "67a4ca60-eea2-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "NORWALK_PROD",
+    "site_id": "4f4805ec-0ee9-11f0-b4a8-025fd0c66349",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "OCEANCITY_UAT",
+    "site_id": "7b4bc424-a7dc-11ed-a1e8-42e281654476",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "OCEANCITY_PROD",
+    "site_id": "da3c1178-a07e-11ee-8147-56d1ee6b2413",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ORLEANS_UAT",
+    "site_id": "b7b4f268-a245-11ef-959d-c2bb038608a2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ORLEANS_PROD",
+    "site_id": "a69673f6-ac9c-11ef-ac80-d2979395356c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "OXFORD_UAT",
+    "site_id": "fd479e96-ed10-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "OXFORD_PROD",
+    "site_id": "292922e6-ed11-11ef-b35c-4aa52259098f",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PARK_RIDGE_UAT",
+    "site_id": "0f95453a-eea1-11ef-959d-c2bb038608a2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PARK_X_UAT",
+    "site_id": "2aa09a04-1b57-11f0-85b7-061c47835ee1",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PARK_X_PROD",
+    "site_id": "f12836e4-1f5f-11f0-a761-e675d585ebad",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PEAK_PARKING_UAT",
+    "site_id": "fdbcf868-3ec3-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PEAK_PARKING_PROD",
+    "site_id": "23697ca0-3e04-11ef-85dc-e665cc09bf86",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PEAK_TEXAS_UAT",
+    "site_id": "06642656-6f3b-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PEAK_TEXAS_PROD",
+    "site_id": "a32eb42e-6f3b-11ef-b553-1a0cb38c2eb5",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PHOENIX_UAT",
+    "site_id": "934ce736-3907-11ed-a8e2-e629a4144614",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PHOENIX_PROD",
+    "site_id": "a60ed186-3961-11ed-8fa5-d258731daefc",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PHSA_REIMAGINED_PARKING_UAT",
+    "site_id": "e1210de0-6d46-11f0-b341-56de25d2a69a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PILOTPITTSBURGPA_UAT",
+    "site_id": "73ba5758-e642-11ed-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PILOTPITTSBURGPA_PROD",
+    "site_id": "ed3fa082-13f7-11ee-9c41-6ef2fb394a83",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PORTLAND_RO_UAT",
+    "site_id": "28042096-5d69-11f0-8fa0-8635b99bbe98",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PORT_HOOD_RIVER_UAT",
+    "site_id": "346b1eb4-eea3-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PRIME_PARKING_UAT",
+    "site_id": "5be51a26-f015-11ef-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PRIME_PARKING_PROD",
+    "site_id": "2d726046-f843-11ef-a015-565661424de4",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PRRS_UAT",
+    "site_id": "1aa6a80a-dbf6-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "PRRS_PROD",
+    "site_id": "a4bd7d26-dbf5-11ef-aa0d-1abc71e273ac",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "REEF_CASPER_WY_REIMAGINED_PARKING_UAT",
+    "site_id": "696a4c72-5d69-11f0-b341-56de25d2a69a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "REEF_CASPER_WY_REIMAGINED_PARKING_PROD",
+    "site_id": "766fb9fe-7671-11f0-b5e4-ee775f4253ca",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RIDGEHILL_UAT",
+    "site_id": "b120ed08-3499-404a-85af-0c8efcee2008",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RIDGEHILL_PROD",
+    "site_id": "a549a0fe-e05d-4655-bdfc-d142b8b4eeea",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RISETEK_OKC_UAT",
+    "site_id": "0570bfa6-50e9-11ed-a94c-ba4611676070",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RISETEK_OKC_PROD",
+    "site_id": "59e9c610-9b79-11ed-a38d-de1b5e5960f1",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RIVER_OAKS_UAT",
+    "site_id": "f3062dac-fe2e-11ee-ae3f-92040ec4c6a4",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RIVER_OAKS_PROD",
+    "site_id": "46dd302e-fe2f-11ee-aa58-82967aaeaa80",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ROSEBURG_UAT",
+    "site_id": "67fdb682-6660-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ROSEBURG_PROD",
+    "site_id": "bf63de5e-6dd8-11ee-82bb-ee0fed0687b3",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RPS_CHATTANOOGA_TN_UAT",
+    "site_id": "8a59e64e-5cb6-11f0-8fa0-8635b99bbe98",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RPS_CHATTANOOGA_TN_PROD",
+    "site_id": "e507c304-5cb6-11f0-be66-bab8e7405708",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RPS_JACKSONVILLE_FL_UAT",
+    "site_id": "ec45f18e-5c9f-11f0-b813-6ada889afcec",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RPS_JACKSONVILLE_FL_PROD",
+    "site_id": "0089459e-5cb2-11f0-be66-bab8e7405708",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RUTGERS_UAT",
+    "site_id": "27be85fc-8161-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "RUTGERS_PROD",
+    "site_id": "8a16b7a4-3216-11f0-8ece-2ee6f0ba96ea",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SANIBEL_UAT",
+    "site_id": "df7a9f98-1373-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SANIBEL_PROD",
+    "site_id": "1bd37cb2-1374-11ef-bf9e-72127457a419",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SANMATEO_REDWOOD_UAT",
+    "site_id": "660eed2a-1f8a-11f0-85b7-061c47835ee1",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SANMATEO_REDWOOD_PROD",
+    "site_id": "84bcad2a-1fa3-11f0-92dd-0e793f950ac4",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SAN_DIEGO_UAT",
+    "site_id": "7fe53dac-665f-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SAN_DIEGO_PROD",
+    "site_id": "fc49da54-6dd7-11ee-bd8f-42803422fd7d",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SAN_DIEGO_PPA_UAT",
+    "site_id": "8b91c376-d7b7-11ef-8dfc-721539541a40",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SAN_DIEGO_PPA_PROD",
+    "site_id": "b16680a8-0338-11f0-8f3d-c611b04b1464",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SAN_FRANCISCO_UAT",
+    "site_id": "72f7b64c-9422-11ee-bfcc-f66b6709ac8e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SAN_FRANCISCO_PROD",
+    "site_id": "46386396-945d-11ee-b3fc-5e883ed10c3d",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SATELLITE_UAT",
+    "site_id": "0102a3dc-4cae-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SATELLITE_PROD",
+    "site_id": "2e0e35fe-4e4c-11ee-82bb-ee0fed0687b3",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SCPM_UAT",
+    "site_id": "c55db3b8-4348-11ed-a94c-ba4611676070",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SEASTREAK_UAT",
+    "site_id": "9204e104-23f0-11f0-85b7-061c47835ee1",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SEASTREAK_PROD",
+    "site_id": "bb050ab8-220e-11f0-a795-86e53f85dcd4",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SEPTA_UAT",
+    "site_id": "cd666208-44ae-11ef-b128-de29d549d608",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SEPTA_PROD",
+    "site_id": "4fa2e26e-44af-11ef-ba31-ca0a5add8b0c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SMYRNA_UAT",
+    "site_id": "47f8f666-224f-11ef-8e44-76f8a1a040d2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SMYRNA_PROD",
+    "site_id": "c162222c-48bd-11ef-ba31-ca0a5add8b0c",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SOL_UAT",
+    "site_id": "c3e2b4a2-9ac8-11ed-a1e8-42e281654476",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SOL_PROD",
+    "site_id": "6628292c-9ac9-11ed-adbe-e2785781fe47",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SOUTH_LAKE_TAHOE_UAT",
+    "site_id": "4588c2d2-24ea-11f0-85b7-061c47835ee1",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SOUTH_LAKE_TAHOE_PROD",
+    "site_id": "36ccafc6-b086-11ee-aa58-82967aaeaa80",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SOUTH_MIAMI_UAT",
+    "site_id": "fcdfa352-48a3-11ef-b49f-e202d2db16eb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SOUTH_MIAMI_PROD",
+    "site_id": "4549913e-48a4-11ef-98e9-2a370f00fe52",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ST_JOHNSBURY_VT_UAT",
+    "site_id": "39d92422-fe66-11ef-959d-c2bb038608a2",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "ST_JOHNSBURY_VT_PROD",
+    "site_id": "629e3b9a-fe66-11ef-9851-56609c1071f1",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SURF_CITY_UAT",
+    "site_id": "fa2a560a-e837-11ef-89e2-c60c10e87cc7",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "SURF_CITY_PROD",
+    "site_id": "e3ac8dbc-e7bf-11ef-a767-b2dfc46f34fe",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "UPTOWN_ATLANTA_UAT",
+    "site_id": "79a06096-25b4-11f0-85b7-061c47835ee1",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "UPTOWN_ATLANTA_PROD",
+    "site_id": "f5bd7040-25b6-11f0-929f-b2e34196ca08",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VALLEJOL_UAT",
+    "site_id": "7bd11751-0b1f-41e5-b4ef-1687b340a33d",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VALLEJOL_PROD",
+    "site_id": "2e2a4032-1bda-11ed-8edb-e6f96eaf3014",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VEST_SECURITY_SYSTEM_UAT",
+    "site_id": "45e01d32-b551-11f0-91e0-7a6c4906a76e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VEST_SECURITY_SYSTEM_PROD",
+    "site_id": "2bcc09f0-b9ad-11f0-aa5a-6687c27cba26",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VIRGINIA_UAT",
+    "site_id": "6eba342a-170d-11ee-b4ca-ae854bfaee9a",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VIRGINIA_PROD",
+    "site_id": "03596804-214e-11ee-bd8f-42803422fd7d",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VISTA_CA_UAT",
+    "site_id": "6996d1aa-eea3-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VISTA_CA_PROD",
+    "site_id": "45eff72a-9878-11f0-aa32-6e39c1718690",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VOLUSIA_UAT",
+    "site_id": "d9334548-a277-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "VOLUSIA_PROD",
+    "site_id": "307c24ac-a27b-11ef-b686-86ed65784325",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WATSONVILLE_UAT",
+    "site_id": "07353b28-eea3-11ef-baad-360a6c86f50f",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WELLS_PD_UAT",
+    "site_id": "7658e06c-b555-11f0-91e0-7a6c4906a76e",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WESTCHESTER_UAT",
+    "site_id": "99e7d13a-87e0-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WESTCHESTER_PROD",
+    "site_id": "6643e6ca-87e0-11ef-98ab-965a77295b51",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WINPARK_TX_UAT",
+    "site_id": "2d72aec2-4864-11f0-89a5-267b79b8bf83",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WINPARK_TX_PROD",
+    "site_id": "988fcbf4-4864-11f0-b0cc-269eda569200",
+    "base_url": "https://api.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WOODSTOCK_GA_UAT",
+    "site_id": "3c14106a-fb89-11ef-aca5-7617bcc5e1cb",
+    "base_url": "https://devapi.parkloyalty.com/"
+  },
+  {
+    "customer_name": "WOODSTOCK_GA_PROD",
+    "site_id": "21963e82-fb86-11ef-9851-56609c1071f1",
+    "base_url": "https://api.parkloyalty.com/"
+  }
+]

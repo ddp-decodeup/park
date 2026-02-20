@@ -1,0 +1,40 @@
+Settings File Read Me File:
+############################
+1.) Officer Name for Print: Now we can define the officer name format from settings files
+Key Name: "OFFICER_NAME_FORMAT_FOR_PRINT"
+Key Values: (Ex. Officer Name is Sonia Sotomayor)
+"FIRST_INITIAL_LAST_FULL" = "ex. S SOTOMAYOR"
+"FIRST_FULL_LAST_INITIAL" = "ex. SONIA S"
+"FIRST_FULL_LAST_FULL" = "ex. SONIA SOTOMAYOR"
+"FIRST_INITIAL_LAST_INITIAL" = "ex. S S"
+"FIRST_FULL_ONLY" = "ex. SONIA"
+
+If it don't get the value out of above mentioned then it will consider FIRST INITIAL LAST FULL (ex. S SOTOMAYOR)
+
+-----------------------------
+2.) Inventory Module Based on Settings File. You can now show/hide inventory module from this setting file flag below:
+Key Name: "INVENTORY_MODULE"
+Key Value:
+"YES" = It will show & enable inventory Module
+"NO" = It will hide & disable inventory module
+
+-----------------------------
+3.) Header Footer in Facsimile based on Settings File. You can now enable/disable Facsimile with Header Footer
+Key Name : "HEADER_FOOTER_IN_FACSIMILE"
+Key Value:
+"YES" = It will enable Facsimile with Header Footer
+"NO" = It will disable Facsimile with Header Footer
+
+Along with "YES", We need two below parameter from settings file to enable it
+[A] Key Name : "HEADER_URL_FOR_FACSIMILE"
+Key Value : "URL of Header Image to be added"
+
+[B] Key Name : "FOOTER_URL_FOR_FACSIMILE"
+Key Value : "URL of Footer Image to be added"
+
+-----------------------------
+4.) When you need to add LPR image in Facsimile image
+[A] Key Name : "IS_PRINT_LPR_IMAGE_IN_FACSIMILE"
+Key Value:
+"YES" = Lpr image display in print out
+"NO" = Lpr image hide from printout

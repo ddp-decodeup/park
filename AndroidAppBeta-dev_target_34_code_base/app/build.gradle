@@ -1,0 +1,1971 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    //id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.google.firebase.firebase-perf'
+    id 'dagger.hilt.android.plugin' // Add Hilt plugin
+
+//    kotlin("android.extensions")
+//    apply plugin: 'kotlin-kapt'
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+
+    def versionPropsFile = file('version.properties')
+    Properties versionProps = new Properties()
+
+    if (versionPropsFile.canRead()) {
+        versionProps.load(new FileInputStream(versionPropsFile))
+    }
+
+//    signingConfigs {
+//        config {
+////            storeFile file('C:/APK/KEYSTORE/KEYSTORE/KeyStorePark.jks')
+////            storePassword 'Rfv@123456'
+////            keyAlias = 'park'
+////            keyPassword 'Rfv@123456'
+//
+//
+//            keyAlias keystoreProperties['keyAlias']
+//            keyPassword keystoreProperties['keyPassword']
+//            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+//            storePassword keystoreProperties['storePassword']
+//
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+//        }
+//    }
+
+    buildFeatures.buildConfig = true
+
+    defaultConfig {
+        //min sdk support will be android 13 & max will be android 16
+        minSdkVersion 30
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        buildConfigField "String", "CAPTCHA_SITE_KEY", captchaSiteKey
+        buildConfigField "String", "CAPTCHA_SECRET_KEY", captchaSecretKey
+
+        //Flag used to enable doubango for license plate scanning instead of regular lpr sdk
+        buildConfigField "Boolean", "ENABLE_DOUBANGO_FOR_LPR", enableDoubangoForLPR
+    }
+
+    buildTypes {
+        debug{
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("long", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")
+
+            buildConfigField "String", "BASE_API_URL", baseURLDeveloper
+            buildConfigField "String", "BUILD_RELEASE_TYPE", releaseTypeUat
+            //signingConfig = null//we are setting up null to override default behaviour
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("long", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")
+
+            buildConfigField "String", "BASE_API_URL", baseURLProduction
+            buildConfigField "String", "BUILD_RELEASE_TYPE", releaseTypeProd
+//            signingConfig signingConfigs.config
+//            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/NOTICE', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+        }
+    }
+
+
+    flavorDimensions "version"
+    productFlavors {
+        park {
+            def parkVersionCode = versionProps['PARK_VERSION_CODE'].toInteger()
+            def parkVersionName = versionProps['PARK_VERSION_NAME']
+
+            applicationId 'com.parkloyalty.lpr.scan'
+            versionCode parkVersionCode
+            versionName parkVersionName
+            dimension "version"
+            //archivesBaseName = "Park"
+//            site_id = 'd57ca4fd-53f2-4894-8cb4-51061b569670'
+        }
+
+        risetekInnova {
+            def riskTekInnovaVersionCode = versionProps['RISE_TEK_INNOVA_VERSION_CODE'].toInteger()
+            def riskTekInnovaVersionName = versionProps['RISE_TEK_INNOVA_VERSION_NAME']
+
+            applicationId 'com.risetekinnova.lpr.scan'
+            versionCode riskTekInnovaVersionCode
+            versionName riskTekInnovaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+            //archivesBaseName = "Rise_Tek_Innova"
+//            site_id = '60105ba4-8d60-4d35-a84f-5e9255b83cd8'
+        }
+
+        risetekMuzic {
+            def riskTekMuzicVersionCode = versionProps['RISE_TEK_MUZIC_VERSION_CODE'].toInteger()
+            def riskTekMuzicVersionName = versionProps['RISE_TEK_MUZIC_VERSION_NAME']
+
+            applicationId 'com.risetekmuzic.lpr.scan'
+            versionCode riskTekMuzicVersionCode
+            versionName riskTekMuzicVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+            //archivesBaseName = "Rise_Tek_Muzic"
+//            site_id = '60105ba4-8d60-4d35-a84f-5e9255b83cd8'
+        }
+
+        ridgeHill {
+            def ridgeHillVersionCode = versionProps['RIDGE_HILL_VERSION_CODE'].toInteger()
+            def ridgeHillVersionName = versionProps['RIDGE_HILL_VERSION_NAME']
+
+            applicationId 'com.ridgehill.lpr.scan'
+            versionCode ridgeHillVersionCode
+            versionName ridgeHillVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+            //archivesBaseName = "Rise_Tek_Muzic"
+//            site_id = '60105ba4-8d60-4d35-a84f-5e9255b83cd8'
+        }
+
+        duncan {
+            def duncanVersionCode = versionProps['DUNCAN_VERSION_CODE'].toInteger()
+            def duncanVersionName = versionProps['DUNCAN_VERSION_NAME']
+
+            applicationId 'com.duncan.lpr.scan'
+            versionCode duncanVersionCode
+            versionName duncanVersionName
+            dimension "version"
+            buildConfigField("long", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")
+            //archivesBaseName = "Duncan"
+//            site_id = 'd57ca4fd-53f2-4894-8cb4-51061b569670'
+        }
+
+        stratos {
+            def stratosVersionCode = versionProps['STRATOS_VERSION_CODE'].toInteger()
+            def stratosVersionName = versionProps['STRATOS_VERSION_NAME']
+
+            applicationId 'com.stratos.lpr.scan'
+            versionCode stratosVersionCode
+            versionName stratosVersionName
+            dimension "version"
+            //archivesBaseName = "strator"
+//            site_id = '60105ba4-8d60-4d35-a84f-5e9255b83cd8'
+        }
+
+        glendale {
+            def glendaleVersionCode = versionProps['GLENDALE_VERSION_CODE'].toInteger()
+            def glendaleVersionName = versionProps['GLENDALE_VERSION_NAME']
+
+            applicationId 'com.glendale.lpr.scan'
+            versionCode glendaleVersionCode
+            versionName glendaleVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        glendalePolice {
+            def glendalePoliceVersionCode = versionProps['GLENDALE_POLICE_VERSION_CODE'].toInteger()
+            def glendalePoliceVersionName = versionProps['GLENDALE_POLICE_VERSION_NAME']
+
+            applicationId 'com.glendale.police.lpr.scan'
+            versionCode glendalePoliceVersionCode
+            versionName glendalePoliceVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        cedar {
+            def cedarVersionCode = versionProps['CEDAR_VERSION_CODE'].toInteger()
+            def cedarVersionName = versionProps['CEDAR_VERSION_NAME']
+
+            applicationId 'com.cedar.lpr.scan'
+            versionCode cedarVersionCode
+            versionName cedarVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+            //archivesBaseName = "Cedar"
+//            site_id = '60105ba4-8d60-4d35-a84f-5e9255b83cd8'
+        }
+        vallejo {
+            def cedarVersionCode = versionProps['VALLEJO_VERSION_CODE'].toInteger()
+            def cedarVersionName = versionProps['VALLEJO_VERSION_NAME']
+
+            applicationId 'com.vallejo.lpr.scan'
+            versionCode cedarVersionCode
+            versionName cedarVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        encinitas {
+            def encinitasVersionCode = versionProps['ENCINITAS_VERSION_CODE'].toInteger()
+            def encinitasVersionName = versionProps['ENCINITAS_VERSION_NAME']
+
+            applicationId 'com.encinitas.lpr.scan'
+            versionCode encinitasVersionCode
+            versionName encinitasVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        leavenworth {
+            def cedarVersionCode = versionProps['LEAVENWORTH_VERSION_CODE'].toInteger()
+            def cedarVersionName = versionProps['LEAVENWORTH_VERSION_NAME']
+
+            applicationId 'com.leavenworth.lpr.scan'
+            versionCode cedarVersionCode
+            versionName cedarVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        flowbird {
+            def cedarVersionCode = versionProps['FLOWBIRD_VERSION_CODE'].toInteger()
+            def cedarVersionName = versionProps['FLOWBIRD_VERSION_NAME']
+
+            applicationId 'com.flowbird.lpr.scan'
+            versionCode cedarVersionCode
+            versionName cedarVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        mackay {
+            def cedarVersionCode = versionProps['MACKAY_VERSION_CODE'].toInteger()
+            def cedarVersionName = versionProps['MACKAY_VERSION_NAME']
+
+            applicationId 'com.mackay.lpr.scan'
+            versionCode cedarVersionCode
+            versionName cedarVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        laz {
+            def lazVersionCode = versionProps['LAZ_VERSION_CODE'].toInteger()
+            def lazVersionName = versionProps['LAZ_VERSION_NAME']
+
+            applicationId 'com.laz.lpr.scan'
+            versionCode lazVersionCode
+            versionName lazVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        lazpilot {
+            def lazPilotVersionCode = versionProps['LAZPILOT_VERSION_CODE'].toInteger()
+            def lazPilotVersionName = versionProps['LAZPILOT_VERSION_NAME']
+
+            applicationId 'com.lazpilot.lpr.scan'
+            versionCode lazPilotVersionCode
+            versionName lazPilotVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+         carta{
+            def cedarVersionCode = versionProps['CARTA_VERSION_CODE'].toInteger()
+            def cedarVersionName = versionProps['CARTA_VERSION_NAME']
+
+            applicationId 'com.carta.lpr.scan'
+            versionCode cedarVersionCode
+            versionName cedarVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        scpm{
+            def cspmVersionCode = versionProps['CSPM_VERSION_CODE'].toInteger()
+            def cspmVersionName = versionProps['CSPM_VERSION_NAME']
+
+            applicationId 'com.scpm.lpr.scan'
+            versionCode cspmVersionCode
+            versionName cspmVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        phoenix{
+            def phonenixVersionCode = versionProps['PHOENIX_VERSION_CODE'].toInteger()
+            def phoenixVersionName = versionProps['PHOENIX_VERSION_NAME']
+
+            applicationId 'com.phoenix.lpr.scan'
+            versionCode phonenixVersionCode
+            versionName phoenixVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        risetekokc{
+            def phonenixVersionCode = versionProps['RISETEKOKC_VERSION_CODE'].toInteger()
+            def phoenixVersionName = versionProps['RISETEKOKC_VERSION_NAME']
+
+            applicationId 'com.risetekokc.lpr.scan'
+            versionCode phonenixVersionCode
+            versionName phoenixVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+         monkton{
+            def phonenixVersionCode = versionProps['MONKTON_VERSION_CODE'].toInteger()
+            def phoenixVersionName = versionProps['MONKTON_VERSION_NAME']
+
+            applicationId 'com.monkton.lpr.scan'
+            versionCode phonenixVersionCode
+            versionName phoenixVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+         SOL{
+            def solVersionCode = versionProps['SOL_VERSION_CODE'].toInteger()
+            def solVersionName = versionProps['SOL_VERSION_NAME']
+
+            applicationId 'com.sol.lpr.scan'
+            versionCode solVersionCode
+            versionName solVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        Bellingham{
+            def bellinghamVersionCode = versionProps['BELLINGHAM_VERSION_CODE'].toInteger()
+            def bellinghamVersionName = versionProps['BELLINGHAM_VERSION_NAME']
+
+            applicationId 'com.bellingham.lpr.scan'
+            versionCode bellinghamVersionCode
+            versionName bellinghamVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Durango{
+            def durangoVersionCode = versionProps['DURANGO_VERSION_CODE'].toInteger()
+            def durangoVersionName = versionProps['DURANGO_VERSION_NAME']
+
+            applicationId 'com.durango.lpr.scan'
+            versionCode durangoVersionCode
+            versionName durangoVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        CFB{
+            def cfbVersionCode = versionProps['CITY_OF_FOLLY_BEACH_VERSION_CODE'].toInteger()
+            def cfbVersionName = versionProps['CITY_OF_FOLLY_BEACH_VERSION_NAME']
+
+            applicationId 'com.cfb.lpr.scan'
+            versionCode cfbVersionCode
+            versionName cfbVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        HiltonHead{
+            def hiltonheadVersionCode = versionProps['HILTON_HEAD_VERSION_CODE'].toInteger()
+            def hiltonheadVersionName = versionProps['HILTON_HEAD_VERSION_NAME']
+
+            applicationId 'com.hilton.lpr.scan'
+            versionCode hiltonheadVersionCode
+            versionName hiltonheadVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        BurBankCA{
+            def burbankCAVersionCode = versionProps['BURBANK_CA_VERSION_CODE'].toInteger()
+            def burbankCAVersionName = versionProps['BURBANK_CA_VERSION_NAME']
+
+            applicationId 'com.burbank.lpr.scan'
+            versionCode burbankCAVersionCode
+            versionName burbankCAVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        MansFieldCT{
+            def mansFieldCTVersionCode = versionProps['MANSFIELD_CT_VERSION_CODE'].toInteger()
+            def mansFieldCTVersionName = versionProps['MANSFIELD_CT_VERSION_NAME']
+
+            applicationId 'com.mansfield.lpr.scan'
+            versionCode mansFieldCTVersionCode
+            versionName mansFieldCTVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        PilotPittsburgPA{
+            def pilotpittsburgPAVersionCode = versionProps['PILOTPITTSBURG_PA_VERSION_CODE'].toInteger()
+            def pilotpittsburgPAVersionName = versionProps['PILOTPITTSBURG_PA_VERSION_NAME']
+
+            applicationId 'com.pilotpittsburg.lpr.scan'
+            versionCode pilotpittsburgPAVersionCode
+            versionName pilotpittsburgPAVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        ClemensKickOff{
+            def ClemensKickOffVersionCode = versionProps['CLEMENSKICKOFF_VERSION_CODE'].toInteger()
+            def ClemensKickOffVersionName = versionProps['CLEMENSKICKOFF_VERSION_NAME']
+
+            applicationId 'com.clemenskick.lpr.scan'
+            versionCode ClemensKickOffVersionCode
+            versionName ClemensKickOffVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        mysticCT{
+            def MysticCtVersionCode = versionProps['MYSTICCT_VERSION_CODE'].toInteger()
+            def MysticCtVersionName = versionProps['MYSTICCT_VERSION_NAME']
+
+            applicationId 'com.mysticct.lpr.scan'
+            versionCode MysticCtVersionCode
+            versionName MysticCtVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        CityofVirginia {
+            def CityOfVirginiaVersionCode = versionProps['CITYOFVIRGINIA_VERSION_CODE'].toInteger()
+            def CityOfVirginiaVersionName = versionProps['CITYOFVIRGINIA_VERSION_NAME']
+
+            applicationId 'com.virginia.lpr.scan'
+            versionCode CityOfVirginiaVersionCode
+            versionName CityOfVirginiaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        Charleston {
+            def CharlestonVersionCode = versionProps['CHARLESTON_VERSION_CODE'].toInteger()
+            def CharlestonVersionName = versionProps['CHARLESTON_VERSION_NAME']
+
+            applicationId 'com.charleston.lpr.scan'
+            versionCode CharlestonVersionCode
+            versionName CharlestonVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Bismarck {
+            def BismarckVersionCode = versionProps['BISMARCK_VERSION_CODE'].toInteger()
+            def BismarckVersionName = versionProps['BISMARCK_VERSION_NAME']
+
+            applicationId 'com.bismarck.lpr.scan'
+            versionCode BismarckVersionCode
+            versionName BismarckVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Satellite {
+            def SatelliteVersionCode = versionProps['SATELLITE_VERSION_CODE'].toInteger()
+            def SatelliteVersionName = versionProps['SATELLITE_VERSION_NAME']
+
+            applicationId 'com.satellite.lpr.scan'
+            versionCode SatelliteVersionCode
+            versionName SatelliteVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Burlington {
+            def BurlingtonVersionCode = versionProps['BURLINGTON_VERSION_CODE'].toInteger()
+            def BurlingtonVersionName = versionProps['BURLINGTON_VERSION_NAME']
+
+            applicationId 'com.burlington.lpr.scan'
+            versionCode BurlingtonVersionCode
+            versionName BurlingtonVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        OceanCity {
+            def OceanCityVersionCode = versionProps['OCEANCITY_VERSION_CODE'].toInteger()
+            def OceanCityVersionName = versionProps['OCEANCITY_VERSION_NAME']
+
+            applicationId 'com.ocean.lpr.scan'
+            versionCode OceanCityVersionCode
+            versionName OceanCityVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        SanDiego {
+            def SandiegoVersionCode = versionProps['SANDIEGO_VERSION_CODE'].toInteger()
+            def SandiegoVersionName = versionProps['SANDIEGO_VERSION_NAME']
+
+            applicationId 'com.sandiego.lpr.scan'
+            versionCode SandiegoVersionCode
+            versionName SandiegoVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        ChulaVista {
+            def ChulaVistaVersionCode = versionProps['CHULAVISTA_VERSION_CODE'].toInteger()
+            def ChulaVistaVersionName = versionProps['CHULAVISTA_VERSION_NAME']
+
+            applicationId 'com.chulavista.lpr.scan'
+            versionCode ChulaVistaVersionCode
+            versionName ChulaVistaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Roseburg {
+            def RoseBurgVersionCode = versionProps['ROSEBURG_VERSION_CODE'].toInteger()
+            def RoseBurgVersionName = versionProps['ROSEBURG_VERSION_NAME']
+
+            applicationId 'com.roseburg.lpr.scan'
+            versionCode RoseBurgVersionCode
+            versionName RoseBurgVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Irvine {
+            def IrvineVersionCode = versionProps['IRVINE_VERSION_CODE'].toInteger()
+            def IrvineVersionName = versionProps['IRVINE_VERSION_NAME']
+
+            applicationId 'com.oakland.lpr.scan'
+            versionCode IrvineVersionCode
+            versionName IrvineVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        NorthernCalifornia {
+            def NorthernCaliforniaVersionCode = versionProps['NORTHERN_CALIFORNIA_VERSION_CODE'].toInteger()
+            def NorthernCaliforniaVersionName = versionProps['NORTHERN_CALIFORNIA_VERSION_NAME']
+
+            applicationId 'com.northerncalifornia.lpr.scan'
+            versionCode NorthernCaliforniaVersionCode
+            versionName NorthernCaliforniaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Adobe {
+            def ADOBEVersionCode = versionProps['ADOBE_VERSION_CODE'].toInteger()
+            def ADOBEVersionName = versionProps['ADOBE_VERSION_NAME']
+
+            applicationId 'com.adobe.lpr.scan'
+            versionCode ADOBEVersionCode
+            versionName ADOBEVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        MackaySample {
+            def MackaySampleVersionCode = versionProps['MACKAY_SAMPLE_VERSION_CODE'].toInteger()
+            def MackaySampleVersionName = versionProps['MACKAY_SAMPLE_VERSION_NAME']
+
+            applicationId 'com.mackaysample.lpr.scan'
+            versionCode MackaySampleVersionCode
+            versionName MackaySampleVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        LazAtlanta {
+            def LazAtlantaVersionCode = versionProps['LAZATLANTA_VERSION_CODE'].toInteger()
+            def LazAtlantaVersionName = versionProps['LAZATLANTA_VERSION_NAME']
+
+            applicationId 'com.lazatlanta.lpr.scan'
+            versionCode LazAtlantaVersionCode
+            versionName LazAtlantaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        LazCCP {
+            def LazccpVersionCode = versionProps['LAZCCP_VERSION_CODE'].toInteger()
+            def LazccpVersionName = versionProps['LAZCCP_VERSION_NAME']
+
+            applicationId 'com.lazccp.lpr.scan'
+            versionCode LazccpVersionCode
+            versionName LazccpVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        LazKcmoPrivate {
+            def lazKcmoPrivateVersionCode = versionProps['LAZ_KCMO_PRIVATE_VERSION_CODE'].toInteger()
+            def lazKcmoPrivateVersionName = versionProps['LAZ_KCMO_PRIVATE_VERSION_NAME']
+
+            applicationId 'com.lazkcmo.private.lpr.scan'
+            versionCode lazKcmoPrivateVersionCode
+            versionName lazKcmoPrivateVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        LazConjuctivePoint {
+            def lazConjuctivePointVersionCode = versionProps['LAZ_CONJUCTIVE_POINT_VERSION_CODE'].toInteger()
+            def lazConjuctivePointVersionName = versionProps['LAZ_CONJUCTIVE_POINT_VERSION_NAME']
+
+            applicationId 'com.lazconjuctive.point.lpr.scan'
+            versionCode lazConjuctivePointVersionCode
+            versionName lazConjuctivePointVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        Martin {
+            def MartinVersionCode = versionProps['MARTIN_VERSION_CODE'].toInteger()
+            def MartinVersionName = versionProps['MARTIN_VERSION_NAME']
+
+            applicationId 'com.martin.lpr.scan'
+            versionCode MartinVersionCode
+            versionName MartinVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        SanFrancisco {
+            def SanFranciscoVersionCode = versionProps['SANFRANCISCO_VERSION_CODE'].toInteger()
+            def SanFranciscoVersionName = versionProps['SANFRANCISCO_VERSION_NAME']
+
+            applicationId 'com.sanfrancisco.lpr.scan'
+            versionCode SanFranciscoVersionCode
+            versionName SanFranciscoVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Fresno {
+            def FresnoVersionCode = versionProps['FRESNO_VERSION_CODE'].toInteger()
+            def FresnoVersionName = versionProps['FRESNO_VERSION_NAME']
+
+            applicationId 'com.fresno.lpr.scan'
+            versionCode FresnoVersionCode
+            versionName FresnoVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        ValetDivision {
+            def ValetDivisionVersionCode = versionProps['VALETDIVISION_VERSION_CODE'].toInteger()
+            def ValetDivisionVersionName = versionProps['VALETDIVISION_VERSION_NAME']
+
+            applicationId 'com.valetdivision.lpr.scan'
+            versionCode ValetDivisionVersionCode
+            versionName ValetDivisionVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        SanAntonio {
+            def SanAntonioVersionCode = versionProps['SANANTONIO_VERSION_CODE'].toInteger()
+            def SanAntonioVersionName = versionProps['SANANTONIO_VERSION_NAME']
+
+            applicationId 'com.sanantonio.lpr.scan'
+            versionCode SanAntonioVersionCode
+            versionName SanAntonioVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        LakeTahoe {
+            def LakeTahoeVersionCode = versionProps['LAKETAHOE_VERSION_CODE'].toInteger()
+            def LakeTahoeVersionName = versionProps['LAKETAHOE_VERSION_NAME']
+
+            applicationId 'com.laketahoe.lpr.scan'
+            versionCode LakeTahoeVersionCode
+            versionName LakeTahoeVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Kalamazoo {
+            def KalamzooVersionCode = versionProps['KALAMAZOO_VERSION_CODE'].toInteger()
+            def KalamzooVersionName = versionProps['KALAMAZOO_VERSION_NAME']
+
+            applicationId 'com.kalamzoo.lpr.scan'
+            versionCode KalamzooVersionCode
+            versionName KalamzooVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        IsleOfPalms {
+            def IsleofpalmsVersionCode = versionProps['ISLEOFPALMS_VERSION_CODE'].toInteger()
+            def IsleofpalmsVersionName = versionProps['ISLEOFPALMS_VERSION_NAME']
+
+            applicationId 'com.isleofpalms.lpr.scan'
+            versionCode IsleofpalmsVersionCode
+            versionName IsleofpalmsVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        LAMetro {
+            def LaMetroVersionCode = versionProps['LAMETRO_VERSION_CODE'].toInteger()
+            def LaMetroVersionName = versionProps['LAMETRO_VERSION_NAME']
+
+            applicationId 'com.lametro.lpr.scan'
+            versionCode LaMetroVersionCode
+            versionName LaMetroVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Lawrence {
+            def LawrenceVersionCode = versionProps['LAWRENCE_VERSION_CODE'].toInteger()
+            def LawrenceVersionName = versionProps['LAWRENCE_VERSION_NAME']
+
+            applicationId 'com.lawrence.lpr.scan'
+            versionCode LawrenceVersionCode
+            versionName LawrenceVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        COB {
+            def CobVersionCode = versionProps['COB_VERSION_CODE'].toInteger()
+            def CobVersionName = versionProps['COB_VERSION_NAME']
+
+            applicationId 'com.cob.lpr.scan'
+            versionCode CobVersionCode
+            versionName CobVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        HartFord {
+            def HartFordVersionCode = versionProps['HARTFORD_VERSION_CODE'].toInteger()
+            def HartFordVersionName = versionProps['HARTFORD_VERSION_NAME']
+
+            applicationId 'com.hartford.lpr.scan'
+            versionCode HartFordVersionCode
+            versionName HartFordVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        LAZLB {
+            def LazLbVersionCode = versionProps['LAZLB_VERSION_CODE'].toInteger()
+            def LazLbVersionName = versionProps['LAZLB_VERSION_NAME']
+
+            applicationId 'com.lazlb.lpr.scan'
+            versionCode LazLbVersionCode
+            versionName LazLbVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Ashland {
+            def AshlandVersionCode = versionProps['ASHLAND_VERSION_CODE'].toInteger()
+            def AshlandVersionName = versionProps['ASHLAND_VERSION_NAME']
+
+            applicationId 'com.ashland.lpr.scan'
+            versionCode AshlandVersionCode
+            versionName AshlandVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Riveroaks {
+            def RiverOaksVersionCode = versionProps['RIVEROAKS_VERSION_CODE'].toInteger()
+            def RiverOaksVersionName = versionProps['RIVEROAKS_VERSION_NAME']
+
+            applicationId 'com.riveroaks.lpr.scan'
+            versionCode RiverOaksVersionCode
+            versionName RiverOaksVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        ACEAmazon {
+            def ACEAmazonVersionCode = versionProps['ACE_AMAZON_VERSION_CODE'].toInteger()
+            def ACEAmazonVersionName = versionProps['ACE_AMAZON_VERSION_NAME']
+
+            applicationId 'com.amazon.lpr.scan'
+            versionCode ACEAmazonVersionCode
+            versionName ACEAmazonVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        FashionCity {
+            def FashionCityVersionCode = versionProps['FASHION_CITY_VERSION_CODE'].toInteger()
+            def FashionCityVersionName = versionProps['FASHION_CITY_VERSION_NAME']
+
+            applicationId 'com.fashioncity.lpr.scan'
+            versionCode FashionCityVersionCode
+            versionName FashionCityVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Beaufort {
+            def BeaufortVersionCode = versionProps['BEAUFORT_VERSION_CODE'].toInteger()
+            def BeaufortVersionName = versionProps['BEAUFORT_VERSION_NAME']
+
+            applicationId 'com.beaufort.lpr.scan'
+            versionCode BeaufortVersionCode
+            versionName BeaufortVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Sanibel {
+            def SanibelVersionCode = versionProps['SANIBEL_VERSION_CODE'].toInteger()
+            def SanibelVersionName = versionProps['SANIBEL_VERSION_NAME']
+
+            applicationId 'com.sanibel.lpr.scan'
+            versionCode SanibelVersionCode
+            versionName SanibelVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Glasgow {
+            def GlasgowVersionCode = versionProps['GLASGOW_VERSION_CODE'].toInteger()
+            def GlasgowVersionName = versionProps['GLASGOW_VERSION_NAME']
+
+            applicationId 'com.glasgow.lpr.scan'
+            versionCode GlasgowVersionCode
+            versionName GlasgowVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Cohasset {
+            def CohassetVersionCode = versionProps['COHASSET_VERSION_CODE'].toInteger()
+            def CohassetVersionName = versionProps['COHASSET_VERSION_NAME']
+
+            applicationId 'com.cohasset.lpr.scan'
+            versionCode CohassetVersionCode
+            versionName CohassetVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        SmyrnaBeach {
+            def SmyrnaBeachVersionCode = versionProps['SMYRNA_BEACH_VERSION_CODE'].toInteger()
+            def SmyrnaBeachVersionName = versionProps['SMYRNA_BEACH_VERSION_NAME']
+
+            applicationId 'com.smyrna.lpr.scan'
+            versionCode SmyrnaBeachVersionCode
+            versionName SmyrnaBeachVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        LittleRock{
+            def LittleRockVersionCode = versionProps['LITTLE_ROCK_VERSION_CODE'].toInteger()
+            def LittleRockVersionName = versionProps['LITTLE_ROCK_VERSION_NAME']
+
+            applicationId 'com.littlerock.lpr.scan'
+            versionCode LittleRockVersionCode
+            versionName LittleRockVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        MemorialHerman{
+            def MemorialHermanVersionCode = versionProps['MEMORIAL_HERMAN_VERSION_CODE'].toInteger()
+            def MemorialHermanVersionName = versionProps['MEMORIAL_HERMAN_VERSION_NAME']
+
+            applicationId 'com.memorial.lpr.scan'
+            versionCode MemorialHermanVersionCode
+            versionName MemorialHermanVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        PeakParking{
+            def PeakParkingVersionCode = versionProps['PEAK_PARKING_VERSION_CODE'].toInteger()
+            def PeakParkingVersionName = versionProps['PEAK_PARKING_VERSION_NAME']
+
+            applicationId 'com.peak.lpr.scan'
+            versionCode PeakParkingVersionCode
+            versionName PeakParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        PeakTexas{
+            def PeakTexasVersionCode = versionProps['PEAK_TEXAS_VERSION_CODE'].toInteger()
+            def PeakTexasVersionName = versionProps['PEAK_TEXAS_VERSION_NAME']
+
+            applicationId 'com.peaktexas.lpr.scan'
+            versionCode PeakTexasVersionCode
+            versionName PeakTexasVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Septa{
+            def SeptaVersionCode = versionProps['SEPTA_VERSION_CODE'].toInteger()
+            def SeptaVersionName = versionProps['SEPTA_VERSION_NAME']
+
+//            applicationId 'com.septa.lpr.scan'
+            applicationId 'org.septa.lpr.scan'
+            versionCode SeptaVersionCode
+            versionName SeptaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        KansasCity{
+            def KansasVersionCode = versionProps['KANSAS_VERSION_CODE'].toInteger()
+            def KansasVersionName = versionProps['KANSAS_VERSION_NAME']
+
+            applicationId 'com.kansas.lpr.scan'
+            versionCode KansasVersionCode
+            versionName KansasVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        SouthMiami{
+            def miamiVersionCode = versionProps['SOUTHMIAMI_VERSION_CODE'].toInteger()
+            def miamiVersionName = versionProps['SOUTHMIAMI_VERSION_NAME']
+
+            applicationId 'com.miami.lpr.scan'
+            versionCode miamiVersionCode
+            versionName miamiVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Ephrata{
+            def ephrataVersionCode = versionProps['EPHRATA_VERSION_CODE'].toInteger()
+            def ephrataVersionName = versionProps['EPHRATA_VERSION_NAME']
+
+            applicationId 'com.ephrata.lpr.scan'
+            versionCode ephrataVersionCode
+            versionName ephrataVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Rutgers{
+            def rutersVersionCode = versionProps['RUTGERS_VERSION_CODE'].toInteger()
+            def rutgersVersionName = versionProps['RUTGERS_VERSION_NAME']
+
+            applicationId 'com.rutgers.lpr.scan'
+            versionCode rutersVersionCode
+            versionName rutgersVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        WestChester{
+            def rutersVersionCode = versionProps['WESTFIELD_VERSION_CODE'].toInteger()
+            def rutgersVersionName = versionProps['WESTFIELD_VERSION_NAME']
+
+            applicationId 'com.westchester.lpr.scan'
+            versionCode rutersVersionCode
+            versionName rutgersVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Dallas{
+            def dallasVersionCode = versionProps['DALLAS_VERSION_CODE'].toInteger()
+            def dallasVersionName = versionProps['DALLAS_VERSION_NAME']
+
+            applicationId 'com.dallas.lpr.scan'
+            versionCode dallasVersionCode
+            versionName dallasVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Clifton{
+            def califtonVersionCode = versionProps['CLIFTON_HEIGHTS_VERSION_CODE'].toInteger()
+            def califtonVersionName = versionProps['CLIFTON_HEIGHTS_VERSION_NAME']
+
+            applicationId 'com.clifton.lpr.scan'
+            versionCode califtonVersionCode
+            versionName califtonVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Orleans{
+            def OrleansVersionCode = versionProps['ORLEANS_VERSION_CODE'].toInteger()
+            def OrleansVersionName = versionProps['ORLEANS_VERSION_NAME']
+
+            applicationId 'com.orleans.lpr.scan'
+            versionCode OrleansVersionCode
+            versionName OrleansVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Volusia{
+            def VolusiaVersionCode = versionProps['VOLUSIA_VERSION_CODE'].toInteger()
+            def VolusiaVersionName = versionProps['VOLUSIA_VERSION_NAME']
+
+            applicationId 'com.volusia.lpr.scan'
+            versionCode VolusiaVersionCode
+            versionName VolusiaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Easton{
+            def EastonVersionCode = versionProps['EASTON_VERSION_CODE'].toInteger()
+            def EastonVersionName = versionProps['EASTON_VERSION_NAME']
+
+            applicationId 'com.easton.lpr.scan'
+            versionCode EastonVersionCode
+            versionName EastonVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        CorpusChristi{
+            def CorpusChristiVersionCode = versionProps['CORPUS_CHRISTI_VERSION_CODE'].toInteger()
+            def CorpusChristiVersionName = versionProps['CORPUS_CHRISTI_VERSION_NAME']
+
+            applicationId 'com.corpus.lpr.scan'
+            versionCode CorpusChristiVersionCode
+            versionName CorpusChristiVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        CityOfSanDiego{
+            def CorpusChristiVersionCode = versionProps['CITY_OF_SAN_DIEGO_VERSION_CODE'].toInteger()
+            def CorpusChristiVersionName = versionProps['CITY_OF_SAN_DIEGO_VERSION_NAME']
+
+            applicationId 'com.cityofsandiego.lpr.scan'
+            versionCode CorpusChristiVersionCode
+            versionName CorpusChristiVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        PRRS{
+            def PrrsUtahVersionCode = versionProps['PRRS_UTAH_VERSION_CODE'].toInteger()
+            def PrrsUtahVersionName = versionProps['PRRS_UTAH_VERSION_NAME']
+
+            applicationId 'com.prrs.lpr.scan'
+            versionCode PrrsUtahVersionCode
+            versionName PrrsUtahVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        PrimeParking{
+            def PrimeParkingVersionCode = versionProps['PRIME_PARKING_VERSION_CODE'].toInteger()
+            def PrimeParkingVersionName = versionProps['PRIME_PARKING_VERSION_NAME']
+
+            applicationId 'com.prime.lpr.scan'
+            versionCode PrimeParkingVersionCode
+            versionName PrimeParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        SurfCity{
+            def SurfCityVersionCode = versionProps['SURF_CITY_VERSION_CODE'].toInteger()
+            def SurfCityVersionName = versionProps['SURF_CITY_VERSION_NAME']
+
+            applicationId 'com.surf.lpr.scan'
+            versionCode SurfCityVersionCode
+            versionName SurfCityVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        WoodStock{
+            def WoodStockVersionCode = versionProps['WOOD_STOCK_VERSION_CODE'].toInteger()
+            def WoodStockVersionName = versionProps['WOOD_STOCK_VERSION_NAME']
+
+            applicationId 'com.woodstock.lpr.scan'
+            versionCode WoodStockVersionCode
+            versionName WoodStockVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Oxford{
+            def OxfordVersionCode = versionProps['OXFORD_VERSION_CODE'].toInteger()
+            def OxfordVersionName = versionProps['OXFORD_VERSION_NAME']
+
+            applicationId 'com.oxford.lpr.scan'
+            versionCode OxfordVersionCode
+            versionName OxfordVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Millbrae{
+            def MillbraeVersionCode = versionProps['MILLBRAE_VERSION_CODE'].toInteger()
+            def MillbraeVersionName = versionProps['MILLBRAE_VERSION_NAME']
+
+            applicationId 'com.millbrae.lpr.scan'
+            versionCode MillbraeVersionCode
+            versionName MillbraeVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        ParkRidge{
+            def ParkRidgeVersionCode = versionProps['PARKRIDGE_VERSION_CODE'].toInteger()
+            def ParkRidgeVersionName = versionProps['PARKRIDGE_VERSION_NAME']
+
+            applicationId 'com.parkridge.lpr.scan'
+            versionCode ParkRidgeVersionCode
+            versionName ParkRidgeVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        AlamedaCountySheriff{
+            def AlamedaCountySheriffVersionCode = versionProps['ALAMEDA_COUNTY_SHERIFF_VERSION_CODE'].toInteger()
+            def AlamedaCountySheriffVersionName = versionProps['ALAMEDA_COUNTY_SHERIFF_VERSION_NAME']
+
+            applicationId 'com.alameda.lpr.scan'
+            versionCode AlamedaCountySheriffVersionCode
+            versionName AlamedaCountySheriffVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        AlamedaCountyTransit {
+            def AlamedaCountyTransitVersionCode = versionProps['ALAMEDA_COUNTY_TRANSIT_VERSION_CODE'].toInteger()
+            def AlamedaCountyTransitVersionName = versionProps['ALAMEDA_COUNTY_TRANSIT_VERSION_NAME']
+
+            applicationId 'com.alamedatransit.lpr.scan'
+            versionCode AlamedaCountyTransitVersionCode
+            versionName AlamedaCountyTransitVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Jacksonville{
+            def JacksonvilleVersionCode = versionProps['JACKSONVILLE_VERSION_CODE'].toInteger()
+            def JacksonvilleVersionName = versionProps['JACKSONVILLE_VERSION_NAME']
+
+            applicationId 'com.jacksonville.lpr.scan'
+            versionCode JacksonvilleVersionCode
+            versionName JacksonvilleVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Norwalk{
+            def NorwalkVersionCode = versionProps['NORWALK_VERSION_CODE'].toInteger()
+            def NorwalkVersionName = versionProps['NORWALK_VERSION_NAME']
+
+            applicationId 'com.norwalk.lpr.scan'
+            versionCode NorwalkVersionCode
+            versionName NorwalkVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Covina{
+            def CovinaVersionCode = versionProps['COVINA_VERSION_CODE'].toInteger()
+            def CovinaVersionName = versionProps['COVINA_VERSION_NAME']
+
+            applicationId 'com.covina.lpr.scan'
+            versionCode CovinaVersionCode
+            versionName CovinaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Kenosha{
+            def KenoshaVersionCode = versionProps['KENOSHA_VERSION_CODE'].toInteger()
+            def KenoshaVersionName = versionProps['KENOSHA_VERSION_NAME']
+
+            applicationId 'com.kenosha.lpr.scan'
+            versionCode KenoshaVersionCode
+            versionName KenoshaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Watsonville{
+            def WatsonvilleVersionCode = versionProps['WATSONVILLE_VERSION_CODE'].toInteger()
+            def WatsonvilleVersionName = versionProps['WATSONVILLE_VERSION_NAME']
+
+            applicationId 'com.watsonville.lpr.scan'
+            versionCode WatsonvilleVersionCode
+            versionName WatsonvilleVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        PorthoodRiver{
+            def PorthoodRiverVersionCode = versionProps['PORT_HOOD_RIVER_VERSION_CODE'].toInteger()
+            def PorthoodRiverVersionName = versionProps['PORT_HOOD_RIVER_VERSION_NAME']
+
+            applicationId 'com.hoodriver.lpr.scan'
+            versionCode PorthoodRiverVersionCode
+            versionName PorthoodRiverVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        
+        VistaCA {
+            def VistaCaVersionCode = versionProps['VISTA_CA_VERSION_CODE'].toInteger()
+            def VistaCaVersionName = versionProps['VISTA_CA_VERSION_NAME']
+
+            applicationId 'com.vista.lpr.scan'
+            versionCode VistaCaVersionCode
+            versionName VistaCaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        IndianaBorough{
+            def IndianaBoroughVersionCode = versionProps['INDIANA_BOROUGH_VERSION_CODE'].toInteger()
+            def IndianaBoroughVersionName = versionProps['INDIANA_BOROUGH_VERSION_NAME']
+
+            applicationId 'com.indianaborough.lpr.scan'
+            versionCode IndianaBoroughVersionCode
+            versionName IndianaBoroughVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        MountRainier{
+            def MountRainierVersionCode = versionProps['MOUNT_RAINIER_VERSION_CODE'].toInteger()
+            def MountRainierVersionName = versionProps['MOUNT_RAINIER_VERSION_NAME']
+
+            applicationId 'com.mountrainier.lpr.scan'
+            versionCode MountRainierVersionCode
+            versionName MountRainierVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        BoyntonBeach{
+            def BoyntonBeachVersionCode = versionProps['BOYNTON_BEACH_VERSION_CODE'].toInteger()
+            def BoyntonBeachVersionName = versionProps['BOYNTON_BEACH_VERSION_NAME']
+
+            applicationId 'com.boynton.lpr.scan'
+            versionCode BoyntonBeachVersionCode
+            versionName BoyntonBeachVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        Boston{
+            def BostonVersionCode = versionProps['BOSTON_VERSION_CODE'].toInteger()
+            def BostonVersionName = versionProps['BOSTON_VERSION_NAME']
+
+            applicationId 'com.boston.lpr.scan'
+            versionCode BostonVersionCode
+            versionName BostonVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        AtlanticBeachNc {
+            def atlanticBeachNcVersionCode = versionProps['ATLANTIC_BEACH_NC_VERSION_CODE'].toInteger()
+            def atlanticBeachNcVersionName = versionProps['ATLANTIC_BEACH_NC_VERSION_NAME']
+
+            applicationId 'com.atlanticbeachnc.lpr.scan'
+            versionCode atlanticBeachNcVersionCode
+            versionName atlanticBeachNcVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        AtlanticBeachSc {
+            def atlanticBeachScVersionCode = versionProps['ATLANTIC_BEACH_SC_VERSION_CODE'].toInteger()
+            def atlanticBeachScVersionName = versionProps['ATLANTIC_BEACH_SC_VERSION_NAME']
+
+            applicationId 'com.atlanticbeachsc.lpr.scan'
+            versionCode atlanticBeachScVersionCode
+            versionName atlanticBeachScVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        StJohnsburyVT {
+            def stJohnsburyVTVersionCode = versionProps['ST_JOHNSBURY_VT_VERSION_CODE'].toInteger()
+            def stJohnsburyVTVersionName = versionProps['ST_JOHNSBURY_VT_VERSION_NAME']
+
+            applicationId 'com.stjohnsburyvt.lpr.scan'
+            versionCode stJohnsburyVTVersionCode
+            versionName stJohnsburyVTVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        WoodstockGA {
+            def woodstockGaVersionCode = versionProps['WOODSTOCK_GA_VERSION_CODE'].toInteger()
+            def woodstockGaVersionName = versionProps['WOODSTOCK_GA_VERSION_NAME']
+
+            applicationId 'com.woodstockga.lpr.scan'
+            versionCode woodstockGaVersionCode
+            versionName woodstockGaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        IndianHarbourBeach {
+            def indianHarbourBeachVersionCode = versionProps['INDIAN_HARBOUR_BEACH_VERSION_CODE'].toInteger()
+            def indianHarbourBeachVersionName = versionProps['INDIAN_HARBOUR_BEACH_VERSION_NAME']
+
+            applicationId 'com.indianharbourbeach.lpr.scan'
+            versionCode indianHarbourBeachVersionCode
+            versionName indianHarbourBeachVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        CityOfWaterloo{
+            def cityOfWaterlooVersionCode = versionProps['CITY_OF_WATERLOO_VERSION_CODE'].toInteger()
+            def cityOfWaterlooVersionName = versionProps['CITY_OF_WATERLOO_VERSION_NAME']
+
+            applicationId 'com.cityofwaterloo.lpr.scan'
+            versionCode cityOfWaterlooVersionCode
+            versionName cityOfWaterlooVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        ParkX{
+            def parkXVersionCode = versionProps['PARKX_VERSION_CODE'].toInteger()
+            def parkXVersionName = versionProps['PARKX_VERSION_NAME']
+
+            applicationId 'com.parkx.lpr.scan'
+            versionCode parkXVersionCode
+            versionName parkXVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        SanMateoRedwood{
+            def sanMateoRedwoodVersionCode = versionProps['SANMATEO_REDWOOD_VERSION_CODE'].toInteger()
+            def sanMateoRedwoodVersionName = versionProps['SANMATEO_REDWOOD_VERSION_NAME']
+
+            applicationId 'com.sanmateo.redwood.lpr.scan'
+            versionCode sanMateoRedwoodVersionCode
+            versionName sanMateoRedwoodVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        Seastreak{
+            def seastreakVersionCode = versionProps['SEASTREAK_VERSION_CODE'].toInteger()
+            def seastreakVersionName = versionProps['SEASTREAK_VERSION_NAME']
+
+            applicationId 'com.seastreak.lpr.scan'
+            versionCode seastreakVersionCode
+            versionName seastreakVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        SouthLake{
+            def southlaketahoeVersionCode = versionProps['SOUTH_LAKE_TAHOE_VERSION_CODE'].toInteger()
+            def southlaketahoeVersionName = versionProps['SOUTH_LAKE_TAHOE_VERSION_NAME']
+
+            applicationId 'com.southlake.lpr.scan'
+            versionCode southlaketahoeVersionCode
+            versionName southlaketahoeVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        UptownAtlanta {
+            def uptownAtlantaVersionCode = versionProps['UPTOWN_ATLANTA_VERSION_CODE'].toInteger()
+            def uptownAtlantaVersionName = versionProps['UPTOWN_ATLANTA_VERSION_NAME']
+
+            applicationId 'com.uptown.atlanta.lpr.scan'
+            versionCode uptownAtlantaVersionCode
+            versionName uptownAtlantaVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        DanvilleVA {
+            def danvilleVAVersionCode = versionProps['DANVILLE_VA_VERSION_CODE'].toInteger()
+            def danvilleVAVersionName = versionProps['DANVILLE_VA_VERSION_NAME']
+
+            applicationId 'com.danville.va.lpr.scan'
+            versionCode danvilleVAVersionCode
+            versionName danvilleVAVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        Camden {
+            def camdenVersionCode = versionProps['CAMDEN_VERSION_CODE'].toInteger()
+            def camdenVersionName = versionProps['CAMDEN_VERSION_NAME']
+
+            applicationId 'com.camden.lpr.scan'
+            versionCode camdenVersionCode
+            versionName camdenVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        WinparkTx {
+            def winparkTxVersionCode = versionProps['WINPARK_TX_VERSION_CODE'].toInteger()
+            def winparkTxVersionName = versionProps['WINPARK_TX_VERSION_NAME']
+
+            applicationId 'com.winpark.tx.lpr.scan'
+            versionCode winparkTxVersionCode
+            versionName winparkTxVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        JacksonvilleFlReimaginedParking {
+            def jacksonvilleFlReimaginedParkingVersionCode = versionProps['JACKSONVILLE_FL_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def jacksonvilleFlReimaginedParkingVersionName = versionProps['JACKSONVILLE_FL_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.jacksonvillefl.reimagineparking.lpr.scan'
+            versionCode jacksonvilleFlReimaginedParkingVersionCode
+            versionName jacksonvilleFlReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+
+        ChattanoogaTnReimaginedParking {
+            def chattanoogaTnReimaginedParkingVersionCode = versionProps['CHATTANOOGA_TN_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def chattanoogaTnReimaginedParkingVersionName = versionProps['CHATTANOOGA_TN_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.chattanoogatn.reimagineparking.lpr.scan'
+            versionCode chattanoogaTnReimaginedParkingVersionCode
+            versionName chattanoogaTnReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        CityOfWiltonManorsReimaginedParking {
+            def cityOfWiltonManorsReimaginedParkingVersionCode = versionProps['CITY_OF_WILTON_MANORS_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def cityOfWiltonManorsReimaginedParkingVersionName = versionProps['CITY_OF_WILTON_MANORS_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.cityofwiltonmanors.reimagineparking.lpr.scan'
+            versionCode cityOfWiltonManorsReimaginedParkingVersionCode
+            versionName cityOfWiltonManorsReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        ReefCasperWYReimaginedParking {
+            def reefCasperWYReimaginedParkingVersionCode = versionProps['REEF_CASPER_WY_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def reefCasperWYReimaginedParkingVersionName = versionProps['REEF_CASPER_WY_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.reefcasperwy.reimaginedparking.lpr.scan'
+            versionCode reefCasperWYReimaginedParkingVersionCode
+            versionName reefCasperWYReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        MobileAlReimaginedParking {
+            def mobileAlReimaginedParkingVersionCode = versionProps['MOBILE_AL_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def mobileAlReimaginedParkingVersionName = versionProps['MOBILE_AL_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.mobileal.reimaginedparking.lpr.scan'
+            versionCode mobileAlReimaginedParkingVersionCode
+            versionName mobileAlReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        FayettevilleNcReimaginedParking {
+            def fayettevilleNcReimaginedParkingVersionCode = versionProps['FAYETTEVILLE_NC_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def fayettevilleNcReimaginedParkingVersionName = versionProps['FAYETTEVILLE_NC_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.fayettevillenc.reimaginedparking.lpr.scan'
+            versionCode fayettevilleNcReimaginedParkingVersionCode
+            versionName fayettevilleNcReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        PortLandRo {
+            def portLandRoVersionCode = versionProps['PORTLAND_RO_VERSION_CODE'].toInteger()
+            def portLandRoVersionName = versionProps['PORTLAND_RO__VERSION_NAME']
+
+            applicationId 'com.portland.ro.lpr.scan'
+            versionCode portLandRoVersionCode
+            versionName portLandRoVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        HamtramckMi {
+            def hamtramckMiVersionCode = versionProps['HAMTRAMCK_MI_VERSION_CODE'].toInteger()
+            def hamtramckMiVersionName = versionProps['HAMTRAMCK_MI_VERSION_NAME']
+
+            applicationId 'com.hamtramck.mi.lpr.scan'
+            versionCode hamtramckMiVersionCode
+            versionName hamtramckMiVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        MerrickParkFLReimaginedParking {
+            def merrickParkFLReimaginedParkingVersionCode = versionProps['MERRICK_PARK_FL_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def merrickParkFLReimaginedParkingVersionName = versionProps['MERRICK_PARK_FL_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.merrickparkfl.reimaginedparking.lpr.scan'
+            versionCode merrickParkFLReimaginedParkingVersionCode
+            versionName merrickParkFLReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        HillsboroOrPrivateReimaginedParking {
+            def hillsboroOrPrivateReimaginedParkingVersionCode = versionProps['HILLSBORO_OR_PRIVATE_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def hillsboroOrPrivateReimaginedParkingVersionName = versionProps['HILLSBORO_OR_PRIVATE_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.hillsboroorprivate.reimaginedparking.lpr.scan'
+            versionCode hillsboroOrPrivateReimaginedParkingVersionCode
+            versionName hillsboroOrPrivateReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        PhsaReimaginedParking {
+            def phsaReimaginedParkingVersionCode = versionProps['PHSA_REIMAGINED_PARKING_VERSION_CODE'].toInteger()
+            def phsaReimaginedParkingVersionName = versionProps['PHSA_REIMAGINED_PARKING_VERSION_NAME']
+
+            applicationId 'com.phsa.reimaginedparking.lpr.scan'
+            versionCode phsaReimaginedParkingVersionCode
+            versionName phsaReimaginedParkingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        MtaLongIslandRailRoad {
+            def mtaLongIslandRailRoadVersionCode = versionProps['MTA_LONG_ISLAND_RAIL_ROAD_VERSION_CODE'].toInteger()
+            def mtaLongIslandRailRoadVersionName = versionProps['MTA_LONG_ISLAND_RAIL_ROAD_VERSION_NAME']
+
+            applicationId 'com.mtalirr.lpr.scan'
+            versionCode mtaLongIslandRailRoadVersionCode
+            versionName mtaLongIslandRailRoadVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        GreenburghNY {
+            def greenburghNYVersionCode = versionProps['GREENBURGH_NY_VERSION_CODE'].toInteger()
+            def greenburghNYVersionName = versionProps['GREENBURGH_NY_VERSION_NAME']
+
+            applicationId 'com.greenburgh.ny.lpr.scan'
+            versionCode greenburghNYVersionCode
+            versionName greenburghNYVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        BottleworksIn {
+            def bottleworksInVersionCode = versionProps['BOTTLEWORKS_IN_VERSION_CODE'].toInteger()
+            def bottleworksInVersionName = versionProps['BOTTLEWORKS_IN_VERSION_NAME']
+
+            applicationId 'com.bottleworks.in.lpr.scan'
+            versionCode bottleworksInVersionCode
+            versionName bottleworksInVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        AceHgiManhattan {
+            def aceHgiManhattanVersionCode = versionProps['ACE_HGI_MANHATTAN_VERSION_CODE'].toInteger()
+            def aceHgiManhattanVersionName = versionProps['ACE_HGI_MANHATTAN_VERSION_NAME']
+
+            applicationId 'com.ace.hgi.manhattan.lpr.scan'
+            versionCode aceHgiManhattanVersionCode
+            versionName aceHgiManhattanVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        ABobsTowing {
+            def aBobsTowingVersionCode = versionProps['A_BOBS_TOWING_VERSION_CODE'].toInteger()
+            def aBobsTowingVersionName = versionProps['A_BOBS_TOWING_VERSION_NAME']
+
+            applicationId 'com.a.bobs.towing.lpr.scan'
+            versionCode aBobsTowingVersionCode
+            versionName aBobsTowingVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        ElPasoTxMackay {
+            def elPasoTxMackayVersionCode = versionProps['EL_PASO_TX_MACKAY_VERSION_CODE'].toInteger()
+            def elPasoTxMackayVersionName = versionProps['EL_PASO_TX_MACKAY_VERSION_NAME']
+
+            applicationId 'com.el.paso.tx.mackay.lpr.scan'
+            versionCode elPasoTxMackayVersionCode
+            versionName elPasoTxMackayVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+
+        ImParkPHSA {
+            def imParkVersionCode = versionProps['IMPARK_PHSA_VERSION_CODE'].toInteger()
+            def imParkVersionName = versionProps['IMPARK_PHSA_VERSION_NAME']
+
+            applicationId 'com.im.park.phsa.lpr.scan'
+            versionCode imParkVersionCode
+            versionName imParkVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        ElCaminoCollege {
+            def elCaminoCollegeVersionCode = versionProps['EL_CAMINO_COLLEGE_VERSION_CODE'].toInteger()
+            def elCaminoCollegeVersionName = versionProps['EL_CAMINO_COLLEGE_VERSION_NAME']
+
+            applicationId 'com.el.camino.college.lpr.scan'
+            versionCode elCaminoCollegeVersionCode
+            versionName elCaminoCollegeVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        AceSanDiegoZoo {
+            def aceSanDiegoZooVersionCode = versionProps['ACE_SAN_DIEGO_ZOO_VERSION_CODE'].toInteger()
+            def aceSanDiegoZooVersionName = versionProps['ACE_SAN_DIEGO_ZOO_VERSION_NAME']
+
+            applicationId 'com.ace.sandiego.zoo.lpr.scan'
+            versionCode aceSanDiegoZooVersionCode
+            versionName aceSanDiegoZooVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        JeffersonCityMo {
+            def jeffersonCityMoVersionCode = versionProps['JEFFERSON_CITY_MO_VERSION_CODE'].toInteger()
+            def jeffersonCityMoVersionName = versionProps['JEFFERSON_CITY_MO_VERSION_NAME']
+
+            applicationId 'com.jefferson.city.mo.lpr.scan'
+            versionCode jeffersonCityMoVersionCode
+            versionName jeffersonCityMoVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        VestSecuritySystem {
+            def vestSecuritySystemVersionCode = versionProps['VEST_SECURITY_SYSTEM_VERSION_CODE'].toInteger()
+            def vestSecuritySystemVersionName = versionProps['VEST_SECURITY_SYSTEM_VERSION_NAME']
+
+            applicationId 'com.vest.security.system.lpr.scan'
+            versionCode vestSecuritySystemVersionCode
+            versionName vestSecuritySystemVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        WellsPd {
+            def wellsPdVersionCode = versionProps['WELLS_PD_VERSION_CODE'].toInteger()
+            def wellsPdVersionName = versionProps['WELLS_PD_VERSION_NAME']
+
+            applicationId 'com.wells.pd.lpr.scan'
+            versionCode wellsPdVersionCode
+            versionName wellsPdVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        DeerFieldBeachFL {
+            def deerFieldBeachFLCode = versionProps['DEER_FIELD_BEACH_FL_VERSION_CODE'].toInteger()
+            def deerFieldBeachFLVersionName = versionProps['DEER_FIELD_BEACH_FL_VERSION_NAME']
+
+            applicationId 'com.deer.field.beach.fl.lpr.scan'
+            versionCode deerFieldBeachFLCode
+            versionName deerFieldBeachFLVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+        StormwaterDivision {
+            def stormwaterDivisionCode = versionProps['STORMWATER_DIVISION_VERSION_CODE'].toInteger()
+            def stormwaterDivisionVersionName = versionProps['STORMWATER_DIVISION_VERSION_NAME']
+
+            applicationId 'com.storm.water.division.lpr.scan'
+            versionCode stormwaterDivisionCode
+            versionName stormwaterDivisionVersionName
+            dimension "version"
+            proguardFile 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        park {
+            res {
+                srcDirs 'src\\park\\res'
+            }
+        }
+
+        //Define all the flavors here in which you want Doubango SDK
+        def sharedFlavorsForDoubango = ["Septa", "CityOfSanDiego", "ReefCasperWYReimaginedParking"]
+
+        sharedFlavorsForDoubango.each { flavor ->
+            if (project.hasProperty("enableDoubangoForLPR") && project.enableDoubangoForLPR.toBoolean()) {
+                //Merging JNI LIBs needed for Doubango SDK
+                sourceSets."$flavor".jniLibs.srcDirs += ['../binaries/android/jniLibs']
+
+                //Merging ultimate alpr java SDK files
+                sourceSets."$flavor".java.srcDirs += ['../java/android']
+
+                //Merging all the files from doubango_custom_pack into main package
+                sourceSets."$flavor".java.srcDirs += ['src/doubango_custom_pack/java']
+                sourceSets."$flavor".res.srcDirs += ['src/doubango_custom_pack/res']
+                sourceSets."$flavor".manifest.srcFile 'src/doubango_custom_pack/AndroidManifest.xml'
+
+                //Merging custom models for ultimate alpr
+                sourceSets."$flavor".assets.srcDirs += ['../ultimate_alpr_assets/models_lite']
+                sourceSets."$flavor".assets.srcDirs += ['../ultimate_alpr_assets/fonts']
+            } else {
+                //Not to merge anything here, in case of error, we can uncomment below one
+                //myflavor.java.srcDirs = [] // Disable source for this flavor
+                //sourceSets."$flavor".java.srcDirs = []
+                //sourceSets."$flavor".res.srcDirs = []
+            }
+        }
+
+        //if you want to make it run for all variant then use main instead Septa
+//        Septa {
+//            if (project.hasProperty("enableDoubangoForLPR") && project.enableDoubangoForLPR.toBoolean()) {
+//                jniLibs.srcDirs += ['../binaries/android/jniLibs']
+//                //java.srcDirs += ['src/main/java']
+//                //java.srcDirs += ['../../../java/android']
+//                java.srcDirs += ['../java/android']
+//                java.srcDirs += ['src/doubango_custom_pack/java']
+//
+//                res.srcDirs += ['src/doubango_custom_pack/res']
+//
+//                manifest.srcFile 'src/doubango_custom_pack/AndroidManifest.xml'
+//
+//                //assets.srcDirs += ['../ultimate_alpr_assets/models']
+//                assets.srcDirs += ['../ultimate_alpr_assets/models_lite']
+//                assets.srcDirs += ['../ultimate_alpr_assets/fonts']
+//            } else {
+//                //myflavor.java.srcDirs = [] // Disable source for this flavor
+//            }
+//
+//
+//        }
+    }
+
+
+//    compileKotlin {
+//        kotlinOptions {
+//            jvmTarget = "1.8"
+//        }
+//    }
+//
+//    compileTestKotlin {
+//        kotlinOptions {
+//            jvmTarget = "1.8"
+//        }
+//    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+//    androidExtensions {
+//        experimental = true
+//    }
+    namespace 'com.parkloyalty.lpr.scan'
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+    //Fragment Navigation Library
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.9.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.9.5'
+
+    //Splash Screen Library
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+
+    //Hilt for DI
+    implementation 'com.google.dagger:hilt-android:2.57.2'
+    kapt 'com.google.dagger:hilt-compiler:2.57.2'
+//    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+//    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha03'
+
+    //Jackson
+    implementation "com.fasterxml.jackson.core:jackson-core:2.20.0"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:2.20"
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.20.0"
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.20.0"
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.0.20"
+    implementation "androidx.core:core-ktx:1.7.0"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.1'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'androidx.test:runner:1.6.2'
+    implementation 'androidx.test.espresso:espresso-core:3.6.1'
+    implementation 'androidx.core:core:1.13.1'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // material design
+    //implementation 'com.google.android.material:material:1.3.0'
+
+    //multidex.
+    implementation 'androidx.multidex:multidex:2.0.1'
+//    implementation 'commons-codec:commons-codec:1.10'
+
+    // Room components
+    implementation 'androidx.room:room-runtime:2.8.2'
+    kapt 'androidx.room:room-compiler:2.8.2'
+    androidTestImplementation 'androidx.room:room-testing:2.8.2'
+    testImplementation "androidx.room:room-testing:2.8.2"
+
+
+//    implementation "androidx.room:room-runtime:2.4.0-alpha03"
+//    annotationProcessor "androidx.room:room-compiler:2.4.0-alpha03"
+//    kapt 'androidx.room:room-compiler:2.4.0-alpha03'
+
+
+   // implementation 'com.commonsware.cwac:saferoom:0.4.4'
+
+    //com.app.sendbits.network
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+    implementation("com.squareup.okhttp3:okhttp:4.4.0")
+
+    //image loader
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+    /*bind view*/
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    kapt 'com.jakewharton:butterknife-compiler:10.1.0'
+
+//    compileOnly 'javax.annotation:jsr250-api:1.0'
+//    implementation 'javax.inject:javax.inject:1'
+
+
+    /*RxJava lib*/
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+
+    /* LiveData lib*/
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.8.6'
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.8.6'
+
+    /* Card View*/
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    //DotsIndicator
+    //implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'com.tbuonomo:dotsindicator:5.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //convert Base64.toBase64String
+    implementation 'com.madgag.spongycastle:core:1.58.0.0'
+    implementation 'com.madgag.spongycastle:prov:1.58.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Vision API for camera2 (Passport/National ID)
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    implementation 'androidx.annotation:annotation:1.0.0'
+
+    /*Contact list*/
+    //implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+//    implementation 'com.github.alvinhkh:TextDrawable:'
+
+    /*Fast scroll*/
+    implementation 'com.simplecityapps:recyclerview-fastscroll:1.0.18'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+
+    //dependency for the reCAPTCHA (safetynet)
+    implementation 'com.google.android.gms:play-services-safetynet:18.1.0'
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+    implementation 'com.google.android.gms:play-services-basement:18.4.0'
+    implementation 'com.google.android.gms:play-services-tasks:18.2.0'
+
+    //dependency for fast networking for networking
+    //implementation 'com.amitshekhar.android:android-networking:1.0.4'
+    //implementation 'com.github.amitshekhariitbhu.Fast-Android-Networking:android-networking:1.0.4'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.browser:browser:1.3.0'
+
+    //IMPORTANT: make sure to use the newest version. 11.0.1 is old
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    //https://github.com/warting/android-signaturepad
+    //https://github.com/gcacace/android-signaturepad
+    //implementation 'com.kyanogen.signatureview:signature-view:1.2'
+    implementation 'se.warting.signature:signature-view:0.1.2' // legacy android views
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //crop image
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    //compress image
+    //implementation project(':compressor')
+    implementation 'id.zelory:compressor:3.0.1'
+
+
+    //implementation 'org.apache.httpcomponents:httpcore:4.4.10'
+    //implementation 'org.apache.httpcomponents:httpmime:4.5.6'
+
+    //bar code
+    implementation 'com.google.zxing:core:3.2.1'
+    //implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    //implementation 'com.google.zxing:core:3.5.1'
+
+    // (Recommended) Add the Google Analytics dependency.
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+
+
+    // Import the Firebase BoM (see: https://firebase.google.com/docs/android/learn-more#bom)
+    implementation platform('com.google.firebase:firebase-bom:28.3.0')
+
+
+    implementation files('libs/opencsv-2.2.jar')
+    implementation files('libs/ZSDK_ANDROID_API.jar')
+    implementation files('libs/SiiAndroidSDK.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+    implementation files('libs/xflibrary-release(1.12.18.0).aar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation files('libs/snmp6_1.jar')
+//    implementation files('libs/commons-io-2.2.jar')
+//    implementation files('libs/commons-net-3.0.1.jar')
+//    implementation files('libs/commons-validator-1.4.0.jar')
+
+    //QR CODE
+    //implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
+   // implementation 'com.github.androidmads:QRGenerator:1.0.4'
+    //https://github.com/alexzhirkevich/custom-qr-generator
+    implementation 'com.github.alexzhirkevich:custom-qr-generator:1.6.2'
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+
+    //implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
+    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
+
+    implementation 'com.starmicronics:stario:2.10.0'
+    implementation 'com.starmicronics:starioextension:1.15.0'
+
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+//    implementation "androidx.activity:activity-ktx:1.2.3"
+
+//    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+//    FOR OCR
+    // CameraX core library using camera2 implementation
+//    implementation "androidx.camera:camera-camera2:1.0.2"
+//    // CameraX Lifecycle Library
+//    implementation "androidx.camera:camera-lifecycle:1.0.2"
+//    // CameraX View class
+//    implementation "androidx.camera:camera-view:1.0.0-alpha27"
+
+    def camerax_version = "1.3.4"
+    implementation "androidx.camera:camera-core:$camerax_version"
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+    implementation "androidx.camera:camera-view:$camerax_version"
+
+    implementation "com.airbnb.android:lottie:4.2.0"
+
+    // Text features
+    implementation "com.google.android.gms:play-services-mlkit-text-recognition:19.0.1"
+
+    // ML Kit barcode scanner
+    implementation 'com.google.mlkit:barcode-scanning:17.3.0'
+
+    implementation 'com.google.firebase:firebase-perf'
+
+    //implementation 'org.apache.poi:poi-ooxml:5.2.3'
+//    implementation('org.apache.poi:poi-ooxml:5.2.3') {
+//        exclude group: 'commons-codec', module: 'commons-codec'
+//    }
+
+    // gallery picker
+//    implementation 'com.github.dhaval2404:imagepicker:2.1'
+}

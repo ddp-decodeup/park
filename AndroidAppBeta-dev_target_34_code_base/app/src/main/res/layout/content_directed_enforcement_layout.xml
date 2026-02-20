@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTypeOfHit"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:layout_marginVertical="@dimen/_10dp"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+            app:boxCornerRadiusBottomStart="@dimen/_10dp"
+            app:boxCornerRadiusTopEnd="@dimen/_10dp"
+            app:boxCornerRadiusTopStart="@dimen/_10dp"
+            app:hintEnabled="false"
+            app:hintTextAppearance="@style/Editext.Theme"
+            app:placeholderTextAppearance="@style/Editext.Theme">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewTypeOfHit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54dp"
+                android:background="@drawable/round_corner_shape_without_fill_thin_grey"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown_arrow"
+                android:editable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hintTypeOfHit"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black_heading"
+                android:textColorHint="@color/black_heading"
+                android:textSize="@dimen/_14sp"
+                android:visibility="visible" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewLicensePlateNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54dp"
+            android:layout_marginVertical="@dimen/_6dp"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+            android:layoutDirection="rtl"
+            android:scrollbars="vertical"
+            app:defaultQueryHint="@string/hintLicensePlateNumber"
+            app:iconifiedByDefault="false" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDirectedEnforcement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingVertical="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:nestedScrollingEnabled="true"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_directed_enforcement"
+            tools:itemCount="15"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

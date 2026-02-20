@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right">
+
+    <Button
+        android:id="@+id/btnWhiteSticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White Sticker"
+        android:textColor="@android:color/white"
+        android:background="@drawable/red_button"
+        android:layout_margin="8dp"
+        android:padding="@dimen/_6dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnRedSticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Sticker"
+        android:textColor="@android:color/white"
+        android:background="@drawable/red_button"
+        android:layout_margin="8dp"
+        android:padding="@dimen/_6dp"
+        android:visibility="gone"/>
+</LinearLayout>

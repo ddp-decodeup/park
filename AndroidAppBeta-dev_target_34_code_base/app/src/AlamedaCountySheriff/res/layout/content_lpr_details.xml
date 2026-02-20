@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_26dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="@string/scr_lbl_lpr_image"
+                    android:textColor="@color/black_heading"
+                    android:textSize="@dimen/_20sp"
+                    android:accessibilityHeading="true"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCamera"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:src="@drawable/ic_camera_new"
+                        android:visibility="visible" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120dp"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:background="@drawable/round_corner_shape_with_fill_black"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNumberPlate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_16dp"
+                    android:paddingVertical="@dimen/_6dp"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/content_lpr_fuzzy_logic_box" android:id="@+id/layoutContentLprFuzzyLogicBox" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_zone"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutVehLot"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="@dimen/_7dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10dp"
+                    app:boxCornerRadiusTopStart="@dimen/_10dp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10dp"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/AutoComTextViewVehLot"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/round_corner_shape_without_fill_thin_blue"
+                        android:clickable="true"
+                        android:hint="Select"
+                        android:textAllCaps="true"
+                        android:focusable="true"
+                        android:editable="true"
+                        android:imeOptions="actionDone"
+                        android:focusableInTouchMode="true"
+                        android:inputType="textAutoComplete|textCapCharacters"
+                        android:textColor="@color/black_heading"
+                        android:textColorHint="@color/black_heading"
+                        android:fontFamily="@font/poppins_regular"
+                        android:drawableRight="@drawable/ic_dropdown_arrow_blue"
+                        android:paddingVertical="@dimen/_1dp"
+                        android:ellipsize="start"
+                        android:maxLines="3"
+                        android:textSize="@dimen/_12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_26dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_lpr_reverse_geo"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_20sp"
+                android:visibility="gone"
+                android:accessibilityHeading="true" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_21dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/reverseCoded"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_ticket_number"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_15sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivLock"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_lock_open_24"
+                    android:visibility="visible"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_vehicle_details"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_20sp"
+                android:visibility="gone"
+                android:accessibilityHeading="true"/>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_lpr_number"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_14sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_text"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:paddingHorizontal="@dimen/_2dp">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tvLprNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_50dp"
+                            android:background="@drawable/round_corner_shape_without_fill_gray"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:gravity="center_vertical|left"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapCharacters|textEmailAddress"
+                            android:maxLength="10"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textColor="@color/black_sub_heading"
+                            android:textSize="@dimen/_16sp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRight"
+                        android:layout_width="@dimen/_30dp"
+                        android:layout_height="@dimen/_22dp"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight="0.3"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_payment_fuzzy_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_payment_for_similar_plate"
+                    android:textColor="@color/black_heading"
+                    android:textSize="@dimen/_14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--Button_shape_without_with_height-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReScan"
+                    style="@style/Button_shape_without_fill_grey_with_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_shape_without_fill_magenta_with_ht"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_rescan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/magenta" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCheck"
+                    style="@style/Button_shape_without_fill_grey_with_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_shape_without_fill_orange_with_ht"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orange" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_4dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_make"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutVehMake"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/_7dp"
+                        app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+                        app:boxCornerRadiusBottomStart="@dimen/_10dp"
+                        app:boxCornerRadiusTopEnd="@dimen/_10dp"
+                        app:boxCornerRadiusTopStart="@dimen/_10dp"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/Editext.Theme"
+                        app:placeholderTextAppearance="@style/Editext.Theme">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/AutoComTextViewMakeVeh"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/round_corner_shape_without_fill_thin_blue"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/ic_dropdown_arrow_blue"
+                            android:editable="true"
+                            android:ellipsize="start"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="Select"
+                            android:imeOptions="actionDone"
+                            android:inputType="textAutoComplete|textCapCharacters"
+                            android:maxLines="3"
+                            android:paddingVertical="@dimen/_1dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black_heading"
+                            android:textColorHint="@color/black_heading"
+                            android:textSize="@dimen/_12sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="@string/scr_lbl_model"
+                        android:textColor="@color/light_grey_100"
+                        android:textSize="@dimen/_14sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutVehModel"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/_7dp"
+                        app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+                        app:boxCornerRadiusBottomStart="@dimen/_10dp"
+                        app:boxCornerRadiusTopEnd="@dimen/_10dp"
+                        app:boxCornerRadiusTopStart="@dimen/_10dp"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/Editext.Theme"
+                        app:placeholderTextAppearance="@style/Editext.Theme">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/AutoComTextViewVehModel"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/round_corner_shape_without_fill_thin_blue"
+                            android:clickable="true"
+                            android:editable="true"
+                            android:ellipsize="start"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="@string/scr_lbl_select"
+                            android:imeOptions="actionDone"
+                            android:inputType="textAutoComplete|textCapCharacters"
+                            android:maxLines="3"
+                            android:paddingVertical="@dimen/_1dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black_heading"
+                            android:textColorHint="@color/black_heading"
+                            android:textSize="@dimen/_12sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_color"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutVehColor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/_7dp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10dp"
+                    app:boxCornerRadiusTopStart="@dimen/_10dp"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/AutoComTextViewVehColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/round_corner_shape_without_fill_thin_blue"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_dropdown_arrow_blue"
+                        android:editable="true"
+                        android:ellipsize="start"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Select"
+                        android:imeOptions="actionDone"
+                        android:inputType="textAutoComplete|textCapCharacters"
+                        android:maxLines="3"
+                        android:paddingVertical="@dimen/_1dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_heading"
+                        android:textColorHint="@color/black_heading"
+                        android:textSize="@dimen/_12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--style="@style/Button_shape_blue_with_height"-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPermit"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_permit"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPayment"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_payment"
+                    android:textAllCaps="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_0dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--Button_shape_without_with_height-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnExempt"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_exempt"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStolen"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_stolen"
+                    android:textAllCaps="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_0dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnScofflaw"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_20dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_scofflaw"
+                    android:textAllCaps="false" />
+                <!--Button_shape_yellow-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTimings"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_timings"
+                    android:textAllCaps="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginHorizontal="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_0dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCameraRawFeedData"
+                    android:layout_weight="1"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/_0dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_camera_raw_feed_data"
+                    android:textAllCaps="false"
+                    android:visibility="gone"/>
+                <!--Button_shape_yellow-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCameraRawFeedData1"
+                    android:layout_weight="1"
+                    style="@style/Button_shape_grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_20dp"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/scr_btn_no_timings"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:textAllCaps="false"
+                    android:visibility="gone"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:background="@color/bg_semi_white"
+                android:elevation="@dimen/_15dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                app:cardElevation="@dimen/_7dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_26dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/tabStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_30dp"
+                            android:layout_marginRight="@dimen/_4dp"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTabStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_6dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Status"
+                                android:textColor="@color/deep_blue"
+                                android:textSize="@dimen/_16sp" />
+
+                            <View
+                                android:id="@+id/viewStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/deep_blue" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/tabHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4dp"
+                            android:layout_marginRight="@dimen/_30dp"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTabHistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_6dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/scr_lbl_cite_history"
+                                android:textColor="@color/app_gray"
+                                android:textSize="@dimen/_16sp" />
+
+                            <View
+                                android:id="@+id/viewHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/app_gray" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginBottom="@dimen/_20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <include layout="@layout/content_empty_layout_status" android:id="@+id/layoutContentEmptyLayoutStatus" />
+                        <!--round_corner_shape_without_fill_green-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layHide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/layPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_btn_payment"
+                                    android:accessibilityHeading="true"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/imgPayment"
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_payment_list" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_14dp"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                android:background="@drawable/round_corner_shape_without_fill_grey"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_14dp"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/tvStart1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="@string/scr_lbl_start"
+                                            android:textColor="@color/light_grey_100"
+                                            android:textSize="@dimen/_14sp" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/tvStart1"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="03/11 10:00PM"
+                                            android:textColor="@color/black_sub_heading"
+                                            android:textSize="@dimen/_14sp" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_14dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/tvStatus1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="@string/scr_lbl_start"
+                                            android:textColor="@color/light_grey_100"
+                                            android:textSize="@dimen/_14sp" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/tvStatus1"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="Active"
+                                            android:textColor="@color/black_sub_heading"
+                                            android:textSize="@dimen/_14sp" />
+                                    </RelativeLayout>
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/tvEnd1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="@string/scr_lbl_end"
+                                            android:textColor="@color/light_grey_100"
+                                            android:textSize="@dimen/_14sp" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/tvEnd1"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="03/11 10:00PM"
+                                            android:textColor="@color/black_sub_heading"
+                                            android:textSize="@dimen/_14sp" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_14dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/tvZone1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="Zone:"
+                                            android:textColor="@color/light_grey_100"
+                                            android:textSize="@dimen/_14sp" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toRightOf="@+id/tvZone1"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:text="94536"
+                                            android:textColor="@color/black_sub_heading"
+                                            android:textSize="@dimen/_14sp" />
+                                    </RelativeLayout>
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        <!--round_corner_shape_without_fill-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layPermit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_lbl_permit_detail"
+                                    android:accessibilityHeading="true"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:text="@string/scr_lbl_permit_detail"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPermit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_permit_list" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        <!--round_corner_shape_without_fill_red-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layScofflaw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/ll_scofflaw_icon"
+                                android:accessibilityHeading="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_lbl_scoffkaw_detail"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/im_sccoflaw"
+                                        android:contentDescription="@string/scr_lbl_scoffkaw_detail"
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <include layout="@layout/content_white_red_button_boot_tow" android:id="@+id/layoutContentWhiteRedButtonBootTow" />
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvScofflaw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_scofflaw_list" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layStolen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_btn_stolen_det"
+                                    android:accessibilityHeading="true"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvStolen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_stolen_list" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layExempt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_btn_exempt_det"
+                                    android:accessibilityHeading="true"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvExempt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_exempt_list" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        <!--round_corner_shape_without_fill_yellow-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layTiming"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/appTextTimeName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_lbl_timing_detail"
+                                    android:accessibilityHeading="true"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:id="@+id/ll_timing_icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/imageview_timing_icon"
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvTiming"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_10dp"
+                                android:layout_marginTop="@dimen/_14dp"
+                                android:layout_marginBottom="@dimen/_16dp"
+                                android:nestedScrollingEnabled="false"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_timing_list" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layCameraRawFeedData"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/round_corner_shape_without_fill_grey"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_10dp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:weightSum="2"
+                                android:orientation="horizontal"
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_btn_camera_raw_feed_Data_det"
+                                    android:accessibilityHeading="true"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp"
+                                    />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    >
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="@dimen/_27dp"
+                                        android:layout_height="@dimen/_27dp"
+                                        android:src="@drawable/ic_icon_blue"
+                                        android:visibility="visible" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_marginBottom="@dimen/_16dp"
+                                android:id="@+id/rvCameraRawFeedData"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_exempt_list"
+                                />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnIssueStatus"
+                            style="@style/Button_shape_blue"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/_26dp"
+                            android:layout_marginBottom="@dimen/_6dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/scr_btn_issue_ticket"
+                            android:textAllCaps="false"
+                            android:visibility="gone"/>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginBottom="@dimen/_20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layhistorytext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:layout_marginRight="@dimen/_10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:text="@string/scr_lbl_citation"
+                                android:accessibilityHeading="true"
+                                android:textColor="@color/black_heading"
+                                android:textSize="@dimen/_18sp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imghistory"
+                                    android:layout_width="@dimen/_27dp"
+                                    android:layout_height="@dimen/_27dp"
+                                    android:src="@drawable/ic_icon_blue"
+                                    android:visibility="gone" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_fine_amount_sum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="@string/scr_lbl_citation"
+                                    android:textColor="@color/black_heading"
+                                    android:textSize="@dimen/_18sp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_20dp"
+                                android:nestedScrollingEnabled="true"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_lpr_history_list"
+                                android:visibility="gone"/>
+
+                            <include layout="@layout/content_empty_layout" android:id="@+id/layoutContentEmptyLayout"  />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnIssueHistory"
+                                style="@style/Button_shape_blue"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="@dimen/_2dp"
+                                android:layout_marginBottom="@dimen/_6dp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_10dp"
+                                android:text="@string/scr_btn_issue_ticket"
+                                android:textAllCaps="false"
+                                android:visibility="visible"
+                                android:layout_alignBottom="@+id/rvHistory"/>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnValid"
+                                android:layout_weight="1"
+                                style="@style/Button_shape_blue"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="@dimen/_6dp"
+                                android:layout_marginTop="@dimen/_26dp"
+                                android:layout_marginLeft="@dimen/_1dp"
+                                android:padding="@dimen/_10dp"
+                                android:text="@string/scr_btn_Valid"
+                                android:textAllCaps="false"
+                                android:visibility="gone"
+                                />
+
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

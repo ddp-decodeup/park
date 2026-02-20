@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="app_name">Danville VA</string>
+    <string name="app_name_title">Danville VA</string>
+    <string name="cmp_name_title">Danville VA</string>
+
+    <!--<string name="app_name">Phoenix</string>
+    <string name="app_name_title">Phoenix Enforcement</string>
+    <string name="cmp_name_title">ACE - Phoenix</string>-->
+
+    <string name="scr_lbl_violation_print">Failure to remit payment or to appeal within fifteen (15) days
+    will result in significant late penalties.</string>
+    <string name="scr_lbl_ofc_print">The Officer below being duly sworn, upon oath deposes and says that in the City of Philadelphia, Pennsylvania, the vehicle
+                            described above was observed in violation of the Philadelphia Traffic Code specified herein and a copy of this notice was
+                           served upon the violator as required by law</string>
+    <string name="scr_lbl_fine">Due Now</string>
+    <string name="scr_lbl_lpr_number">License No.</string>
+    <string name="scr_lbl_ticket_number">Issue No.</string>
+    <string name="scr_lbl_side">Direction:</string>
+    <string name="scr_lbl_side_ticket">Direction</string>
+    <string name="scr_lbl_badge_id">Officer ID</string>
+    <string name="scr_lbl_citation_details">Citation Images</string>
+    <string name="scr_lbl_expiray_year">Exp</string>
+    <string name="scr_lbl_print_issue_time">Time</string>
+    <string name="scr_lbl_ticket_type">Issue Type</string>
+
+</resources>

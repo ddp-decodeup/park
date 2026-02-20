@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_5dp"
+    android:paddingTop="@dimen/_5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_child_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appcomimgview_setting"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_14dp"
+                android:src="@drawable/ic_settings" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_child_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvtime_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="Time zone"
+                    android:textColor="@color/black_heading"
+                    android:textSize="@dimen/_16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mTextViewTimeZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="item 1"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

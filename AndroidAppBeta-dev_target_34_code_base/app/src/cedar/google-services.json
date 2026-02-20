@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1014442218672",
+    "project_id": "parkloyalty-1a87e",
+    "storage_bucket": "parkloyalty-1a87e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014442218672:android:ac1a7bffa158aacc459775",
+        "android_client_info": {
+          "package_name": "com.cedar.lpr.scan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014442218672-0mlofgedan7mhn1jjnkk97tnda9prqr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cedar.lpr.scan",
+            "certificate_hash": "7fa48305329ebbc404e3502d5d840d780e90bff9"
+          }
+        },
+        {
+          "client_id": "1014442218672-rk5d4p5rf2k8pjvc2h2babd5s70tsrsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cedar.lpr.scan",
+            "certificate_hash": "41ef87eb0c2144e9e588e0e352ea7095fc15b86b"
+          }
+        },
+        {
+          "client_id": "1014442218672-a8fb9o58hda7iuaul0nnpf09g3m3gnuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQCQBaIj7nA-bUNC3vNERVcMgU7elidH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014442218672-a8fb9o58hda7iuaul0nnpf09g3m3gnuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

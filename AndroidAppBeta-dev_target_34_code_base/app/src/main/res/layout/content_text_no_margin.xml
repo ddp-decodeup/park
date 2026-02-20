@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:text=""
+        android:textColor="@color/light_grey_100"
+        android:textSize="@dimen/_10sp" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/tvFieldValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:layout_marginLeft="90dp"
+        android:text=""
+        android:padding="@dimen/_0dp"
+        android:textColor="@color/black_heading"
+        android:textSize="@dimen/_10sp"
+        tools:ignore="RelativeOverlap" />
+
+</RelativeLayout>

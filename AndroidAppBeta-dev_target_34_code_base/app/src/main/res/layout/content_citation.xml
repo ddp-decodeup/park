@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+   <!-- <include layout="@layout/dashboard_header" />-->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/content_linerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_below="@+id/rel_main"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:scrollbars = "vertical"
+                    android:inputType="textCapCharacters"
+                    android:layout_weight="0.7"
+                    app:iconifiedByDefault="false"
+                    android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+                    android:layoutDirection="rtl" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:src="@drawable/ic_filter"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_search_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="4">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_search_1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15dp"
+                    app:boxCornerRadiusTopStart="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_search_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress|textCapCharacters"
+                        android:maxLength="40"
+                        android:textSize="@dimen/_12sp"
+                        app:errorEnabled="true"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_search_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_search_2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/_7dp"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme"
+                    android:layout_weight="0.7"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15dp"
+                    app:boxCornerRadiusTopStart="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    app:boxStrokeWidth="1.5dp">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/et_search_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/round_corner_shape_without_fill_thin_blue"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_dropdown_arrow_blue"
+                        android:editable="true"
+                        android:ellipsize="start"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Select"
+                        android:imeOptions="actionDone"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="3"
+                        android:paddingVertical="@dimen/_1dp"
+                        android:textColor="@color/black_heading"
+                        android:textColorHint="@color/black_heading"
+                        android:textSize="@dimen/_12sp"
+                        android:textAllCaps="true"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_search_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_search_3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15dp"
+                    app:boxCornerRadiusTopStart="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_search_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress|textCapCharacters"
+                        android:maxLength="40"
+                        android:textSize="@dimen/_12sp"
+                        app:errorEnabled="true"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_search_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_search_4"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15dp"
+                    app:boxCornerRadiusTopStart="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_search_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress|textCapCharacters"
+                        android:maxLength="40"
+                        android:textSize="@dimen/_12sp"
+                        app:errorEnabled="true"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_search_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_search_5"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15dp"
+                    app:boxCornerRadiusBottomStart="@dimen/_15dp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15dp"
+                    app:boxCornerRadiusTopStart="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintTextAppearance="@style/Editext.Theme"
+                    app:placeholderTextAppearance="@style/Editext.Theme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_search_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="40"
+                        android:textSize="@dimen/_12sp"
+                        app:errorEnabled="true"
+                        android:textAllCaps="true"
+                        android:inputType="textCapCharacters"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="3.3"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_recent_added"
+                android:textColor="@color/deep_blue"
+                android:textSize="@dimen/_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_0dp"
+                    android:fillViewport="true"
+                    android:fitsSystemWindows="true"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:nestedScrollingEnabled="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_lpr_history_list" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

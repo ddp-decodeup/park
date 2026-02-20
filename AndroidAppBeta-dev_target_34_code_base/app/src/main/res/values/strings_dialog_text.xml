@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="success_title_request_taken" translatable="false">Request Taken</string>
+    <string name="success_desc_password_will_be_emailed" translatable="false">Thank you.\nYour password will be emailed soon on the registered email address.</string>
+
+    <string name="success_title_data_reset_and_reloaded" translatable="false">Reset &amp; Reloaded</string>
+    <string name="success_desc_data_reset_and_reloaded" translatable="false">Your existing data is cleared &amp; new data reloaded, Please login again to use application with fresh data.</string>
+
+    <string name="dialog_title_close_app" translatable="false">Close App</string>
+    <string name="dialog_desc_close_app" translatable="false">Do you really want to close the app ?</string>
+
+</resources>

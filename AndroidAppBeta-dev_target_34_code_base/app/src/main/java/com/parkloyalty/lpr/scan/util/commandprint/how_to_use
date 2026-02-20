@@ -1,0 +1,29 @@
+val sampleBitmap = BitmapFactory.decodeResource(resources, R.drawable.sample_image)
+
+        val elements = listOf(
+            DrawableElement.Rectangle(
+                x = 100f, y = 200f, width = 300f, height = 150f,
+                fillColor = Color.BLUE, borderColor = Color.RED, borderWidth = 4f
+            ),
+            DrawableElement.Text(
+                x = 120f, y = 280f,
+                text = "Box 1",
+                textColor = Color.WHITE,
+                textSize = 40f
+            ),
+            DrawableElement.Circle(
+                centerX = 500f, centerY = 500f,
+                radius = 80f,
+                fillColor = Color.YELLOW,
+                borderColor = Color.BLACK,
+                borderWidth = 5f
+            ),
+            DrawableElement.Image(
+                x = 200f, y = 600f,
+                width = 150f, height = 150f,
+                bitmap = sampleBitmap
+            )
+        )
+
+        val customView = CustomDrawingView(this, elements)
+        setContentView(customView)

@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="19dp"
+    android:viewportWidth="20"
+    android:viewportHeight="19">
+  <path
+      android:pathData="M10,0h10v3h-10z"
+      android:fillColor="@color/back_button"/>
+  <path
+      android:pathData="M0,8h20v3h-20z"
+      android:fillColor="@color/back_button"/>
+  <path
+      android:pathData="M0,16h10v3h-10z"
+      android:fillColor="@color/back_button"/>
+</vector>

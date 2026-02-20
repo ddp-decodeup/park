@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "619238615153",
+    "project_id": "parkloyalty-july-onwards",
+    "storage_bucket": "parkloyalty-july-onwards.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619238615153:android:2d15bf105dc47e56d113d0",
+        "android_client_info": {
+          "package_name": "com.mobileal.reimaginedparking.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh-u2l_U3pgxZKizT21X0pwF5VNDJtvU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

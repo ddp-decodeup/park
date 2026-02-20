@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="confirmation_text_title_reset_and_reload" translatable="false">Reset &amp; Reload</string>
+    <string name="confirmation_text_desc_reset_and_reload" translatable="false">Do you want to reset and reload all the dataset? This will clear all the existing data including offline tickets.</string>
+
+    <string name="confirmation_text_title_logout" translatable="false">Logout</string>
+    <string name="confirmation_text_desc_logout" translatable="false">Do you really want to logout from the application ?</string>
+
+</resources>

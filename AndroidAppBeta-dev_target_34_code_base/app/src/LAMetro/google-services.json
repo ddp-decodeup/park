@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436326076919",
+    "project_id": "parkloyalty-max30",
+    "storage_bucket": "parkloyalty-max30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436326076919:android:038116e494e0daf643def2",
+        "android_client_info": {
+          "package_name": "com.lametro.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliI2SZCuKGuRcrHUlWOWiu603KkHd1PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

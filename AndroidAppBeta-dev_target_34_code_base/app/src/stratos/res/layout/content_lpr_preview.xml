@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dashboard_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:background="@color/bg_semi_white"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_mainview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@color/bg_semi_white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_30dp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layOfficerDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_26dp"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvOfficerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/_26dp"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:fontFamily="@font/sf_pro_text_semibold"
+                        android:text="@string/scr_lbl_officer_details"
+                        android:textColor="@color/black_heading"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:textSize="@dimen/_20sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layVehicalDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_26dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_26dp"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="@dimen/_12dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sf_pro_text_semibold"
+                            android:text="@string/scr_lbl_vehicle_details"
+                            android:textColor="@color/black_heading"
+                            android:textSize="@dimen/_20sp"
+                            android:accessibilityHeading="true"/>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivEditVehicle"
+                                android:layout_width="@dimen/_30dp"
+                                android:layout_height="@dimen/_30dp"
+                                android:src="@drawable/ic_edit"
+                                android:visibility="visible" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvODetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="@dimen/_16dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="Amet minim mollit non deserunt ullamco est sit
+aliqua dolor do amet sint. Velit officia consequat
+duis enim velit mollit. Exercitation."
+                        android:textColor="@color/light_grey_100"
+                        android:backgroundTint="@android:color/transparent"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textSize="@dimen/_14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layTicketDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingBottom="@dimen/_26dp"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/_26dp"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:fontFamily="@font/sf_pro_text_semibold"
+                        android:text="@string/scr_lbl_ticket_details"
+                        android:textColor="@color/black_heading"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:textSize="@dimen/_20sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <include layout="@layout/content_lpr_preview_location_details"/>
+                <include layout="@layout/content_lpr_preview_note"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/print_layout_stratos"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733608932341",
+    "project_id": "impark---enforcement-app",
+    "storage_bucket": "impark---enforcement-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733608932341:android:1a87c48818ed9ce652e6bc",
+        "android_client_info": {
+          "package_name": "com.im.park.phsa.lpr.scan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBUUj4Ak04JTcXldsHtWMpuOqCELFxgDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

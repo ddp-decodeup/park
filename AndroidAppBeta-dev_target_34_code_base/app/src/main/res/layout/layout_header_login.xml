@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200dp"
+    android:background="@drawable/bg_login_header"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_app_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_cmp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="@string/scr_lbl_park_loyalty"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sp"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCompanySubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="@string/scr_lbl_enforcement"
+            android:textColor="@color/pastel_orange"
+            android:textSize="@dimen/_18sp"
+            android:visibility="invisible" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

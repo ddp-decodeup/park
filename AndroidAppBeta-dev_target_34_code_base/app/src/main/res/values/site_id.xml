@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SITE_ID">60105ba4-8d60-4d35-a84f-5e9255b83cd8</string>// RiseTek UAT
+    <string name="SITE_ID_PROD">54cecae5-3ccc-4517-aac8-725c1e3b7ae2</string>// RiseTek PROD
+    <string name="SITE_ID_RISETEK_OKC_UAT">0570bfa6-50e9-11ed-a94c-ba4611676070</string>// RiseTek OKC
+    <string name="SITE_ID_RISETEK_OKC_PROD">59e9c610-9b79-11ed-a38d-de1b5e5960f1</string>// RiseTek OKC
+    OKC UAT
+    <string name="SITE_ID_Glendale">884f1f0b-765c-40b6-be5d-22bb6768e4fe</string>// Glendale UAT
+    <string name="SITE_ID_Glendale_prod">2d689158-dcca-4e49-94f3-5ef82439228e</string>// Glendale
+    PROD
+    <string name="SITE_ID_Innova">562366c5-4ad7-4496-bef1-bca452389061</string>// Rise Tek Innova
+    UAT
+    <string name="SITE_ID_Innova_PROD">cda63db5-e951-4166-9870-2983bdf88ec1</string>// Rise Tek
+    Innova PROD
+    <string name="SITE_ID_Greenvile">68ea3b5c-172f-4f33-8d55-e76c301ad212</string>// Park UAT
+    <string name="SITE_ID_Greenvile_PROD">68ea3b5c-172f-4f33-8d55-e76c301ad212</string>// Park PROD
+    <string name="SITE_ID_Phili_PROD">c9a69cf6-c066-44f2-a78a-7b800f11fb8c</string>// Duncan PROD
+    <string name="SITE_ID_Phili_TRANINING">c4538246-fb30-4337-840e-8722858dd9ab</string>// Duncan Tran
+    <string name="SITE_ID_RIDGEHILL_UAT">b120ed08-3499-404a-85af-0c8efcee2008</string>// Ridge hill
+    UAT
+    <string name="SITE_ID_RIDGEHILL_PROD">a549a0fe-e05d-4655-bdfc-d142b8b4eeea</string>// Ridge hill
+    PROD
+    <string name="SITE_ID_VALLEJOL_UAT">7bd11751-0b1f-41e5-b4ef-1687b340a33d</string>// VALLEJOL UAT
+    <string name="SITE_ID_VALLEJOL_PROD">2e2a4032-1bda-11ed-8edb-e6f96eaf3014</string>// VALLEJOL PROD
+    UAT
+    <string name="SITE_ID_LEAVENWORTH_UAT">46b8a5e5-c1d0-420e-b825-c09712ee8665</string>// LEAVENWORTH UAT
+    <string name="SITE_ID_LEAVENWORTH_PROD">267ccc30-1bdd-11ed-8edb-e6f96eaf3014</string>// LEAVENWORTH PROD
+
+    <string name="SITE_ID_FLOWBIRD_UAT">5b12f420-0868-11ed-80e1-faa36d4eb12e</string>// FLOWBIRD UAT
+    <string name="SITE_ID_MACKAY_UAT">4d195198-0868-11ed-80e1-faa36d4eb12e</string>// MACKAY UAT
+
+    <string name="SITE_ID_LAZ_UAT">e55ff60a-09bc-11ed-80e1-faa36d4eb12e</string>// LAZ Atlana UAT
+
+    <string name="SITE_ID_LAZ_CCP_UAT">9e9a9880-8ff6-11ee-bfcc-f66b6709ac8e</string>// LAZ CCP UAT
+    <string name="SITE_ID_LAZ_CCP_PROD">8e9bc50c-95ab-11ee-9a11-c20b99673619</string>// LAZ CCP PROD
+    UAT
+    <string name="SITE_ID_Chatanooga_UAT">28dda0ec-7850-11ed-a1e8-42e281654476</string>// Carta UAT
+    <string name="SITE_ID_Chatanooga_PROD">207758d0-7850-11ed-bad2-c6a8b8bdbc81</string>// Carta PROD
+    <string name="SITE_ID_Encinitas_UAT">7a43db7c-2a03-11ed-8809-7af7a0f7ffb5</string>// Encinitas UAT
+    <string name="SITE_ID_Encinitas_PROD">08ebc7b0-5b85-11ed-99bd-12086ced55af</string>// Encinitas Prod
+    <string name="SITE_ID_CEDAR_UAT">fc8e66d7-e7f3-4b5d-b2f5-5758ed941afd</string>// MACKAY UAT
+    <string name="SITE_ID_CEDAR_PROD">ba87910e-1268-11ed-8c34-6a51194b64dc</string>// MACKAY UAT
+    <string name="SITE_ID_SCPM_UAT">c55db3b8-4348-11ed-a94c-ba4611676070</string>// SCPM UAT
+
+    <string name="SITE_ID_SAN_DIEGO_UAT">7fe53dac-665f-11ee-b4ca-ae854bfaee9a</string>// SAN DIEGO UAT
+    <string name="SITE_ID_SAN_DIEGO_PROD">fc49da54-6dd7-11ee-bd8f-42803422fd7d</string>// SAN DIEGO PROD
+
+    <string name="SITE_ID_CHULA_VISTA_UAT">ef3bbc58-665f-11ee-b4ca-ae854bfaee9a</string>// CHULA_VISTA UAT
+    <string name="SITE_ID_CHULA_VISTA_PROD">5c5a3d94-6dd8-11ee-bd8f-42803422fd7d</string>// CHULA_VISTA PROD
+
+    <string name="SITE_ID_ROSEBURG_UAT">67fdb682-6660-11ee-b4ca-ae854bfaee9a</string>// ROSEBURG UAT
+    <string name="SITE_ID_ROSEBURG_PROD">bf63de5e-6dd8-11ee-82bb-ee0fed0687b3</string>// ROSEBURG PROD
+
+    <string name="SITE_ID_IRVINE_UAT">2d390d86-6c54-11ee-b4ca-ae854bfaee9a</string>// NC UAT
+    <string name="SITE_ID_IRVINE_PROD">15db4326-6dd9-11ee-8b64-665980bd7c45</string>// NC PROD
+
+    <string name="SITE_ID_MARTIN_UAT">85f7c4f8-6c54-11ee-b4ca-ae854bfaee9a</string>// Martin UAT
+    <string name="SITE_ID_MARTIN_PROD">6a487514-6dd9-11ee-8b64-665980bd7c45</string>// Martin PROD
+
+    <string name="SITE_ID_PHOENIX_UAT">934ce736-3907-11ed-a8e2-e629a4144614</string>// Phoenix UAT
+    <string name="SITE_ID_PHOENIX_PROD">a60ed186-3961-11ed-8fa5-d258731daefc</string>// Phoenix PROD
+
+    <string name="SITE_ID_MONKTON_UAT">817a67c0-5e66-11ed-a94c-ba4611676070</string>// Phoenix UAT
+    <string name="SITE_ID_MONKTON_PROD">a60ed186-3961-11ed-8fa5-d258731daefc</string>// Phoenix PROD
+
+    <string name="SITE_ID_SOL_UAT">c3e2b4a2-9ac8-11ed-a1e8-42e281654476</string>// SOL UAT
+    <string name="SITE_ID_SOL_PROD">6628292c-9ac9-11ed-adbe-e2785781fe47</string>// SOL PROD
+
+    <string name="SITE_ID_BELLINGHAM_UAT">7b4bc424-a7dc-11ed-a1e8-42e281654476</string>// Bellingham uat
+
+    <string name="SITE_ID_OCEANCITY_UAT">7b4bc424-a7dc-11ed-a1e8-42e281654476</string>// OCEAN CITY uat
+    <string name="SITE_ID_OCEANCITY_PROD">da3c1178-a07e-11ee-8147-56d1ee6b2413</string>// OCEAN CITY prod
+
+    <string name="SITE_ID_DURANGO_UAT">b05f13b4-bf65-11ed-8d4c-ae98e284599d</string>// Durango uat
+    <string name="SITE_ID_DURANGO_PROD">816d72c4-0378-11ee-8b64-665980bd7c45</string>// Durango prod
+
+    <string name="SITE_ID_CFFB_UAT">a98dcd6a-cfc2-11ed-ad98-66070e279278</string>// CFFB uat
+    <string name="SITE_ID_CFFB_PROD">33370b0e-e5fc-11ed-8b64-665980bd7c45</string>// CFFB prod
+    <string name="SITE_ID_HILTON_HEAD_UAT">a67bfed6-d9b2-11ed-8187-7ae65eb7fc1d</string>// HILTON HEAD uat
+    <string name="SITE_ID_HILTON_HEAD_PROD">48b5af98-efb7-11ed-8b64-665980bd7c45</string>// HILTON HEAD Prod
+    <string name="SITE_ID_BURBANK_CA_UAT">1016ffce-dae1-11ed-8187-7ae65eb7fc1d</string>//BURBANK_CA uat
+    <string name="SITE_ID_BURBANK_CA_PROD">1fe4be32-fdeb-11ed-bd8f-42803422fd7d</string>//BURBANK_CA PROD
+    <string name="SITE_ID_PILOTPITTSBURGPA_UAT">73ba5758-e642-11ed-b4ca-ae854bfaee9a</string>// PilotPittsburgPA uat
+    <string name="SITE_ID_PILOTPITTSBURGPA_PROD">ed3fa082-13f7-11ee-9c41-6ef2fb394a83</string>// PilotPittsburgPA prod
+    <string name="SITE_ID_MANSFIELDCT_UAT">c293c922-fa4c-11ed-b4ca-ae854bfaee9a</string>// MANSFIELDCT UAT
+    <string name="SITE_ID_MANSFIELDCT_PROD">98ccd4bc-fa4c-11ed-8b64-665980bd7c45</string>// MANSFIELDCT PROD
+    <string name="SITE_ID_CLEMENSKICK_UAT">4e79e4e2-e9ab-11ed-b4ca-ae854bfaee9a</string>// CLEMENSKICK uat
+    <string name="SITE_ID_CLEMENSKICK_PROD">6f1b5db0-f91a-11ed-8b64-665980bd7c45</string>// CLEMENSKICK PROD
+
+    <string name="SITE_ID_VIRGINIA_UAT">6eba342a-170d-11ee-b4ca-ae854bfaee9a</string>// VIRGINIA UAT
+    <string name="SITE_ID_VIRGINIA_PROD">03596804-214e-11ee-bd8f-42803422fd7d</string>// VIRGINIA PROD
+    <string name="SITE_ID_MYSTICCT_UAT">dd9bb726-e556-11ed-8bae-acde48001122</string>// MYSTICCT UAT
+    <string name="SITE_ID_MYSTICCT_PROD">cd1200ae-1fd5-11ee-8b64-665980bd7c45</string>// MYSTICCT PROD
+    <string name="SITE_ID_CHARLESTON_UAT">7b9fdc62-22ed-11ee-b4ca-ae854bfaee9a</string>// CHARLESTON UAT
+    <string name="SITE_ID_CHARLESTON_PROD">cdb0262e-22ed-11ee-bd8f-42803422fd7d</string>// CHARLESTON PROD
+
+    <string name="SITE_ID_BISMARCK_UAT">9db6bd50-3681-11ee-b4ca-ae854bfaee9a</string>// BISMARCK UAT
+    <string name="SITE_ID_BISMARCK_PROD">ead64c86-3681-11ee-9c41-6ef2fb394a83</string>// BISMARCK PROD
+
+    <string name="SITE_ID_SATELLITE_UAT">0102a3dc-4cae-11ee-b4ca-ae854bfaee9a</string>// SATELLITE Beach UAT
+    <string name="SITE_ID_SATELLITE_PROD">2e0e35fe-4e4c-11ee-82bb-ee0fed0687b3</string>// SATELLITE PROD
+
+    <string name="SITE_ID_BURLINGTON_UAT">25653706-52a0-11ee-b4ca-ae854bfaee9a</string>// BURLINGTON UAT
+    <string name="SITE_ID_BURLINGTON_PROD">25653706-52a0-11ee-b4ca-ae854bfaee9a</string>// BURLINGTON PROD
+
+    <string name="SITE_ID_LAZ_PILOT_UAT">e6afb106-765f-11ee-b1a6-8e41d72fde5f</string>// LAZ_PILOT UAT
+
+    <string name="SITE_ID_ADOBE_UAT">a2a68724-829d-11ee-b1a6-8e41d72fde5f</string>// ADOBE UAT
+    <string name="SITE_ID_ADOBE_PROD">d91e6376-82a2-11ee-af97-7e6c461c5070</string>// ADOBE UAT
+
+    <string name="SITE_ID_MACKAY_SAMPLE_UAT">f270f9be-8d48-11ee-b1a6-8e41d72fde5f</string>// Mackay UAT
+
+    <string name="SITE_ID_SAN_FRANCISCO_UAT">72f7b64c-9422-11ee-bfcc-f66b6709ac8e</string>// San Francisco UAT
+    <string name="SITE_ID_SAN_FRANCISCO_PROD">46386396-945d-11ee-b3fc-5e883ed10c3d </string>// San Francisco Prod
+
+    <string name="SITE_ID_ACE_FRENSO_UAT">66271d0a-af6f-11ee-be9c-72ab48aba21d</string>// Ace Frenso UAT
+    <string name="SITE_ID_ACE_FRENSO_PROD">fa6879c8-af6f-11ee-aa58-82967aaeaa80</string>// Ace Frenso Prod
+
+    <string name="SITE_ID_ACE_VALET_DIVISION_UAT">065ddd44-af71-11ee-be9c-72ab48aba21d</string>// Ace Valet Division UAT
+    <string name="SITE_ID_ACE_VALET_DIVISION_PROD">e6a5c340-af70-11ee-845b-0602968307f0</string>// Ace Valet Division Prod
+
+    <string name="SITE_ID_ACE_SAN_ANTONIO_UAT">7408a2fc-af71-11ee-be9c-72ab48aba21d</string>// ACE_SAN_ANTONIO UAT
+    <string name="SITE_ID_ACE_SAN_ANTONIO_PROD">f341093c-b085-11ee-9a11-c20b99673619</string>// ACE_SAN_ANTONIO Prod
+
+    <string name="SITE_ID_ACE_LAKE_TAHOE_UAT">e1ad1918-af72-11ee-be9c-72ab48aba21d</string>// Ace Lake Tahoe  UAT
+    <string name="SITE_ID_ACE_LAKE_TAHOE_PROD">36ccafc6-b086-11ee-aa58-82967aaeaa80</string>// Ace Lake Tahoe Prod
+
+    <string name="SITE_ID_KALAMAZOO_UAT">e7f5fbb4-a15d-11ee-9554-1a682a2f9ae8</string>// Kalamazoo  UAT
+    <string name="SITE_ID_KALAMAZOO_PROD">183db4ec-a15e-11ee-b39a-bebc79a4d1a3</string>// Kalamazoo Prod
+
+    <string name="SITE_ID_ISLE_PLAMS_UAT">7fc01b7c-c982-11ee-be9c-72ab48aba21d</string>// Isle  UAT
+    <string name="SITE_ID_ISLE_PLAMS_PROD">c6443f42-c982-11ee-b39a-bebc79a4d1a3</string>// Isle Prod
+
+    <string name="SITE_ID_LA_METRO_UAT">ae65f9fe-e5c3-11ed-b4ca-ae854bfaee9a</string>// LA Metro  UAT
+    <string name="SITE_ID_LA_METRO_PROD">ed4b4850-d527-11ee-af97-7e6c461c5070</string>// LA Metro Prod
+
+    <string name="SITE_ID_LAWRENCE_UAT">b578fe02-d196-11ee-be9c-72ab48aba21d</string>// LAWRENCE  UAT
+    <string name="SITE_ID_LAWRENCE_PROD">09c94cae-d198-11ee-9818-ee2c79e2244c</string>// LAWRENCE Prod
+
+    <string name="SITE_ID_HARTFORD_UAT">0a8fe3b8-dc2f-11ee-be9c-72ab48aba21d</string>// Hartford  UAT
+    <string name="SITE_ID_HARTFORD_PROD">5bd20490-dc2f-11ee-bf9e-72127457a419</string>// Hartford Prod
+
+    <string name="SITE_ID_BANGOR_UAT">b87d467a-dbd3-11ee-be9c-72ab48aba21d</string>// BANGOR  UAT
+    <string name="SITE_ID_BANGOR_PROD">3aba432e-dbd7-11ee-845b-0602968307f0</string>// BANGOR Prod
+
+    <string name="SITE_ID_LAZLB_UAT">44c9992e-e810-11ee-ab9f-fe86ecca5050</string>// LAZ LB  UAT
+    <string name="SITE_ID_LAZLB_PROD">9ac3522a-e810-11ee-8147-56d1ee6b2413</string>// LAZ LB Prod
+
+    <string name="SITE_ID_RIVER_OAKS_UAT">f3062dac-fe2e-11ee-ae3f-92040ec4c6a4</string>// RIVER OAKS UAT
+    <string name="SITE_ID_RIVER_OAKS_PROD">46dd302e-fe2f-11ee-aa58-82967aaeaa80</string>// RIVER OAKS Prod
+
+    <string name="SITE_ID_ASHLAND_UAT">c1a843e4-fe2e-11ee-ae3f-92040ec4c6a4</string>//ASHLAND UAT
+    <string name="SITE_ID_ASHLAND_PROD">28022506-fe2f-11ee-aa58-82967aaeaa80</string>//ASHLAND Prod
+
+    <string name="SITE_ID_ACE_AMAZON_UAT">8dabbd02-04b7-11ef-8e44-76f8a1a040d2</string>//AMAZON UAT
+    <string name="SITE_ID_ACE_AMAZON_PROD">8f828b9c-04b7-11ef-8147-56d1ee6b2413</string>//AMAZON Prod
+
+    <string name="SITE_ID_BEAUFORT_UAT">2b6d81e0-0d25-11ef-8e44-76f8a1a040d2</string>//BEAUFORT UAT
+    <string name="SITE_ID_BEAUFORT_PROD">3e2116e8-0d26-11ef-9818-ee2c79e2244c</string>//BEAUFORT Prod
+
+    <string name="SITE_ID_SANIBEL_UAT">df7a9f98-1373-11ef-8e44-76f8a1a040d2</string>//SANIBEL UAT
+    <string name="SITE_ID_SANIBEL_PROD">1bd37cb2-1374-11ef-bf9e-72127457a419</string>//SANIBEL Prod
+
+    <string name="SITE_ID_ACE_FASHION_UAT">e88fbd3c-1e3d-11ef-8e44-76f8a1a040d2</string>//FASHION UAT
+    <string name="SITE_ID_ACE_FASHION_PROD">6793d852-1e3e-11ef-96c0-c232bef35183</string>//FASHION Prod
+
+    <string name="SITE_ID_GLASGOW_UAT">55c16a92-1f4f-11ef-8e44-76f8a1a040d2</string>//GLASGOW UAT
+    <string name="SITE_ID_GLASGOW_PROD"></string>//GLASGOW Prod
+
+    <string name="SITE_ID_COHASSET_UAT">b4fbe4d6-2ec4-11ef-8e44-76f8a1a040d2</string>//COHASSET UAT
+    <string name="SITE_ID_COHASSET_PROD">30c9b390-2ec5-11ef-ba31-ca0a5add8b0c</string>//COHASSET Prod
+
+    <string name="SITE_ID_SMYRNA_UAT">47f8f666-224f-11ef-8e44-76f8a1a040d2</string>//SMYRNA UAT
+    <string name="SITE_ID_SMYRNA_PROD">c162222c-48bd-11ef-ba31-ca0a5add8b0c</string>//SMYRNA Prod
+
+    <string name="SITE_ID_LITTLE_ROCK_UAT">8a5b9964-351e-11ef-8e44-76f8a1a040d2</string>//LITTLE ROCK UAT
+    <string name="SITE_ID_LITTLE_ROCK_PROD">3d7be566-375a-11ef-9008-06303a7b3284</string>//LITTLE ROCK Prod
+
+    <string name="SITE_ID_MEMORIAL_HERMAN_UAT">ac197ac6-436a-11ef-b49f-e202d2db16eb</string>//MEMORIAL HERMAN UAT
+    <string name="SITE_ID_MEMORIAL_HERMAN_PROD">2065f2b8-441c-11ef-ba31-ca0a5add8b0c</string>//MEMORIAL HERMAN Prod
+
+    <string name="SITE_ID_PEAK_PARKING_UAT">fdbcf868-3ec3-11ef-8e44-76f8a1a040d2</string>//PEAK PARKING HERMAN UAT
+    <string name="SITE_ID_PEAK_PARKING_PROD">23697ca0-3e04-11ef-85dc-e665cc09bf86</string>//PEAK PARKING Prod
+
+    <string name="SITE_ID_PEAK_TEXAS_UAT">06642656-6f3b-11ef-aca5-7617bcc5e1cb</string>//PEAK TEXAS HERMAN UAT
+    <string name="SITE_ID_PEAK_TEXAS_PROD">a32eb42e-6f3b-11ef-b553-1a0cb38c2eb5</string>//PEAK TEXAS Prod
+
+    <string name="SITE_ID_SEPTA_UAT">cd666208-44ae-11ef-b128-de29d549d608</string>//SEPTA UAT
+    <string name="SITE_ID_SEPTA_PROD">4fa2e26e-44af-11ef-ba31-ca0a5add8b0c</string>//SEPTA Prod
+
+    <string name="SITE_ID_KANSAS_UAT">70f9c966-4985-11ef-8e44-76f8a1a040d2</string>//KANSAS UAT
+    <string name="SITE_ID_KANSAS_PROD">a95c3734-4986-11ef-98e9-2a370f00fe52</string>//KANSAS Prod
+
+    <string name="SITE_ID_SOUTH_MIAMI_UAT">fcdfa352-48a3-11ef-b49f-e202d2db16eb</string>//SOUTH MIAMI UAT
+    <string name="SITE_ID_SOUTH_MIAMI_PROD">4549913e-48a4-11ef-98e9-2a370f00fe52</string>//SOUTH MIAMI Prod
+
+    <string name="SITE_ID_EPHRATA_UAT">0a0bf864-7f31-11ef-aca5-7617bcc5e1cb</string>//EPHRATA UAT
+    <string name="SITE_ID_EPHRATA_PROD">8f541f5a-7f32-11ef-80ba-9e136e671e96</string>//EPHRATA Prod
+
+    <string name="SITE_ID_RUTGERS_UAT">27be85fc-8161-11ef-baad-360a6c86f50f</string>//RUTGERS UAT
+    <string name="SITE_ID_RUTGERS_PROD">8a16b7a4-3216-11f0-8ece-2ee6f0ba96ea</string>//RUTGERS Prod
+
+    <string name="SITE_ID_WESTCHESTER_UAT">99e7d13a-87e0-11ef-aca5-7617bcc5e1cb</string>//WESTCHESTER UAT
+    <string name="SITE_ID_WESTCHESTER_PROD">6643e6ca-87e0-11ef-98ab-965a77295b51</string>//RUTGERS Prod
+
+    <string name="SITE_ID_DALLAS_UAT">aa6c4e4c-8d34-11ef-baad-360a6c86f50f</string>//DALLAS UAT
+    <string name="SITE_ID_DALLAS_PROD">a96af934-8cb8-11ef-8395-72ea80e56d92</string>//DALLAS Prod
+
+    <string name="SITE_ID_CLIFTON_UAT">048cca9a-94ed-11ef-89e2-c60c10e87cc7</string>//CLIFTON UAT
+    <string name="SITE_ID_CLIFTON_PROD">1fffc5dc-9521-11ef-9953-428aea8097ed</string>//CLIFTON Prod
+
+    <string name="SITE_ID_ORLEANS_UAT">b7b4f268-a245-11ef-959d-c2bb038608a2</string>//ORLEANS UAT
+    <string name="SITE_ID_ORLEANS_PROD">a69673f6-ac9c-11ef-ac80-d2979395356c</string>//ORLEANS Prod
+
+    <string name="SITE_ID_VOLUSIA_UAT">d9334548-a277-11ef-baad-360a6c86f50f</string>//VOLUSIA UAT
+    <string name="SITE_ID_VOLUSIA_PROD">307c24ac-a27b-11ef-b686-86ed65784325</string>//VOLUSIA Prod
+
+    <string name="SITE_ID_EASTON_UAT">915b1b54-a7dd-11ef-959d-c2bb038608a2</string>//EASTON UAT
+    <string name="SITE_ID_EASTON_PROD">3baa48fc-ad81-11ef-aaf2-3ea9a466b6c5</string>//EASTON Prod
+
+    <string name="SITE_ID_CORPUS_UAT">e0aa29e8-ce43-11ef-89e2-c60c10e87cc7</string>//CORPUS UAT
+    <string name="SITE_ID_CORPUS_PROD"></string>//CORPUS Prod
+
+    <string name="SITE_ID_SAN_DIEGO_PPA_UAT">8b91c376-d7b7-11ef-8dfc-721539541a40</string>//SAN_DIEGO_PAA UAT
+    <string name="SITE_ID_SAN_DIEGO_PPA_PROD">b16680a8-0338-11f0-8f3d-c611b04b1464</string>//SAN_DIEGO_PAA Prod
+
+    <string name="SITE_ID_PRRS_UAT">1aa6a80a-dbf6-11ef-baad-360a6c86f50f</string>//PRRS UAT
+    <string name="SITE_ID_PRRS_PROD">a4bd7d26-dbf5-11ef-aa0d-1abc71e273ac</string>//PRRS Prod
+
+    <string name="SITE_ID_SURF_CITY_UAT">fa2a560a-e837-11ef-89e2-c60c10e87cc7</string>//SURF_CITY UAT
+    <string name="SITE_ID_SURF_CITY_PROD">e3ac8dbc-e7bf-11ef-a767-b2dfc46f34fe</string>//SURF_CITY Prod
+
+    <string name="SITE_ID_PRIME_PARKING_UAT">5be51a26-f015-11ef-89e2-c60c10e87cc7</string>//PRIME_PARKING UAT
+    <string name="SITE_ID_PRIME_PARKING_PROD">2d726046-f843-11ef-a015-565661424de4</string>//PRIME_PARKING Prod
+
+    <string name="SITE_ID_OXFORD_UAT">fd479e96-ed10-11ef-aca5-7617bcc5e1cb</string>//OXFORD UAT
+    <string name="SITE_ID_OXFORD_PROD">292922e6-ed11-11ef-b35c-4aa52259098f</string>//OXFORD Prod
+
+    <string name="SITE_ID_ACE_MILLBRAE_UAT">d86aa070-ee94-11ef-aca5-7617bcc5e1cb</string>//ACE_MILLBRAE UAT
+    <string name="SITE_ID_ACE_MILLBRAE_PROD">3d365966-eeba-11ef-aaf2-3ea9a466b6c5</string>//ACE_MILLBRAE Prod
+
+    <string name="SITE_ID_PARK_RIDGE_UAT">0f95453a-eea1-11ef-959d-c2bb038608a2</string>//PARK_RIDGE UAT
+    <string name="SITE_ID_PARK_RIDGE_PROD"></string>//PARK_RIDGE Prod
+
+    <string name="SITE_ID_ALAMEDA_COUNTY_SHERIFF_UAT">4fd55a20-ee9e-11ef-959d-c2bb038608a2</string>//Alameda County Sheriff UAT
+    <string name="SITE_ID_ALAMEDA_COUNTY_SHERIFF_PROD"></string>//Alameda County Sheriff Prod
+
+    <string name="SITE_ID_ALAMEDA_COUNTY_TRANSIT_UAT">f0e3a6d2-ee9f-11ef-aca5-7617bcc5e1cb</string>//Alameda County Transit  UAT
+    <string name="SITE_ID_ALAMEDA_COUNTY_TRANSIT_PROD"></string>//Alameda County Transit  Prod
+
+    <string name="SITE_ID_JACKSONVILLE_UAT">589a650e-eea0-11ef-89e2-c60c10e87cc7</string>//Jacksonville UAT
+    <string name="SITE_ID_JACKSONVILLE_PROD"></string>//Jacksonville Prod
+
+    <string name="SITE_ID_NORWALK_UAT">67a4ca60-eea2-11ef-baad-360a6c86f50f</string>//Norwalk  UAT
+    <string name="SITE_ID_NORWALK_PROD">4f4805ec-0ee9-11f0-b4a8-025fd0c66349</string>//Norwalk Prod
+
+    <string name="SITE_ID_KENOSHA_UAT">9fb58872-eea2-11ef-8dfc-721539541a40</string>//Kenosha UAT
+    <string name="SITE_ID_KENOSHA_PROD">415c0548-58d9-11f0-be66-bab8e7405708</string>//Kenosha Prod
+
+    <string name="SITE_ID_COVINA_UAT">d5d777a8-eea2-11ef-baad-360a6c86f50f</string>//Covina UAT
+    <string name="SITE_ID_COVINA_PROD"></string>//Covina Prod
+
+    <string name="SITE_ID_WATSONVILLE_UAT">07353b28-eea3-11ef-baad-360a6c86f50f</string>//Watsonville UAT
+    <string name="SITE_ID_WATSONVILLE_PROD"></string>//Watsonville Prod
+
+    <string name="SITE_ID_PORT_HOOD_RIVER_UAT">346b1eb4-eea3-11ef-baad-360a6c86f50f</string>//Port hood River UAT
+    <string name="SITE_ID_PORT_HOOD_RIVER_PROD"></string>//Port hood River Prod
+
+    <string name="SITE_ID_VISTA_CA_UAT">6996d1aa-eea3-11ef-baad-360a6c86f50f</string>//Vista CA UAT
+    <string name="SITE_ID_VISTA_CA_PROD">45eff72a-9878-11f0-aa32-6e39c1718690</string>//Vista CA Prod
+
+    <string name="SITE_ID_INDIANA_BOROUGH_UAT">9ec9c6d4-eea3-11ef-baad-360a6c86f50f</string>//Indiana Borough UAT
+    <string name="SITE_ID_INDIANA_BOROUGH_PROD"></string>//Indiana Borough Prod
+
+    <string name="SITE_ID_MOUNT_RAINIER_UAT">d051af96-eea3-11ef-8dfc-721539541a40</string>//Mount Rainier UAT
+    <string name="SITE_ID_MOUNT_RAINIER_PROD"></string>//Mount Rainier Prod
+
+    <string name="SITE_ID_BOYNTON_UAT">03d2bd6a-eea4-11ef-89e2-c60c10e87cc7</string>//Boynton Beach UAT
+    <string name="SITE_ID_BOYNTON_PROD"></string>//Boynton Beach Prod
+
+    <string name="SITE_ID_BOSTON_UAT">36d23a70-01a4-11f0-89e2-c60c10e87cc7</string>//BoSTON UAT
+    <string name="SITE_ID_BOSTON_PROD"></string>//Boston Prod
+
+    <string name="SITE_ID_ATLANTIC_BEACH_NC_UAT" translatable="false">8431023a-fb8a-11ef-8dfc-721539541a40</string>//Atlantic Beach NC UAT
+    <string name="SITE_ID_ATLANTIC_BEACH_NC_PROD" translatable="false">82e6b970-fb89-11ef-85f4-866763168a95</string>//Atlantic Beach NC Prod
+
+    <string name="SITE_ID_WOODSTOCK_GA_UAT" translatable="false">3c14106a-fb89-11ef-aca5-7617bcc5e1cb</string>//Woodstock GA UAT
+    <string name="SITE_ID_WOODSTOCK_GA_PROD" translatable="false">21963e82-fb86-11ef-9851-56609c1071f1</string>//Woodstock GA Prod
+
+    <string name="SITE_ID_ST_JOHNSBURY_VT_UAT" translatable="false">39d92422-fe66-11ef-959d-c2bb038608a2</string>//St. Johnsbury, VT UAT
+    <string name="SITE_ID_ST_JOHNSBURY_VT_PROD" translatable="false">629e3b9a-fe66-11ef-9851-56609c1071f1</string>//St. Johnsbury, VT Prod
+
+    <string name="SITE_ID_INDIAN_HARBOUR_BEACH_UAT" translatable="false">01d2d092-fd70-11ef-baad-360a6c86f50f</string>//Indian Harbour Beach UAT
+    <string name="SITE_ID_INDIAN_HARBOUR_BEACH_PROD" translatable="false">296794a8-fd70-11ef-b402-4277d9a01b87</string>//Indian Harbour Beach Prod
+
+    <string name="SITE_ID_ATLANTIC_BEACH_SC_UAT" translatable="false">dcc3edcc-03af-11f0-89e2-c60c10e87cc7</string>//Atlantic Beach SC UAT
+    <string name="SITE_ID_ATLANTIC_BEACH_SC_PROD" translatable="false">b4fd7898-03b0-11f0-85f4-866763168a95</string>//Atlantic Beach SC Prod
+
+    <string name="SITE_ID_CITY_OF_WATERLOO_UAT" translatable="false">fa2e7e88-1483-11f0-9913-a6fb5c3e8691</string>//City of Waterloo UAT
+    <string name="SITE_ID_CITY_OF_WATERLOO_PROD" translatable="false">8b785782-1485-11f0-a70c-ae0a61d3b9dd</string>//City of Waterloo Prod
+
+    <string name="SITE_ID_PARK_X_UAT" translatable="false">2aa09a04-1b57-11f0-85b7-061c47835ee1</string>//Park X UAT
+    <string name="SITE_ID_PARK_X_PROD" translatable="false">f12836e4-1f5f-11f0-a761-e675d585ebad</string>//Park X Prod
+
+    <string name="SITE_ID_SANMATEO_REDWOOD_UAT" translatable="false">660eed2a-1f8a-11f0-85b7-061c47835ee1</string>//SANMATEO REDWOOD UAT
+    <string name="SITE_ID_SANMATEO_REDWOOD_PROD" translatable="false">84bcad2a-1fa3-11f0-92dd-0e793f950ac4</string>//SANMATEO REDWOOD Prod
+
+    <string name="SITE_ID_SEASTREAK_UAT" translatable="false">9204e104-23f0-11f0-85b7-061c47835ee1</string>//SEASTREAK UAT
+    <string name="SITE_ID_SEASTREAK_PROD" translatable="false">bb050ab8-220e-11f0-a795-86e53f85dcd4</string>//SEASTREAK Prod
+
+    <string name="SITE_ID_SOUTH_LAKE_TAHOE_UAT" translatable="false">4588c2d2-24ea-11f0-85b7-061c47835ee1</string>//SOUTH LAKE TAHOE UAT
+    <string name="SITE_ID_SOUTH_LAKE_TAHOE_PROD" translatable="false">36ccafc6-b086-11ee-aa58-82967aaeaa80</string>//SOUTH LAKE TAHOE Prod
+<!--    <string name="SITE_ID_SOUTH_LAKE_TAHOE_PROD" translatable="false">a32364f6-24ea-11f0-92dd-0e793f950ac4</string>//SOUTH LAKE TAHOE Prod-->
+
+    <string name="SITE_ID_UPTOWN_ATLANTA_UAT" translatable="false">79a06096-25b4-11f0-85b7-061c47835ee1</string>//Uptown Atlanta UAT
+    <string name="SITE_ID_UPTOWN_ATLANTA_PROD" translatable="false">f5bd7040-25b6-11f0-929f-b2e34196ca08</string>//Uptown Atlanta Prod
+
+    <string name="SITE_ID_DANVILLE_VA_UAT" translatable="false">bb2d2dfc-2b02-11f0-a69b-1ed2671f5a0f</string>//Danville VA UAT
+    <string name="SITE_ID_DANVILLE_VA_PROD" translatable="false">1f686f98-2b03-11f0-8ece-2ee6f0ba96ea</string>//Danville VA Prod
+
+    <string name="SITE_ID_CAMDEN_UAT" translatable="false">d468fc74-3f6b-11f0-9907-6aa8651eef70</string>//Camden UAT
+    <string name="SITE_ID_CAMDEN_PROD" translatable="false">1fd9ceea-3f6c-11f0-b8c2-46f4a53c28cf</string>//Camden Prod
+
+    <string name="SITE_ID_WINPARK_TX_UAT" translatable="false">2d72aec2-4864-11f0-89a5-267b79b8bf83</string>//Camden UAT
+    <string name="SITE_ID_WINPARK_TX_PROD" translatable="false">988fcbf4-4864-11f0-b0cc-269eda569200</string>//Camden Prod
+
+    <string name="SITE_ID_LAZ_KCMO_PRIVATE_UAT" translatable="false">cbe98cf6-5048-11f0-89a5-267b79b8bf83</string>// LAZ_KCMO_PRIVATE UAT
+    <string name="SITE_ID_LAZ_KCMO_PRIVATE_PROD" translatable="false">5a25f24c-504a-11f0-b0cc-269eda569200</string>// LAZ_KCMO_PRIVATE PROD
+
+    <string name="SITE_ID_LAZ_CONJUCTIVE_POINT_UAT" translatable="false">468dfa1c-5bb3-11f0-b341-56de25d2a69a</string>// LAZ_CONJUCTIVE_POINT_UAT
+    <string name="SITE_ID_LAZ_CONJUCTIVE_POINT_PROD" translatable="false">7780d90a-5bb3-11f0-be66-bab8e7405708</string>// LAZ_CONJUCTIVE_POINT_PROD
+
+    <string name="SITE_ID_RPS_JACKSONVILLE_FL_UAT" translatable="false">ec45f18e-5c9f-11f0-b813-6ada889afcec</string>//Reimagined Parking Jacksonville FL UAT
+    <string name="SITE_ID_RPS_JACKSONVILLE_FL_PROD" translatable="false">0089459e-5cb2-11f0-be66-bab8e7405708</string>//Reimagined Parking Jacksonville FL Prod
+
+    <string name="SITE_ID_RPS_CHATTANOOGA_TN_UAT" translatable="false">8a59e64e-5cb6-11f0-8fa0-8635b99bbe98</string>//Reimagined Parking Chattanooga Tn UAT
+    <string name="SITE_ID_RPS_CHATTANOOGA_TN_PROD" translatable="false">e507c304-5cb6-11f0-be66-bab8e7405708</string>//Reimagined Parking Chattanooga Tn Prod
+
+    <string name="SITE_ID_CITY_OF_WILTON_MANORS_REIMAGINED_PARKING_UAT" translatable="false">cf074b26-5d68-11f0-b341-56de25d2a69a</string>//Reimagined Parking City Of Wilton Manors UAT
+    <string name="SITE_ID_CITY_OF_WILTON_MANORS_REIMAGINED_PARKING_PROD" translatable="false">aa7f3f1c-722f-11f0-a030-1a2b301ff7ac</string>//Reimagined Parking City Of Wilton Manors Prod
+
+    <string name="SITE_ID_REEF_CASPER_WY_REIMAGINED_PARKING_UAT" translatable="false">696a4c72-5d69-11f0-b341-56de25d2a69a</string>//Reimagined Parking Reef Casper WY UAT
+    <string name="SITE_ID_REEF_CASPER_WY_REIMAGINED_PARKING_PROD" translatable="false">766fb9fe-7671-11f0-b5e4-ee775f4253ca</string>//Reimagined Parking Reef Casper WY Prod
+
+    <string name="SITE_ID_MOBILE_AL_REIMAGINED_PARKING_UAT" translatable="false">b3cf36ec-5d69-11f0-b341-56de25d2a69a</string>//Reimagined Parking Mobile AL UAT
+    <string name="SITE_ID_MOBILE_AL_REIMAGINED_PARKING_PROD" translatable="false"></string>//Reimagined Parking Mobile AL Prod
+
+    <string name="SITE_ID_FAYETTEVILLE_NC_REIMAGINED_PARKING_UAT" translatable="false">7f0016f2-5cb0-11f0-b813-6ada889afcec</string>//Reimagined Parking Fayetteville Nc UAT
+    <string name="SITE_ID_FAYETTEVILLE_NC_REIMAGINED_PARKING_PROD" translatable="false">f21b1cae-62c8-11f0-aa32-6e39c1718690</string>//Reimagined Parking Fayetteville Nc Prod
+
+    <string name="SITE_ID_PORTLAND_RO_UAT" translatable="false">28042096-5d69-11f0-8fa0-8635b99bbe98</string>//Portland RO UAT
+    <string name="SITE_ID_PORTLAND_RO_PROD" translatable="false"></string>//Portland RO Prod
+
+    <string name="SITE_ID_MERRICK_PARK_FL_REIMAGINED_PARKING_UAT" translatable="false">af6226e4-60b8-11f0-b813-6ada889afcec</string>//Merrick Park FL Reimagined Parking UAT
+    <string name="SITE_ID_MERRICK_PARK_FL_REIMAGINED_PARKING_PROD" translatable="false">fcb4be70-60b8-11f0-a030-1a2b301ff7ac</string>//Merrick Park FL Reimagined Parking Prod
+
+    <string name="SITE_ID_HAMTRAMCK_MI_UAT" translatable="false">d73d9aa0-60a3-11f0-b813-6ada889afcec</string>//HAMTRAMCK MI UAT
+    <string name="SITE_ID_HAMTRAMCK_MI_PROD" translatable="false">f6c9f724-60a3-11f0-be66-bab8e7405708</string>//HAMTRAMCK MI Prod
+
+    <string name="SITE_ID_HILLSBORO_OR_REIMAGINED_PARKING_UAT" translatable="false">52f83a52-6d46-11f0-b341-56de25d2a69a</string>//HILLSBORO_OR_REIMAGINED_PARKING UAT
+    <string name="SITE_ID_HILLSBORO_OR_REIMAGINED_PARKING_PROD" translatable="false"></string>//HILLSBORO_OR_REIMAGINED_PARKING PROD
+
+    <string name="SITE_ID_PHSA_REIMAGINED_PARKING_UAT" translatable="false">e1210de0-6d46-11f0-b341-56de25d2a69a</string>//PHSA_REIMAGINED_PARKING UAT
+    <string name="SITE_ID_PHSA_REIMAGINED_PARKING_PROD" translatable="false"></string>//PHSA_REIMAGINED_PARKING PROD
+
+    <string name="SITE_ID_MTA_LONG_ISLAND_RAIL_ROAD_UAT" translatable="false">cb46bf18-72b1-11f0-8fa0-8635b99bbe98</string>//MTA_LONG_ISLAND_RAIL_ROAD UAT
+    <string name="SITE_ID_MTA_LONG_ISLAND_RAIL_ROAD_PROD" translatable="false">fa4ec404-72b1-11f0-8f49-529c2c709ebe</string>//MTA_LONG_ISLAND_RAIL_ROAD PROD
+
+    <string name="SITE_ID_GREENBURGH_NY_UAT" translatable="false">037dcb54-7746-11f0-8fa0-8635b99bbe98</string>//GREENBURGH_NY UAT PPA agency
+    <string name="SITE_ID_GREENBURGH_NY_PROD" translatable="false">edecf89a-7746-11f0-ae1c-d275b17a2f31</string>//GREENBURGH_NY PROD PPA agency
+
+    <string name="SITE_ID_BOTTLEWORKS_IN_UAT" translatable="false">ffa6aab4-7d94-11f0-8fa0-8635b99bbe98</string>//BOTTLEWORKS IN UAT
+    <string name="SITE_ID_BOTTLEWORKS_IN_PROD" translatable="false">5b9ea9e8-7d95-11f0-ae1c-d275b17a2f31</string>//BOTTLEWORKS IN PROD
+
+    <string name="SITE_ID_ACE_HGI_MANHATTAN_UAT" translatable="false">e4ab4b60-826d-11f0-b813-6ada889afcec</string>//ACE_HGI_MANHATTAN UAT
+<!--    <string name="SITE_ID_ACE_HGI_MANHATTAN_PROD" translatable="false">abad1cd0-839e-11f0-ae1c-d275b17a2f31</string>//ACE_HGI_MANHATTAN PROD-->
+    <string name="SITE_ID_ACE_HGI_MANHATTAN_PROD" translatable="false">7e697980-8434-11f0-9ef0-d6b93f3bac71</string>//ACE_HGI_MANHATTAN PROD
+
+    <string name="SITE_ID_A_BOBS_TOWING_UAT" translatable="false">2a57096c-8d43-11f0-bd74-8269c32d74e2</string>//AA_BOBS_TOWING UAT
+    <string name="SITE_ID_A_BOBS_TOWING_PROD" translatable="false">871de3e0-8d44-11f0-b5e4-ee775f4253ca</string>//A_BOBS_TOWING PROD
+
+    <string name="SITE_ID_EL_PASO_TX_MACKAY_UAT" translatable="false">8dc61c7c-8e6f-11f0-bd74-8269c32d74e2</string>//El PASO TX MACKAY UAT
+    <string name="SITE_ID_EL_PASO_TX_MACKAY_PROD" translatable="false">d26d85aa-8e73-11f0-ae1c-d275b17a2f31</string>//El PASO TX MACKAY PROD
+
+    <string name="SITE_ID_IMPARK_PHSA_UAT" translatable="false">5762502e-9a04-11f0-86a2-e61012cde0ad</string>//Im Park Phsa UAT
+    <string name="SITE_ID_IMPARK_PHSA_PROD" translatable="false"></string>//Im Park Phsa PROD
+
+    <string name="SITE_ID_EL_CAMINO_COLLEGE_UAT" translatable="false">59c89a8c-9ec6-11f0-9e97-be200e1b92ac</string>//EL CAMINO COLLEGE UAT
+    <string name="SITE_ID_EL_CAMINO_COLLEGE_PROD" translatable="false">02fc4aa4-9ec7-11f0-a557-0616291eec49</string>//EL CAMINO COLLEGE PROD
+
+    <string name="SITE_ID_ACE_SAN_DIEGO_ZOO_UAT" translatable="false">412da3ac-afdb-11f0-91e0-7a6c4906a76e</string>//Ace San Diego Zoo UAT
+    <string name="SITE_ID_ACE_SAN_DIEGO_ZOO_PROD" translatable="false">d886f0e6-afdb-11f0-8b67-4ab6efa07e85</string>//Ace San Diego Zoo PROD
+
+    <string name="SITE_ID_JEFFERSON_CITY_MO_UAT" translatable="false">452e2a60-aabf-11f0-91e0-7a6c4906a76e</string>//Jefferson City MO UAT
+    <string name="SITE_ID_JEFFERSON_CITY_MO_PROD" translatable="false">dd2ad69a-aac1-11f0-8290-ca2f412e0a1b</string>//Jefferson City MO PROD
+
+    <string name="SITE_ID_VEST_SECURITY_SYSTEM_UAT" translatable="false">45e01d32-b551-11f0-91e0-7a6c4906a76e</string>//Vest Security System UAT
+    <string name="SITE_ID_VEST_SECURITY_SYSTEM_PROD" translatable="false">2bcc09f0-b9ad-11f0-aa5a-6687c27cba26</string>//Vest Security System PROD
+
+    <string name="SITE_ID_WELLS_PD_UAT" translatable="false">7658e06c-b555-11f0-91e0-7a6c4906a76e</string>//Wells PD UAT
+    <string name="SITE_ID_WELLS_PD_PROD" translatable="false"></string>//Wells PD PROD
+
+    <string name="SITE_ID_DEER_FIELD_BEACH_FL_UAT" translatable="false">5030a936-b99e-11f0-91e0-7a6c4906a76e</string>//deerfield-beach-fl UAT
+    <string name="SITE_ID_DEER_FIELD_BEACH_FL_PROD" translatable="false">9a42047e-b99f-11f0-bb6d-b6316d9f652f</string>//deerfield-beach-fl PROD
+
+</resources>

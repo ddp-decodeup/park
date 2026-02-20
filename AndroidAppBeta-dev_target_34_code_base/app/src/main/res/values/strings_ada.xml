@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ada_content_description_loading_please_wait" translatable="false">Loading, Please wait</string>
+    <string name="ada_content_description_scan_plate" translatable="false">Scan Plate</string>
+    <string name="ada_content_description_sync" translatable="false">Sync</string>
+    <string name="ada_content_description_app_logo" translatable="false">App Logo</string>
+    <string name="ada_content_description_back_button" translatable="false">Back</string>
+    <string name="ada_content_description_hamburger_menu" translatable="false">Hamburger Menu</string>
+    <string name="ada_content_description_close_hamburger_menu" translatable="false">Close Hamburger Menu</string>
+    <string name="ada_content_description_close" translatable="false">Close</string>
+    <string name="ada_content_description_remove" translatable="false">Remove</string>
+    <string name="ada_content_description_remove_image" translatable="false">Remove Image</string>
+
+    <string name="ada_content_description_home_menu_option" translatable="false">Home Menu Option</string>
+    <string name="ada_content_description_ticketing_menu_option" translatable="false">Ticketing Menu Option</string>
+    <string name="ada_content_description_my_activity_menu_option" translatable="false">My Activity Menu Option</string>
+    <string name="ada_content_description_lookup_menu_option" translatable="false">Lookup Menu Option</string>
+    <string name="ada_content_description_guide_enforcement_menu_option" translatable="false">Guide Enforcement Menu Option</string>
+    <string name="ada_content_description_setting_menu_option" translatable="false">Setting Menu Option</string>
+    <string name="ada_content_description_broken_asset_report_menu_option" translatable="false">Broken Asset Report Menu Option</string>
+    <string name="ada_content_description_report_service_menu_option" translatable="false">Report Service Menu Option</string>
+    <string name="ada_content_description_qr_code_menu_option" translatable="false">QR Code Menu Option</string>
+    <string name="ada_content_description_paper_feed_menu_option" translatable="false">Paper Feed Menu Option</string>
+    <string name="ada_content_description_logout_menu_option" translatable="false">Logout Menu Option</string>
+    <string name="ada_content_description_hot_restart_menu_option" translatable="false">Hot Restart Menu Option</string>
+
+    <string name="ada_content_description_issue_sub_menu_option" translatable="false">Issue Sub Menu Option</string>
+    <string name="ada_content_description_scan_sub_menu_option" translatable="false">Scan Sub Menu Option</string>
+    <string name="ada_content_description_scan_sticker_sub_menu_option" translatable="false">Scan Sticker Sub Menu Option</string>
+    <string name="ada_content_description_lpr_mode_sub_menu_option" translatable="false">Lpr Mode Sub Menu Option</string>
+    <string name="ada_content_description_municipal_citation_sub_menu_option" translatable="false">Municipal Citation Sub Menu Option</string>
+
+    <string name="ada_content_description_graph_view_sub_menu_option" translatable="false">Graph View Sub Menu Option</string>
+    <string name="ada_content_description_supervisor_view_sub_menu_option" translatable="false">Supervisor View Sub Menu Option</string>
+    <string name="ada_content_description_daily_summary_sub_menu_option" translatable="false">Daily Summary Sub Menu Option</string>
+    <string name="ada_content_description_lpr_hits_sub_menu_option" translatable="false">Lpr Hits Sub Menu Option</string>
+
+    <string name="ada_content_description_pay_by_plate_sub_menu_option" translatable="false">Pay By Plate Sub Menu Option</string>
+    <string name="ada_content_description_pay_by_space_sub_menu_option" translatable="false">Pay By Space Sub Menu Option</string>
+    <string name="ada_content_description_camera_feed_sub_menu_option" translatable="false">Camera Feed Sub Menu Option</string>
+    <string name="ada_content_description_directed_enforcement" translatable="false">Directed Enforcement</string>
+
+
+    <string name="ada_content_description_citation_result_sub_menu_option" translatable="false">Citation Result Sub Menu Option</string>
+    <string name="ada_content_description_lpr_result_sub_menu_option" translatable="false">Lpr Result Sub Menu Option</string>
+
+    <string name="ada_content_description_broken_meter_report_sub_menu_option" translatable="false">Broken Meter Report Sub Menu Option</string>
+    <string name="ada_content_description_curb_report_sub_menu_option" translatable="false">Curb Report Sub Menu Option</string>
+    <string name="ada_content_description_full_time_eow_officer_report_sub_menu_option" translatable="false">Full Time EOW Officer Report Sub Menu Option</string>
+    <string name="ada_content_description_part_time_eow_officer_report_sub_menu_option" translatable="false">Part Time EOW Officer Report Sub Menu Option</string>
+    <string name="ada_content_description_eow_supervisor_shift_report_sub_menu_option" translatable="false">EOW Supervisor Shift Report Sub Menu Option</string>
+    <string name="ada_content_description_special_assignment_sub_menu_option" translatable="false">Special Assignment Sub Menu Option</string>
+    <string name="ada_content_description_hand_held_malfunction_sub_menu_option" translatable="false">Hand Held Malfunction Sub Menu Option</string>
+    <string name="ada_content_description_sign_report_sub_menu_option" translatable="false">Sign Report Sub Menu Option</string>
+    <string name="ada_content_description_vehicle_inspection_report_sub_menu_option" translatable="false">Vehicle Inspection Report Sub Menu Option</string>
+    <string name="ada_content_description_72_hour_marked_vehicles_sub_menu_option" translatable="false">72 Hour Marked Vehicles Sub Menu Option</string>
+    <string name="ada_content_description_bike_inspection_sub_menu_option" translatable="false">Bike Inspection Sub Menu Option</string>
+    <string name="ada_content_description_72_hours_notice_to_tow_sub_menu_option" translatable="false">72 Hours Notice To Tow Sub Menu Option</string>
+    <string name="ada_content_description_tow_report_sub_menu_option" translatable="false">Tow Report Sub Menu Option</string>
+    <string name="ada_content_description_sign_off_report_sub_menu_option" translatable="false">Sign Off Report Sub Menu Option</string>
+    <string name="ada_content_description_nfl_special_assignment_sub_menu_option" translatable="false">NFL Special Assignment Sub Menu Option</string>
+    <string name="ada_content_description_special_event_report_sub_menu_option" translatable="false">Special Event Report Sub Menu Option</string>
+    <string name="ada_content_description_pch_daily_updates_sub_menu_option" translatable="false">PCH Daily Updates Sub Menu Option</string>
+    <string name="ada_content_description_pay_station_report_sub_menu_option" translatable="false">Pay Station Report Sub Menu Option</string>
+    <string name="ada_content_description_signage_report_sub_menu_option" translatable="false">Signage Report Sub Menu Option</string>
+    <string name="ada_content_description_homeless_report_sub_menu_option" translatable="false">Homeless Report Sub Menu Option</string>
+    <string name="ada_content_description_safety_report_immediate_attention_sub_menu_option" translatable="false">Safety Report Immediate Attention Required Sub Menu Option</string>
+    <string name="ada_content_description_trash_lot_maintenance_sub_menu_option" translatable="false">Trash Lot Maintenance Report Sub Menu Option</string>
+    <string name="ada_content_description_lot_count_vio_rate_report_sub_menu_option" translatable="false">Lot Count Vio Rate Report Sub Menu Option</string>
+    <string name="ada_content_description_lot_inspection_report_sub_menu_option" translatable="false">Lot Inspection Report Sub Menu Option</string>
+    <string name="ada_content_description_work_order_report_sub_menu_option" translatable="false">Work Order Report Sub Menu Option</string>
+
+    <string name="ada_content_description_generate_qr_code_sub_menu_option" translatable="false">Generate QR Code Sub Menu Option</string>
+    <string name="ada_content_description_scan_qr_code_sub_menu_option" translatable="false">Scan QR Code Sub Menu Option</string>
+
+    <string name="ada_content_description_scan_inventory_qr_code" translatable="false">Scan Inventory QR Code</string>
+    <string name="ada_content_description_camera" translatable="false">Camera</string>
+    <string name="ada_content_description_license_plate_image" translatable="false">License Plate</string>
+    <string name="ada_content_description_clear_text_double_tap_to_clear" translatable="false">Clear text button. Double tap to clear the text.</string>
+    <string name="ada_content_description_dropdown_button_double_tap_to_open_dropdown" translatable="false">Dropdown button. Double tap to open drop down options.</string>
+    <string name="ada_content_description_dropdown_button_double_tap_to_close_dropdown" translatable="false">Dropdown button. Double tap to close drop down options.</string>
+
+    <string name="ada_content_description_location_locked" translatable="false">Location Locked</string>
+    <string name="ada_content_description_location_unlocked" translatable="false">Location Unlocked</string>
+    <string name="ada_content_description_license_plate_format_matched" translatable="false">License Plate Format Matched</string>
+    <string name="ada_content_description_license_plate_format_not_matched" translatable="false">License Plate Format Not Matched</string>
+
+    <string name="ada_content_description_tab_selected" translatable="false">%s Tab Selected</string>
+    <string name="ada_content_description_tab_unselected" translatable="false">%s Tab Unselected</string>
+
+    <string name="ada_content_description_not_available" translatable="false">Not Available</string>
+
+
+    <string name="ada_role_empty" translatable="false">\n</string>
+    <string name="ada_role_button" translatable="false">Button</string>
+    <string name="ada_role_link" translatable="false">Link</string>
+    <string name="ada_role_label" translatable="false">Label</string>
+
+    <string name="ada_action_reset_and_reload" translatable="false">Reset and Reload</string>
+    <string name="ada_action_empty" translatable="false"> </string>
+
+    <string name="pause_in_talkback_long" translatable="false">\n\n\n\n</string>
+    <string name="pause_in_talkback_mid" translatable="false">\n\n</string>
+    <string name="pause_in_talkback_short" translatable="false">\n</string>
+    <string name="lbl_no_data" translatable="false">No Data</string>
+    <string name="ada_content_description_required" translatable="false">\nRequired\n</string>
+
+    <string name="ada_announcement_text_cleared" translatable="false">Text cleared</string>
+
+    <string name="ada_class_name_image_button" translatable="false">android.widget.ImageButton</string>
+
+</resources>

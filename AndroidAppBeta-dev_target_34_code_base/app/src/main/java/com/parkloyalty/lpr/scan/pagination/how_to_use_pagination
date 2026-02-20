@@ -1,0 +1,25 @@
+How to use file to show how to implement pagination utils in the code
+
+Step 1: Create object of ListPaginationUtils class & pass recycler view & arraylist into it
+Step 2: Implement ListPaginationListener after object creation.
+Step 3: Add your API call in ListPaginationListener's overridden method onDataLoading()
+        followed by index we are getting in the method.
+Step 4: use startPaginationLoading() for the first time to initiate first API call.
+Step 5: on API Response use
+        if (mListPaginationUtils.getCurrentPageIndex() == PAGINATION_DEFAULT_INDEX) {
+            //Clear your list for the first index
+        }
+
+        mListPaginationUtils.setTotalDataCount(total data count we can get from API response)
+        mListPaginationUtils.completeAPICall()
+
+        //Add all data in list
+        //notify the adapter
+
+
+Step 6: to reset complete API call use
+        resetPaginationLoading()
+        startPaginationLoading()
+Step 7: use errorOccurred() wherever your API fails
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow below -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#ECECEC"/>
+            <size android:width="56dp" android:height="56dp"/>
+            <corners android:radius="28dp"/>
+            <padding android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp"/>
+        </shape>
+    </item>
+    <!-- Shadow highlight (top left) -->
+    <item android:left="0dp" android:top="0dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="30dp"
+                android:centerX="18%"
+                android:centerY="18%"
+                android:startColor="#FFFFFF"
+                android:endColor="#00FFFFFF"/>
+        </shape>
+    </item>
+    <!-- Shadow dark (bottom right) -->
+    <item android:right="0dp" android:bottom="0dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="30dp"
+                android:centerX="82%"
+                android:centerY="82%"
+                android:startColor="#D1D9E6"
+                android:endColor="#00D1D9E6"/>
+        </shape>
+    </item>
+    <!-- Main circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#ECECEC"/>
+        </shape>
+    </item>
+</layer-list>
+

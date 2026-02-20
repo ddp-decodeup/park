@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSignaturePad">
+        <attr name="signPenMaxWidth" format="dimension"/>
+        <attr name="signPenMinWidth" format="dimension"/>
+        <attr name="signPenColor" format="color"/>
+        <attr name="signPadBackgroundColor" format="color"/>
+
+        <!-- new border attrs -->
+        <attr name="signBorderEnabled" format="boolean"/>
+        <attr name="signBorderColor" format="color"/>
+        <attr name="signBorderWidth" format="dimension"/>
+        <attr name="signBorderRadius" format="dimension"/>
+        <attr name="signBorderPadding" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:layout_marginHorizontal="@dimen/_16dp"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/round_corner_shape_border_grey_fill_gray"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_26dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_26dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_notes"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_20sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivEditNotes"
+                    android:layout_width="@dimen/_30dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:src="@drawable/ic_edit"
+                    android:visibility="visible" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:editable="false"
+            android:enabled="false"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/light_grey_100"
+            android:textSize="@dimen/_14sp"
+            android:visibility="gone" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/laySignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgSignature"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_45dp"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/signature_pen"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPersonSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_6dp"
+            android:text="Person Signature"
+            android:textColor="@color/black_sub_heading"
+            android:textSize="@dimen/_14sp"
+            android:visibility="gone"
+            android:accessibilityHeading="true" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layButtonsHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!--Button_shape_without_with_height-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEdit"
+            style="@style/Button_shape_without_fill_grey_with_height"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scr_btn_edit"
+            android:textAllCaps="false"
+            android:textColor="@color/light_grey_100" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_shape_fill_grey_border_ht"
+            android:fontFamily="@font/gilroy_medium"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scr_btn_rescind"
+            android:textAllCaps="false"
+            android:textColor="@color/black_tv"
+            android:textSize="@dimen/_16sp"
+            android:visibility="gone"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_rescind"
+            style="@style/Button_shape_blue"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scr_btn_rescind"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay_button_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPrint"
+            style="@style/Button_shape_blue"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scr_btn_print"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnWithoutPrint"
+            style="@style/Button_shape_blue"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scr_btn_issue_wo_print"
+            android:textAllCaps="false"
+            android:visibility="gone"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

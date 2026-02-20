@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_officer_name"
+                    style="@style/CustomTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/scr_lbl_officer_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_officer_name"
+                        style="@style/CustomTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:enabled="false"
+                        android:maxLength="20" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:id="@+id/viewSeparatorForOfficerDate"
+                    android:layout_width="@dimen/screen_margin"
+                    android:layout_height="@dimen/_0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_date_time"
+                    style="@style/CustomTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/scr_lbl_date_without_colon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_date_time"
+                        style="@style/CustomTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:enabled="false"
+                        android:maxLength="20" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_citation"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_lpr_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_citation"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:maxLength="20" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutLot"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_lot"
+                android:visibility="gone"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/etLot"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputTextSpace"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_space_without_colon"
+                android:visibility="gone"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/etSpace"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutVehBlock"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_block"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/AutoComTextViewVehblock"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutVehState"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_state"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/AutoComTextViewVehState"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutVehStreet"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_street"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/AutoComTextViewVehStreet"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutVehSideOfStreet"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_side_of_street"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/AutoComTextViewVehSideOfState"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutVehMake"
+                    style="@style/CustomTextInputLayoutForDropDownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/screen_margin_half"
+                    android:layout_weight="1"
+                    android:hint="@string/scr_lbl_make"
+                    app:hintEnabled="true"
+                    app:placeholderText="@string/hint_select">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/AutoComTextViewMakeVeh"
+                        style="@style/CustomTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                        android:editable="true"
+                        android:ellipsize="start"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionDone"
+                        android:inputType="textAutoComplete|textCapCharacters"
+                        android:maxLines="3"
+                        android:textAllCaps="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/viewSeparatorForMakeModel"
+                    android:layout_width="@dimen/screen_margin"
+                    android:layout_height="@dimen/_0dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutVehModel"
+                    style="@style/CustomTextInputLayoutForDropDownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/screen_margin_half"
+                    android:layout_weight="1"
+                    android:hint="@string/scr_lbl_model"
+                    app:hintEnabled="true"
+                    app:placeholderText="@string/hint_select">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/AutoComTextViewVehModel"
+                        style="@style/CustomTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                        android:editable="true"
+                        android:ellipsize="start"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionDone"
+                        android:inputType="textAutoComplete|textCapCharacters"
+                        android:maxLines="3"
+                        android:textAllCaps="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutVehColor"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_color"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/AutoComTextViewVehColor"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutVehRemark"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:hint="@string/scr_lbl_remarks"
+                app:hintEnabled="true"
+                app:placeholderText="@string/hint_select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/AutoComTextViewVehRemark"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_dropdown_arrow_blue"
+                    android:editable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textCapCharacters"
+                    android:maxLines="3"
+                    android:textAllCaps="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_textNote"
+                style="@style/CustomTextInputLayoutForDropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/margin_between_input_layouts"
+                android:hint="@string/scr_lbl_comments"
+                android:minHeight="@dimen/_140dp"
+                app:endIconMode="none"
+                app:hintEnabled="true"
+                tools:hint="@string/scr_lbl_comments">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/etNote"
+                    style="@style/CustomTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:ellipsize="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:minHeight="@dimen/_140dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textAlignment="textStart"
+                    app:errorEnabled="true"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/check_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/scr_lbl_regular" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/check_heavy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/scr_lbl_heavy" />
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/check_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/scr_lbl_medium" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lay_button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/screen_margin_half"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    style="@style/CustomPositiveButtonRegular"
+                    android:layout_marginStart="@dimen/screen_margin"
+                    android:layout_weight="1"
+                    android:text="@string/scr_btn_save_small_letter"
+                    android:textAllCaps="false" />
+
+                <View
+                    android:id="@+id/viewPrintDivider"
+                    android:layout_width="@dimen/screen_margin"
+                    android:layout_height="@dimen/_0dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit_issue"
+                    style="@style/CustomNegativeButtonRegular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/screen_margin"
+                    android:layout_weight="1"
+                    android:text="@string/scr_btn_save_cite_small_letter"
+                    android:textAllCaps="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit_time"
+                style="@style/CustomNegativeButtonRegular"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/screen_margin"
+                android:layout_marginTop="@dimen/screen_margin_half"
+                android:layout_marginBottom="@dimen/screen_margin"
+                android:text="@string/scr_btn_save_time_small_letter"
+                android:textAllCaps="false" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--   </ScrollView>-->
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

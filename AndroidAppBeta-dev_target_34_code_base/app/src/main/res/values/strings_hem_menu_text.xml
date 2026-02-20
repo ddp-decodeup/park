@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_option_inner_title_forgot_password" translatable="false">Forgot Password</string>
+    <string name="menu_option_inner_title_setting" translatable="false">Setting</string>
+    <string name="menu_option_inner_title_dashboard" translatable="false">Dashboard</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOfficerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/_26dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:text="@string/scr_lbl_officer_details"
+        android:textColor="@color/black_heading"
+        android:textSize="@dimen/_20sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layMainOfficer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layOfficerId"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_officer_id"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOfficerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:gravity="center|left"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text=""
+                    android:paddingHorizontal="@dimen/_16dp"
+                    android:paddingVertical="@dimen/_6dp"
+                    android:background="@drawable/round_corner_shape_without_fill_gray"
+                    android:textColor="@color/black_sub_heading"
+                    android:textSize="@dimen/_14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layBadgeId"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/scr_lbl_badge_id"
+                    android:textColor="@color/light_grey_100"
+                    android:textSize="@dimen/_14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBadgeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:gravity="center|left"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text=""
+                    android:paddingHorizontal="@dimen/_16dp"
+                    android:paddingVertical="@dimen/_6dp"
+                    android:background="@drawable/round_corner_shape_without_fill_gray"
+                    android:textColor="@color/black_sub_heading"
+                    android:textSize="@dimen/_14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

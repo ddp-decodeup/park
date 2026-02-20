@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:background="@color/bg_semi_white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_main_internal_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/round_corner_shape_fill_yellow_border_grey"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_26dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_location_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_internal_note"
+                android:visibility="gone"
+                android:textColor="@color/black_heading"
+                android:textSize="@dimen/_20sp"
+                android:accessibilityHeading="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocationDetailsFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_location_details"
+                android:textColor="@color/black_tv"
+                android:textSize="@dimen/_16sp"
+                android:accessibilityHeading="true" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/viewLocationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginVertical="@dimen/_22dp"
+            android:background="@color/light_yellow_30"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_voilation_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvVoilationDetailsFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@string/scr_lbl_voilation_details"
+                android:textColor="@color/black_tv"
+                android:textSize="@dimen/_16sp"
+                android:accessibilityHeading="true" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/viewVoilationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginVertical="@dimen/_22dp"
+            android:background="@color/light_yellow_30"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright (C) 2016-2019 Doubango AI <https://www.doubango.org>
+ License: For non-commercial use only
+ Source code: https://github.com/DoubangoTelecom/ultimateALPR-SDK
+ WebSite: https://www.doubango.org/webapps/alpr/
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flParentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.parkloyalty.lpr.scan.doubangoultimatelpr.views.AlprGLSurfaceView
+            android:id="@+id/glSurfaceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <com.parkloyalty.lpr.scan.doubangoultimatelpr.views.AlprPlateView
+            android:id="@+id/plateView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCameraFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/icn_camera_frame" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStart"
+            style="@style/Button_shape_blue_wrap"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginHorizontal="@dimen/_10dp"
+            android:layout_marginVertical="@dimen/_8dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_6dp"
+            android:text="@string/btn_text_start_caps"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStop"
+            style="@style/Button_shape_blue_wrap"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginHorizontal="@dimen/_10dp"
+            android:layout_marginVertical="@dimen/_8dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_6dp"
+            android:text="@string/btn_text_stop_caps"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottomPointAndScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCapture"
+            style="@style/Button_shape_blue"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginHorizontal="@dimen/_10dp"
+            android:layout_marginVertical="@dimen/_8dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_6dp"
+            android:text="@string/btn_capture"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16sp" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

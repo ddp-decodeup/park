@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.SplashScreenFragment"
+        android:label="@string/nav_graph_label_splash_screen" >
+
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_splashScreenFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.login.LoginScreenFragment"
+        android:label="@string/nav_graph_label_login_screen" >
+
+        <action
+            android:id="@+id/action_loginScreenFragment_to_forgotPasswordScreenFragment"
+            app:destination="@id/forgotPasswordScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_loginScreenFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/loginScreenFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.forgotpassword.ForgotPasswordScreenFragment"
+        android:label="@string/nav_graph_label_forgot_password_screen" />
+
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.welcome.WelcomeScreenFragment"
+        android:label="@string/nav_graph_label_welcome_screen" >
+
+
+<!--        <action-->
+<!--            android:id="@+id/action_welcomeScreenFragment_to_settingsScreenFragment"-->
+<!--            app:destination="@id/settingsScreenFragment"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left" />-->
+
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_dashboardScreenFragment"
+            app:destination="@id/dashboardScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/settingsScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.settings.SettingsScreenFragment"
+        android:label="@string/nav_graph_label_settings_screen" />
+
+    <fragment
+        android:id="@+id/dashboardScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.dashboard.DashboardScreenFragment"
+        android:label="@string/nav_graph_label_dashboard_screen" />
+
+    <fragment
+        android:id="@+id/checkSetupScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.checksetup.CheckSetupScreenFragment"
+        android:label="@string/nav_graph_label_check_setup_screen" />
+
+    <fragment
+        android:id="@+id/scanResultScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.scanresult.ScanResultScreenFragment"
+        android:label="@string/nav_graph_label_scan_result_screen" />
+
+    <fragment
+        android:id="@+id/citationFormScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.citationform.CitationFormScreenFragment"
+        android:label="@string/nav_graph_label_citation_form_screen" >
+
+        <action
+            android:id="@+id/action_citationFormScreenFragment_to_citationPreviewScreenFragment"
+            app:destination="@id/citationPreviewScreenFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/citationPreviewScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.citationpreview.CitationPreviewScreenFragment"
+        android:label="@string/nav_graph_label_citation_preview_screen" />
+
+
+    <fragment
+        android:id="@+id/bootScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.boot.BootScreenFragment"
+        android:label="@string/nav_graph_label_boot_screen" >
+
+        <action
+            android:id="@+id/action_bootScreenFragment_to_citationFormScreenFragment"
+            app:destination="@id/citationFormScreenFragment"
+            app:popUpTo="@id/bootScreenFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTimeRecordScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.addtimerecord.AddTimeRecordScreenFragment"
+        android:label="@string/nav_graph_label_add_time_record_screen" >
+
+        <action
+            android:id="@+id/action_addTimeRecordScreenFragment_to_abandonedVehicleScreenFragment"
+            app:destination="@id/abandonedVehicleScreenFragment"
+            app:popUpTo="@id/addTimeRecordScreenFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/abandonedVehicleScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.abandonedvehicle.AbandonedVehicleScreenFragment"
+        android:label="@string/nav_graph_label_abandoned_vehicle_screen" />
+
+    <fragment
+        android:id="@+id/citationHistoryPrinterScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.citationhistoryprinter.CitationHistoryPrinterScreenFragment"
+        android:label="@string/nav_graph_label_citation_history_printer_screen" />
+
+
+    <fragment
+        android:id="@+id/searchScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.search.SearchScreenFragment"
+        android:label="@string/nav_graph_label_search_screen" />
+
+
+    <fragment
+        android:id="@+id/myActivityScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.myactivity.MyActivityScreenFragment"
+        android:label="@string/nav_graph_label_my_activity_screen" />
+
+
+    <fragment
+        android:id="@+id/brokenAssetReportScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.brokenasset.BrokenAssetReportScreenFragment"
+        android:label="@string/nav_graph_label_broken_asset_report_screen" />
+
+
+
+    <fragment
+        android:id="@+id/allReportsScreenFragment"
+        android:name="com.parkloyalty.lpr.scan.views.fragments.reports.AllReportsScreenFragment"
+        android:label="@string/nav_graph_label_all_reports_screen" >
+
+    </fragment>
+
+</navigation>
+
